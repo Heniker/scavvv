@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scav</title>
+
+    <script type="module" crossorigin src="/scavvv/assets/index-CaU_XyYS.js"></script>
+    <link rel="stylesheet" crossorigin href="/scavvv/assets/index-4w67BRBN.css">
+  </head>
+
+  <body class="no-flashbang font-sans overflow-auto p-4 md:p-0 bg-gray-1">
+    <div id="app" class="max-w-7xl my-10 mx-auto"></div>
+
+    <img src="/scavvv/intro12.png" class="scav select-none" />
+    <img src="/scavvv/hollowvignette.png" class="background select-none" />
+  </body>
+
+  <style>
+    .no-flashbang {
+      background-color: hsl(0 0% 7%);
+    }
+
+    .scav {
+      top: 2.8rem;
+      right: 5%;
+      width: 30rem;
+      filter: blur(10px);
+      transform: scaleX(-1);
+      z-index: -2;
+      position: fixed;
+    }
+
+    .background {
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      filter: blur(0px) invert(9%) brightness(1.2);
+      opacity: 0.4;
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+    }
+  </style>
+</html>

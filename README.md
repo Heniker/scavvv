@@ -2,9 +2,12 @@
 
 Anything but updating the wiki
 
-https://heniker.github.io/scavvv/
+tip: use alt+q ([on chrome](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/accesskey)) to quickly focus search bar.
+
+tip2: type `c:` in the search to get only craftable items.
 
 <!--
+ai generated initial html & css
 
 Decompiled with ilspy.
 

@@ -1,0 +1,5487 @@
+[
+  {
+    "description": "A few bits of foliage, tied together into a rope. Used for crafting.",
+    "fullName": "<sprite index=25>Foliage rope",
+    "INT": 1,
+    "items": [
+      {
+        "quality": {
+          "id": "foliage",
+          "amount": 1.0,
+          "LocaleName": "Foliage"
+        },
+        "destroyItem": true,
+        "ignoredId": "rope"
+      },
+      {
+        "quality": {
+          "id": "foliage",
+          "amount": 1.0,
+          "LocaleName": "Foliage"
+        },
+        "destroyItem": true,
+        "ignoredId": "rope"
+      }
+    ],
+    "result": {
+      "id": "rope",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "description": "Generic alien plant life. Barely edible, with a dissatisfying taste. Might make you sick. Decays fast. Often used in crafting.",
+    "fullName": "<sprite index=25>Foliage",
+    "index": 1,
+    "INT": 4,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "funguschunk",
+        "destroyItem": true,
+        "ignoredId": "foliage"
+      },
+      {
+        "specific": true,
+        "specificId": "funguschunk",
+        "destroyItem": true,
+        "ignoredId": "foliage"
+      }
+    ],
+    "result": {
+      "id": "foliage",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "description": "A thin, deceptively durable string made of prepared plant matter. Used in more intricate recipes.",
+    "fullName": "<sprite index=25>String (x3)",
+    "index": 2,
+    "INT": 5,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "rope",
+        "destroyItem": true,
+        "ignoredId": "string"
+      },
+      {
+        "specific": true,
+        "specificId": "rope",
+        "destroyItem": true,
+        "ignoredId": "string"
+      },
+      {
+        "quality": {
+          "id": "cutting",
+          "amount": 1.0,
+          "LocaleName": "Cutting"
+        },
+        "ignoredId": "string"
+      }
+    ],
+    "result": {
+      "id": "string",
+      "amount": 3,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "description": "Thin, flexible sheet made of plant matter. Light and decently durable for what it is.",
+    "fullName": "<sprite index=25>Canvas",
+    "index": 3,
+    "INT": 2,
+    "items": [
+      {
+        "quality": {
+          "id": "foliage",
+          "amount": 1.0,
+          "LocaleName": "Foliage"
+        },
+        "destroyItem": true,
+        "ignoredId": "canvas"
+      },
+      {
+        "quality": {
+          "id": "foliage",
+          "amount": 1.0,
+          "LocaleName": "Foliage"
+        },
+        "destroyItem": true,
+        "ignoredId": "canvas"
+      },
+      {
+        "quality": {
+          "id": "foliage",
+          "amount": 1.0,
+          "LocaleName": "Foliage"
+        },
+        "destroyItem": true,
+        "ignoredId": "canvas"
+      }
+    ],
+    "result": {
+      "id": "canvas",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "description": "Bits and pieces of smashed wood. You could probably make them into a crafting material.",
+    "fullName": "<sprite index=25>Wood scraps",
+    "index": 4,
+    "INT": 3,
+    "items": [
+      {
+        "quality": {
+          "id": "foliage",
+          "amount": 1.0,
+          "LocaleName": "Foliage"
+        },
+        "destroyItem": true,
+        "ignoredId": "woodscraps"
+      },
+      {
+        "quality": {
+          "id": "foliage",
+          "amount": 1.0,
+          "LocaleName": "Foliage"
+        },
+        "destroyItem": true,
+        "ignoredId": "woodscraps"
+      },
+      {
+        "quality": {
+          "id": "foliage",
+          "amount": 1.0,
+          "LocaleName": "Foliage"
+        },
+        "destroyItem": true,
+        "ignoredId": "woodscraps"
+      },
+      {
+        "quality": {
+          "id": "foliage",
+          "amount": 1.0,
+          "LocaleName": "Foliage"
+        },
+        "destroyItem": true,
+        "ignoredId": "woodscraps"
+      }
+    ],
+    "result": {
+      "id": "woodscraps",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 2,
+    "description": "A small pile of ripped clothing. Can be used as a makeshift bandage for bleeding wounds.",
+    "fullName": "<sprite index=25>Ripped dressing",
+    "index": 5,
+    "items": [
+      {
+        "quality": {
+          "id": "rippable",
+          "amount": 1.0,
+          "LocaleName": "Rippable"
+        },
+        "ignoredId": "rippeddressing"
+      }
+    ],
+    "result": {
+      "id": "rippeddressing",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 2,
+    "description": "A roll of dressing with a bandage, used to slow down bleeding, stabilize fractures and aid skin healing. Counteracts infections. Has no effect on muscle health.",
+    "fullName": "<sprite index=25>Sterilized dressing",
+    "index": 6,
+    "INT": 1,
+    "items": [
+      {
+        "quality": {
+          "id": "dressing",
+          "amount": 1.0,
+          "LocaleName": "Dressing"
+        },
+        "minimumCondition": 0.9,
+        "destroyItem": true,
+        "ignoredId": "sterilizedbandage"
+      },
+      {
+        "isLiquid": true,
+        "quality": {
+          "id": "disinfectant",
+          "amount": 10.0,
+          "LocaleName": "Antiseptic"
+        },
+        "minimumCondition": 0.9,
+        "destroyItem": true,
+        "ignoredId": "sterilizedbandage"
+      }
+    ],
+    "result": {
+      "id": "sterilizedbandage",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "description": "Advanced chemical compound that greatly promotes chemical reactions and is able to mend certain materials together, or even melt them. Very commonly used in crafting.",
+    "fullName": "<sprite index=25>Bio-chem fluid (10mL)",
+    "index": 7,
+    "INT": 4,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "glowplantfruit",
+        "destroyItem": true,
+        "ignoredId": "biochem"
+      }
+    ],
+    "result": {
+      "id": "biochem",
+      "isLiquid": true,
+      "amount": 1,
+      "resultCondition": 10.0
+    }
+  },
+  {
+    "category": 2,
+    "description": "Mild opiate for pain relief. Lesser effect when taken orally.",
+    "fullName": "<sprite index=25>Opium (50mL)",
+    "index": 8,
+    "INT": 7,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "mushpear",
+        "destroyItem": true,
+        "ignoredId": "opium"
+      },
+      {
+        "specific": true,
+        "specificId": "mushpear",
+        "destroyItem": true,
+        "ignoredId": "opium"
+      },
+      {
+        "specific": true,
+        "specificId": "biochem",
+        "isLiquid": true,
+        "minimumCondition": 10.0,
+        "destroyItem": true,
+        "ignoredId": "opium"
+      },
+      {
+        "isLiquid": true,
+        "quality": {
+          "id": "water",
+          "amount": 50.0,
+          "LocaleName": "Water"
+        },
+        "minimumCondition": 0.9,
+        "destroyItem": true,
+        "ignoredId": "opium"
+      }
+    ],
+    "result": {
+      "id": "opium",
+      "isLiquid": true,
+      "amount": 1,
+      "resultCondition": 50.0
+    }
+  },
+  {
+    "category": 2,
+    "description": "Strong opiate for pain relief. Lesser effect when taken orally.",
+    "fullName": "<sprite index=25>Morphine (50mL)",
+    "index": 9,
+    "INT": 9,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "opium",
+        "isLiquid": true,
+        "minimumCondition": 75.0,
+        "destroyItem": true,
+        "ignoredId": "morphine"
+      },
+      {
+        "specific": true,
+        "specificId": "biochem",
+        "isLiquid": true,
+        "minimumCondition": 10.0,
+        "destroyItem": true,
+        "ignoredId": "morphine"
+      },
+      {
+        "isLiquid": true,
+        "quality": {
+          "id": "water",
+          "amount": 15.0,
+          "LocaleName": "Water"
+        },
+        "minimumCondition": 0.9,
+        "destroyItem": true,
+        "ignoredId": "morphine"
+      }
+    ],
+    "result": {
+      "id": "morphine",
+      "isLiquid": true,
+      "amount": 1,
+      "resultCondition": 50.0
+    }
+  },
+  {
+    "category": 2,
+    "description": "Highly potent opiate, 100 times stronger than morphine. Consider diluting it.",
+    "fullName": "<sprite index=25>Fentanyl (10mL)",
+    "index": 10,
+    "INT": 11,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "morphine",
+        "isLiquid": true,
+        "minimumCondition": 50.0,
+        "destroyItem": true,
+        "ignoredId": "fentanyl"
+      },
+      {
+        "specific": true,
+        "specificId": "biochem",
+        "isLiquid": true,
+        "minimumCondition": 25.0,
+        "destroyItem": true,
+        "ignoredId": "fentanyl"
+      },
+      {
+        "isLiquid": true,
+        "quality": {
+          "id": "water",
+          "amount": 25.0,
+          "LocaleName": "Water"
+        },
+        "minimumCondition": 0.9,
+        "destroyItem": true,
+        "ignoredId": "fentanyl"
+      },
+      {
+        "specific": true,
+        "specificId": "flammablepowder",
+        "destroyItem": true,
+        "ignoredId": "fentanyl"
+      }
+    ],
+    "result": {
+      "id": "fentanyl",
+      "isLiquid": true,
+      "amount": 1,
+      "resultCondition": 10.0
+    }
+  },
+  {
+    "category": 2,
+    "description": "Opioid pills used to treat pain. Overdose at 60ml.",
+    "fullName": "<sprite index=25>Painkillers (200mL)",
+    "index": 11,
+    "INT": 10,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "reliefcrystalshard",
+        "destroyItem": true,
+        "ignoredId": "painkillers"
+      },
+      {
+        "specific": true,
+        "specificId": "plasticchunk",
+        "destroyItem": true,
+        "ignoredId": "painkillers"
+      },
+      {
+        "specific": true,
+        "specificId": "biochem",
+        "isLiquid": true,
+        "minimumCondition": 20.0,
+        "destroyItem": true,
+        "ignoredId": "painkillers"
+      },
+      {
+        "isLiquid": true,
+        "quality": {
+          "id": "water",
+          "amount": 50.0,
+          "LocaleName": "Water"
+        },
+        "minimumCondition": 0.9,
+        "destroyItem": true,
+        "ignoredId": "painkillers"
+      }
+    ],
+    "result": {
+      "id": "painkillers",
+      "isLiquid": true,
+      "amount": 1,
+      "resultCondition": 200.0
+    }
+  },
+  {
+    "category": 2,
+    "description": "An advanced mix of drugs that alters the structure and function of your brain, slightly increasing your mobility permanently. You might not want to use it more than once.",
+    "fullName": "<sprite index=25>Neural booster",
+    "index": 12,
+    "INT": 18,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "biochem",
+        "isLiquid": true,
+        "minimumCondition": 50.0,
+        "destroyItem": true,
+        "ignoredId": "neuralbooster"
+      },
+      {
+        "specific": true,
+        "specificId": "braingrow",
+        "isLiquid": true,
+        "minimumCondition": 80.0,
+        "destroyItem": true,
+        "ignoredId": "neuralbooster"
+      },
+      {
+        "specific": true,
+        "specificId": "mindwipe",
+        "isLiquid": true,
+        "minimumCondition": 30.0,
+        "destroyItem": true,
+        "ignoredId": "neuralbooster"
+      },
+      {
+        "specific": true,
+        "specificId": "plasticchunk",
+        "destroyItem": true,
+        "ignoredId": "neuralbooster"
+      },
+      {
+        "specific": true,
+        "specificId": "circuitboard",
+        "minimumCondition": 0.9,
+        "destroyItem": true,
+        "ignoredId": "neuralbooster"
+      }
+    ],
+    "result": {
+      "id": "neuralbooster",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 3,
+    "description": "Simple, small bottle for holding liquids, made with some glued together chunks of plastic tied together with rope. Holds 300mL.",
+    "fullName": "<sprite index=25>Canteen",
+    "index": 13,
+    "INT": 6,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "plasticchunk",
+        "destroyItem": true,
+        "ignoredId": "canteen"
+      },
+      {
+        "specific": true,
+        "specificId": "plasticchunk",
+        "destroyItem": true,
+        "ignoredId": "canteen"
+      },
+      {
+        "specific": true,
+        "specificId": "rope",
+        "destroyItem": true,
+        "ignoredId": "canteen"
+      },
+      {
+        "specific": true,
+        "specificId": "biochem",
+        "isLiquid": true,
+        "minimumCondition": 10.0,
+        "destroyItem": true,
+        "ignoredId": "canteen"
+      }
+    ],
+    "result": {
+      "id": "canteen",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 3,
+    "description": "A very flimsy bag made of tied together foliage.",
+    "fullName": "<sprite index=25>Foliage bag",
+    "index": 14,
+    "INT": 5,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "rope",
+        "destroyItem": true,
+        "ignoredId": "foliagebag"
+      },
+      {
+        "specific": true,
+        "specificId": "canvas",
+        "destroyItem": true,
+        "ignoredId": "foliagebag"
+      },
+      {
+        "specific": true,
+        "specificId": "canvas",
+        "destroyItem": true,
+        "ignoredId": "foliagebag"
+      }
+    ],
+    "result": {
+      "id": "foliagebag",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 3,
+    "description": "A foliage bag with added reinforcements, made to be worn on your back.",
+    "fullName": "<sprite index=25>Sling bag",
+    "index": 15,
+    "INT": 7,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "foliagebag",
+        "destroyItem": true,
+        "ignoredId": "slingbag"
+      },
+      {
+        "specific": true,
+        "specificId": "string",
+        "destroyItem": true,
+        "ignoredId": "slingbag"
+      },
+      {
+        "specific": true,
+        "specificId": "rope",
+        "destroyItem": true,
+        "ignoredId": "slingbag"
+      },
+      {
+        "specific": true,
+        "specificId": "rope",
+        "destroyItem": true,
+        "ignoredId": "slingbag"
+      }
+    ],
+    "result": {
+      "id": "slingbag",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "description": "Solid cube made of melted scrap metal. Not particularly strong, but will do in crafting.",
+    "fullName": "<sprite index=25>Scrap cube",
+    "index": 16,
+    "INT": 6,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "scrapmetal",
+        "minimumCondition": 0.9,
+        "destroyItem": true,
+        "ignoredId": "scrapcube"
+      },
+      {
+        "specific": true,
+        "specificId": "biochem",
+        "isLiquid": true,
+        "minimumCondition": 10.0,
+        "destroyItem": true,
+        "ignoredId": "scrapcube"
+      }
+    ],
+    "result": {
+      "id": "scrapcube",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "description": "Thin sheet of scrap metal. Not partiularly strong, but will do in crafting.",
+    "fullName": "<sprite index=25>Scrap panel (x5)",
+    "index": 17,
+    "INT": 5,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "scrapcube",
+        "minimumCondition": 0.9,
+        "destroyItem": true,
+        "ignoredId": "scrappanel"
+      },
+      {
+        "quality": {
+          "id": "cutting",
+          "amount": 1.0,
+          "LocaleName": "Cutting"
+        },
+        "ignoredId": "scrappanel"
+      }
+    ],
+    "result": {
+      "id": "scrappanel",
+      "amount": 5,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "description": "Hollow tube made of scrap metal. Not partiularly strong, but will do in crafting. Could act as a shoddy makeshift hammer.",
+    "fullName": "<sprite index=25>Scrap tube (x2)",
+    "index": 18,
+    "INT": 5,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "scrapcube",
+        "minimumCondition": 0.9,
+        "destroyItem": true,
+        "ignoredId": "scraptube"
+      },
+      {
+        "quality": {
+          "id": "cutting",
+          "amount": 1.0,
+          "LocaleName": "Cutting"
+        },
+        "ignoredId": "scraptube"
+      }
+    ],
+    "result": {
+      "id": "scraptube",
+      "amount": 2,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "description": "A pile of crudely made nails. Should be enough to last a few recipes. You'll probably need a hammer to drive them.",
+    "fullName": "<sprite index=25>Nails (x2)",
+    "index": 19,
+    "INT": 5,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "scrapcube",
+        "destroyItem": true,
+        "ignoredId": "nails"
+      },
+      {
+        "quality": {
+          "id": "cutting",
+          "amount": 1.0,
+          "LocaleName": "Cutting"
+        },
+        "ignoredId": "nails"
+      }
+    ],
+    "result": {
+      "id": "nails",
+      "amount": 2,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "description": "Solid cube made of melted together wood. While it's very frail, it's also light.",
+    "fullName": "<sprite index=25>Wood cube",
+    "index": 20,
+    "INT": 4,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "woodscraps",
+        "destroyItem": true,
+        "ignoredId": "woodcube"
+      },
+      {
+        "specific": true,
+        "specificId": "woodscraps",
+        "destroyItem": true,
+        "ignoredId": "woodcube"
+      },
+      {
+        "specific": true,
+        "specificId": "woodscraps",
+        "destroyItem": true,
+        "ignoredId": "woodcube"
+      },
+      {
+        "specific": true,
+        "specificId": "biochem",
+        "isLiquid": true,
+        "minimumCondition": 10.0,
+        "destroyItem": true,
+        "ignoredId": "woodcube"
+      }
+    ],
+    "result": {
+      "id": "woodcube",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "description": "Thin sheet made of wood. While it's very frail, it's also light.",
+    "fullName": "<sprite index=25>Wood panel (x5)",
+    "index": 21,
+    "INT": 4,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "woodcube",
+        "minimumCondition": 0.9,
+        "destroyItem": true,
+        "ignoredId": "woodpanel"
+      },
+      {
+        "quality": {
+          "id": "cutting",
+          "amount": 1.0,
+          "LocaleName": "Cutting"
+        },
+        "ignoredId": "woodpanel"
+      }
+    ],
+    "result": {
+      "id": "woodpanel",
+      "amount": 5,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "description": "A short wooden stick. While it's very frail, it's also light. Way too small to use as a weapon. Could act as a shoddy makeshift hammer.",
+    "fullName": "<sprite index=25>Stick (x2)",
+    "index": 22,
+    "INT": 4,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "woodcube",
+        "destroyItem": true,
+        "ignoredId": "stick"
+      },
+      {
+        "quality": {
+          "id": "cutting",
+          "amount": 1.0,
+          "LocaleName": "Cutting"
+        },
+        "ignoredId": "stick"
+      }
+    ],
+    "result": {
+      "id": "stick",
+      "amount": 2,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 1,
+    "description": "A small, dull, brittle knife. Can be used for rudimentary crafting. Little to no use in combat.\n\n<color=\"red\">Can be used in the health panel to amputate severely infected limbs.",
+    "fullName": "<sprite index=25>Flimsy knife",
+    "index": 23,
+    "INT": 4,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "scrapmetal",
+        "minimumCondition": 0.9,
+        "destroyItem": true,
+        "ignoredId": "flimsyknife"
+      },
+      {
+        "specific": true,
+        "specificId": "rope",
+        "destroyItem": true,
+        "ignoredId": "flimsyknife"
+      },
+      {
+        "specific": true,
+        "specificId": "woodcube",
+        "destroyItem": true,
+        "ignoredId": "flimsyknife"
+      }
+    ],
+    "result": {
+      "id": "flimsyknife",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "description": "Chunk of bio-chem processed copper. Malleable and conductive, you could turn it into wiring for electronics.",
+    "fullName": "<sprite index=25>Processed copper",
+    "index": 24,
+    "INT": 10,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "rawcopper",
+        "destroyItem": true,
+        "ignoredId": "processedcopper"
+      },
+      {
+        "specific": true,
+        "specificId": "biochem",
+        "isLiquid": true,
+        "minimumCondition": 40.0,
+        "destroyItem": true,
+        "ignoredId": "processedcopper"
+      }
+    ],
+    "result": {
+      "id": "processedcopper",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "description": "Bundle of neatly tied together wires with some isolation around them. Used in electronics crafting.",
+    "fullName": "<sprite index=25>Bundle of wires (x6)",
+    "index": 25,
+    "INT": 10,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "processedcopper",
+        "destroyItem": true,
+        "ignoredId": "bundleofwires"
+      },
+      {
+        "specific": true,
+        "specificId": "plasticchunk",
+        "destroyItem": true,
+        "ignoredId": "bundleofwires"
+      },
+      {
+        "specific": true,
+        "specificId": "plasticchunk",
+        "destroyItem": true,
+        "ignoredId": "bundleofwires"
+      },
+      {
+        "specific": true,
+        "specificId": "plasticchunk",
+        "destroyItem": true,
+        "ignoredId": "bundleofwires"
+      }
+    ],
+    "result": {
+      "id": "bundleofwires",
+      "amount": 6,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "description": "A rectangular slab made of a strong titanium alloy. Can be used for advanced crafting.",
+    "fullName": "<sprite index=25>Titanium slab",
+    "index": 26,
+    "INT": 15,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "ilmenitechunk",
+        "destroyItem": true,
+        "ignoredId": "titaniumslab"
+      },
+      {
+        "specific": true,
+        "specificId": "biochem",
+        "isLiquid": true,
+        "minimumCondition": 50.0,
+        "destroyItem": true,
+        "ignoredId": "titaniumslab"
+      },
+      {
+        "isLiquid": true,
+        "quality": {
+          "id": "water",
+          "amount": 100.0,
+          "LocaleName": "Water"
+        },
+        "minimumCondition": 0.9,
+        "destroyItem": true,
+        "ignoredId": "titaniumslab"
+      },
+      {
+        "quality": {
+          "id": "hammering",
+          "amount": 4.0,
+          "LocaleName": "Hammering"
+        },
+        "ignoredId": "titaniumslab"
+      },
+      {
+        "quality": {
+          "id": "cutting",
+          "amount": 4.0,
+          "LocaleName": "Cutting"
+        },
+        "ignoredId": "titaniumslab"
+      }
+    ],
+    "result": {
+      "id": "titaniumslab",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "description": "A thin, yet firm sheet made of a strong titanium alloy. Can be used for advanced crafting.",
+    "fullName": "<sprite index=25>Titanium sheet (x5)",
+    "index": 27,
+    "INT": 15,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "titaniumslab",
+        "destroyItem": true,
+        "ignoredId": "titaniumsheet"
+      },
+      {
+        "specific": true,
+        "specificId": "biochem",
+        "isLiquid": true,
+        "minimumCondition": 10.0,
+        "destroyItem": true,
+        "ignoredId": "titaniumsheet"
+      },
+      {
+        "quality": {
+          "id": "cutting",
+          "amount": 4.0,
+          "LocaleName": "Cutting"
+        },
+        "ignoredId": "titaniumsheet"
+      }
+    ],
+    "result": {
+      "id": "titaniumsheet",
+      "amount": 5,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "description": "A solid rod made of a strong titanium alloy. Can be used for advanced crafting, and as a makeshift hammer.",
+    "fullName": "<sprite index=25>Titanium rod (x2)",
+    "index": 28,
+    "INT": 15,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "titaniumslab",
+        "destroyItem": true,
+        "ignoredId": "titaniumrod"
+      },
+      {
+        "specific": true,
+        "specificId": "biochem",
+        "isLiquid": true,
+        "minimumCondition": 10.0,
+        "destroyItem": true,
+        "ignoredId": "titaniumrod"
+      },
+      {
+        "quality": {
+          "id": "cutting",
+          "amount": 4.0,
+          "LocaleName": "Cutting"
+        },
+        "ignoredId": "titaniumrod"
+      }
+    ],
+    "result": {
+      "id": "titaniumrod",
+      "amount": 2,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 2,
+    "description": "Yellow blood from an alien. While it looks similar to yours, it visibly differs a bit. Shouldn't be too bad to use as replacement blood, though.",
+    "fullName": "<sprite index=25>Alien blood (50mL)",
+    "index": 29,
+    "INT": 2,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "bloodsac",
+        "destroyItem": true,
+        "ignoredId": "alienblood"
+      }
+    ],
+    "result": {
+      "id": "alienblood",
+      "isLiquid": true,
+      "amount": 1,
+      "resultCondition": 50.0
+    }
+  },
+  {
+    "category": 2,
+    "description": "Mixture of salt and water, often used in treating hypovolemia and thirst.",
+    "fullName": "<sprite index=25>Saline (175mL)",
+    "index": 30,
+    "INT": 9,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "water",
+        "isLiquid": true,
+        "minimumCondition": 150.0,
+        "destroyItem": true,
+        "ignoredId": "saline"
+      },
+      {
+        "specific": true,
+        "specificId": "biochem",
+        "isLiquid": true,
+        "minimumCondition": 10.0,
+        "destroyItem": true,
+        "ignoredId": "saline"
+      },
+      {
+        "isLiquid": true,
+        "quality": {
+          "id": "blood",
+          "amount": 15.0,
+          "LocaleName": "Blood"
+        },
+        "minimumCondition": 0.9,
+        "destroyItem": true,
+        "ignoredId": "saline"
+      }
+    ],
+    "result": {
+      "id": "saline",
+      "isLiquid": true,
+      "amount": 1,
+      "resultCondition": 175.0
+    }
+  },
+  {
+    "category": 2,
+    "description": "Yellow blood. While the color seems normal to you, it's apparently a side effect of the bio-engineering process. Used in treating hypovolemia.",
+    "fullName": "<sprite index=25>Blood (100mL)",
+    "index": 31,
+    "INT": 8,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "alienblood",
+        "isLiquid": true,
+        "minimumCondition": 99.99,
+        "destroyItem": true,
+        "ignoredId": "blood"
+      },
+      {
+        "specific": true,
+        "specificId": "biochem",
+        "isLiquid": true,
+        "minimumCondition": 10.0,
+        "destroyItem": true,
+        "ignoredId": "blood"
+      },
+      {
+        "isLiquid": true,
+        "quality": {
+          "id": "water",
+          "amount": 40.0,
+          "LocaleName": "Water"
+        },
+        "minimumCondition": 0.9,
+        "destroyItem": true,
+        "ignoredId": "blood"
+      }
+    ],
+    "result": {
+      "id": "blood",
+      "isLiquid": true,
+      "amount": 1,
+      "resultCondition": 100.0
+    }
+  },
+  {
+    "category": 1,
+    "description": "A crude tool that's probably better at hitting bolts into place than actually turning them. It won't help with dislocations, but is useful in crafting.'",
+    "fullName": "<sprite index=25>Makeshift wrench",
+    "index": 32,
+    "INT": 9,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "scraptube",
+        "destroyItem": true,
+        "ignoredId": "makeshiftwrench"
+      },
+      {
+        "specific": true,
+        "specificId": "scraptube",
+        "destroyItem": true,
+        "ignoredId": "makeshiftwrench"
+      },
+      {
+        "specific": true,
+        "specificId": "biochem",
+        "isLiquid": true,
+        "minimumCondition": 10.0,
+        "destroyItem": true,
+        "ignoredId": "makeshiftwrench"
+      },
+      {
+        "quality": {
+          "id": "hammering",
+          "amount": 1.0,
+          "LocaleName": "Hammering"
+        },
+        "ignoredId": "makeshiftwrench"
+      }
+    ],
+    "result": {
+      "id": "makeshiftwrench",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 1,
+    "description": "A tool used to provide grip and mechanical advantage in applying torque to turn objects. Can be used on dislocated limbs to correct them more effectively than with your bare hands. Also makes for a decent hammering tool.",
+    "fullName": "<sprite index=25>Wrench",
+    "index": 33,
+    "INT": 12,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "makeshiftwrench",
+        "destroyItem": true,
+        "ignoredId": "wrench"
+      },
+      {
+        "specific": true,
+        "specificId": "scraptube",
+        "destroyItem": true,
+        "ignoredId": "wrench"
+      },
+      {
+        "specific": true,
+        "specificId": "scraptube",
+        "destroyItem": true,
+        "ignoredId": "wrench"
+      },
+      {
+        "specific": true,
+        "specificId": "biochem",
+        "isLiquid": true,
+        "minimumCondition": 10.0,
+        "destroyItem": true,
+        "ignoredId": "wrench"
+      },
+      {
+        "quality": {
+          "id": "hammering",
+          "amount": 1.0,
+          "LocaleName": "Hammering"
+        },
+        "ignoredId": "wrench"
+      }
+    ],
+    "result": {
+      "id": "wrench",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 1,
+    "description": "Cobbled together metal cleaver, with a blade nailed onto the handle. Would do well in crafting. You feel uneasy holding it.\n\n<color=\"red\">Can be used in the health panel to amputate severely infected limbs.",
+    "fullName": "<sprite index=25>Crude cleaver",
+    "index": 34,
+    "INT": 9,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "stick",
+        "destroyItem": true,
+        "ignoredId": "crudecleaver"
+      },
+      {
+        "specific": true,
+        "specificId": "scrappanel",
+        "destroyItem": true,
+        "ignoredId": "crudecleaver"
+      },
+      {
+        "specific": true,
+        "specificId": "scrappanel",
+        "destroyItem": true,
+        "ignoredId": "crudecleaver"
+      },
+      {
+        "quality": {
+          "id": "nails",
+          "amount": 1.0,
+          "LocaleName": "Nails"
+        },
+        "ignoredId": "crudecleaver"
+      },
+      {
+        "quality": {
+          "id": "hammering",
+          "amount": 1.0,
+          "LocaleName": "Hammering"
+        },
+        "ignoredId": "crudecleaver"
+      }
+    ],
+    "result": {
+      "id": "crudecleaver",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 1,
+    "description": "A big, broad metal blade. Would do well in melee combat. You feel uneasy holding it.\n\n<color=\"red\">Can be used in the health panel to amputate severely infected limbs.",
+    "fullName": "<sprite index=25>Machete",
+    "index": 35,
+    "INT": 12,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "crudecleaver",
+        "destroyItem": true,
+        "ignoredId": "machete"
+      },
+      {
+        "specific": true,
+        "specificId": "scrappanel",
+        "destroyItem": true,
+        "ignoredId": "machete"
+      },
+      {
+        "specific": true,
+        "specificId": "scrappanel",
+        "destroyItem": true,
+        "ignoredId": "machete"
+      },
+      {
+        "specific": true,
+        "specificId": "scrappanel",
+        "destroyItem": true,
+        "ignoredId": "machete"
+      },
+      {
+        "specific": true,
+        "specificId": "biochem",
+        "isLiquid": true,
+        "minimumCondition": 30.0,
+        "destroyItem": true,
+        "ignoredId": "machete"
+      },
+      {
+        "quality": {
+          "id": "hammering",
+          "amount": 1.0,
+          "LocaleName": "Hammering"
+        },
+        "ignoredId": "machete"
+      }
+    ],
+    "result": {
+      "id": "machete",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "description": "A chalky and highly flammable powder. Useful in making explosives.",
+    "fullName": "<sprite index=25>Flammable powder",
+    "index": 36,
+    "INT": 8,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "stonefruitopen",
+        "destroyItem": true,
+        "ignoredId": "flammablepowder"
+      },
+      {
+        "quality": {
+          "id": "hammering",
+          "amount": 1.0,
+          "LocaleName": "Hammering"
+        },
+        "ignoredId": "flammablepowder"
+      },
+      {
+        "specific": true,
+        "specificId": "biochem",
+        "isLiquid": true,
+        "minimumCondition": 5.0,
+        "destroyItem": true,
+        "ignoredId": "flammablepowder"
+      }
+    ],
+    "result": {
+      "id": "flammablepowder",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "description": "Empty casing. While it's not of much use by itself, you could use it in crafting.",
+    "fullName": "<sprite index=25>Casing (x5)",
+    "index": 37,
+    "INT": 10,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "scrappanel",
+        "destroyItem": true,
+        "ignoredId": "casing"
+      },
+      {
+        "quality": {
+          "id": "cutting",
+          "amount": 1.0,
+          "LocaleName": "Cutting"
+        },
+        "ignoredId": "casing"
+      },
+      {
+        "quality": {
+          "id": "hammering",
+          "amount": 1.0,
+          "LocaleName": "Hammering"
+        },
+        "ignoredId": "casing"
+      }
+    ],
+    "result": {
+      "id": "casing",
+      "amount": 5,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 3,
+    "description": "A small handgun round. Can be loaded into a small magazine, or directly into the chamber if the gun's bolt is open.",
+    "fullName": "<sprite index=25>9mm round (x5)",
+    "index": 38,
+    "INT": 12,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "casing",
+        "destroyItem": true,
+        "ignoredId": "9mmround"
+      },
+      {
+        "specific": true,
+        "specificId": "casing",
+        "destroyItem": true,
+        "ignoredId": "9mmround"
+      },
+      {
+        "specific": true,
+        "specificId": "casing",
+        "destroyItem": true,
+        "ignoredId": "9mmround"
+      },
+      {
+        "specific": true,
+        "specificId": "casing",
+        "destroyItem": true,
+        "ignoredId": "9mmround"
+      },
+      {
+        "specific": true,
+        "specificId": "casing",
+        "destroyItem": true,
+        "ignoredId": "9mmround"
+      },
+      {
+        "specific": true,
+        "specificId": "flammablepowder",
+        "destroyItem": true,
+        "ignoredId": "9mmround"
+      },
+      {
+        "quality": {
+          "id": "hammering",
+          "amount": 0.5,
+          "LocaleName": "Hammering"
+        },
+        "ignoredId": "9mmround"
+      }
+    ],
+    "result": {
+      "id": "9mmround",
+      "amount": 5,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 3,
+    "description": "A rifle round. Can be loaded into a rifle magazine, or directly into the chamber if the gun's bolt is open.",
+    "fullName": "<sprite index=25>5.56 round (x4)",
+    "index": 39,
+    "INT": 12,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "casing",
+        "destroyItem": true,
+        "ignoredId": "556round"
+      },
+      {
+        "specific": true,
+        "specificId": "casing",
+        "destroyItem": true,
+        "ignoredId": "556round"
+      },
+      {
+        "specific": true,
+        "specificId": "casing",
+        "destroyItem": true,
+        "ignoredId": "556round"
+      },
+      {
+        "specific": true,
+        "specificId": "casing",
+        "destroyItem": true,
+        "ignoredId": "556round"
+      },
+      {
+        "specific": true,
+        "specificId": "flammablepowder",
+        "destroyItem": true,
+        "ignoredId": "556round"
+      },
+      {
+        "quality": {
+          "id": "hammering",
+          "amount": 0.5,
+          "LocaleName": "Hammering"
+        },
+        "ignoredId": "556round"
+      }
+    ],
+    "result": {
+      "id": "556round",
+      "amount": 4,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 3,
+    "description": "A 12 gauge buckshot round. Can be loaded into shotguns, or directly into the chamber if the gun's bolt is open.",
+    "fullName": "<sprite index=25>12-Gauge buckshot (x3)",
+    "index": 40,
+    "INT": 12,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "casing",
+        "destroyItem": true,
+        "ignoredId": "12gauge"
+      },
+      {
+        "specific": true,
+        "specificId": "casing",
+        "destroyItem": true,
+        "ignoredId": "12gauge"
+      },
+      {
+        "specific": true,
+        "specificId": "casing",
+        "destroyItem": true,
+        "ignoredId": "12gauge"
+      },
+      {
+        "specific": true,
+        "specificId": "plasticchunk",
+        "destroyItem": true,
+        "ignoredId": "12gauge"
+      },
+      {
+        "specific": true,
+        "specificId": "flammablepowder",
+        "destroyItem": true,
+        "ignoredId": "12gauge"
+      },
+      {
+        "quality": {
+          "id": "hammering",
+          "amount": 0.5,
+          "LocaleName": "Hammering"
+        },
+        "ignoredId": "12gauge"
+      }
+    ],
+    "result": {
+      "id": "12gauge",
+      "amount": 3,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "description": "A specially shaped container with a spring in it. Used in magazine and firearm making.",
+    "fullName": "<sprite index=25>Magazine base",
+    "index": 41,
+    "INT": 12,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "scrappanel",
+        "destroyItem": true,
+        "ignoredId": "magazinebase"
+      },
+      {
+        "specific": true,
+        "specificId": "scrappanel",
+        "destroyItem": true,
+        "ignoredId": "magazinebase"
+      },
+      {
+        "quality": {
+          "id": "nails",
+          "amount": 1.0,
+          "LocaleName": "Nails"
+        },
+        "ignoredId": "magazinebase"
+      },
+      {
+        "specific": true,
+        "specificId": "plasticchunk",
+        "destroyItem": true,
+        "ignoredId": "magazinebase"
+      },
+      {
+        "quality": {
+          "id": "hammering",
+          "amount": 1.0,
+          "LocaleName": "Hammering"
+        },
+        "ignoredId": "magazinebase"
+      }
+    ],
+    "result": {
+      "id": "magazinebase",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 1,
+    "description": "A universal handgun magazine that accepts 9mm rounds.",
+    "fullName": "<sprite index=25>Small magazine",
+    "index": 42,
+    "INT": 12,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "magazinebase",
+        "destroyItem": true,
+        "ignoredId": "smallmagazine"
+      },
+      {
+        "specific": true,
+        "specificId": "plasticchunk",
+        "destroyItem": true,
+        "ignoredId": "smallmagazine"
+      },
+      {
+        "quality": {
+          "id": "hammering",
+          "amount": 1.0,
+          "LocaleName": "Hammering"
+        },
+        "ignoredId": "smallmagazine"
+      }
+    ],
+    "result": {
+      "id": "smallmagazine",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 1,
+    "description": "A universal rifle magazine that accepts 5.56 rounds.",
+    "fullName": "<sprite index=25>Rifle magazine",
+    "index": 43,
+    "INT": 12,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "magazinebase",
+        "destroyItem": true,
+        "ignoredId": "riflemagazine"
+      },
+      {
+        "specific": true,
+        "specificId": "scrappanel",
+        "destroyItem": true,
+        "ignoredId": "riflemagazine"
+      },
+      {
+        "quality": {
+          "id": "hammering",
+          "amount": 1.0,
+          "LocaleName": "Hammering"
+        },
+        "ignoredId": "riflemagazine"
+      }
+    ],
+    "result": {
+      "id": "riflemagazine",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 3,
+    "description": "A box that can store sixteen 12-Gauge rounds. Use to unload a shell to insert into a firearm.",
+    "fullName": "<sprite index=25>Box of 12-Gauge",
+    "index": 44,
+    "INT": 8,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "woodpanel",
+        "destroyItem": true,
+        "ignoredId": "boxof12gauge"
+      },
+      {
+        "specific": true,
+        "specificId": "plasticchunk",
+        "destroyItem": true,
+        "ignoredId": "boxof12gauge"
+      },
+      {
+        "specific": true,
+        "specificId": "plasticchunk",
+        "destroyItem": true,
+        "ignoredId": "boxof12gauge"
+      },
+      {
+        "quality": {
+          "id": "cutting",
+          "amount": 1.0,
+          "LocaleName": "Cutting"
+        },
+        "ignoredId": "boxof12gauge"
+      }
+    ],
+    "result": {
+      "id": "boxof12gauge",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 3,
+    "description": "An explosive made of nitroglycerin, sorbents, and stabilizers. Good for making holes in the terrain. Not very good for your ears.",
+    "fullName": "<sprite index=25>Dynamite",
+    "index": 45,
+    "INT": 10,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "flammablepowder",
+        "destroyItem": true,
+        "ignoredId": "dynamite"
+      },
+      {
+        "specific": true,
+        "specificId": "flammablepowder",
+        "destroyItem": true,
+        "ignoredId": "dynamite"
+      },
+      {
+        "specific": true,
+        "specificId": "string",
+        "destroyItem": true,
+        "ignoredId": "dynamite"
+      },
+      {
+        "specific": true,
+        "specificId": "scrappanel",
+        "destroyItem": true,
+        "ignoredId": "dynamite"
+      },
+      {
+        "quality": {
+          "id": "hammering",
+          "amount": 1.0,
+          "LocaleName": "Hammering"
+        },
+        "ignoredId": "dynamite"
+      }
+    ],
+    "result": {
+      "id": "dynamite",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "description": "Two insect carcasses joined together, forming a half-tube shape. Used in crafting.",
+    "fullName": "<sprite index=25>Large carcass",
+    "index": 46,
+    "INT": 4,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "carcass",
+        "destroyItem": true,
+        "ignoredId": "largecarcass"
+      },
+      {
+        "specific": true,
+        "specificId": "carcass",
+        "destroyItem": true,
+        "ignoredId": "largecarcass"
+      },
+      {
+        "specific": true,
+        "specificId": "biochem",
+        "isLiquid": true,
+        "minimumCondition": 10.0,
+        "destroyItem": true,
+        "ignoredId": "largecarcass"
+      }
+    ],
+    "result": {
+      "id": "largecarcass",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "description": "A bit of circuitry, ripped out of a once working machine. It still sparks occasionally. Used in crafting.",
+    "fullName": "<sprite index=25>Repair Circuit board",
+    "index": 47,
+    "INT": 9,
+    "isRepair": true,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "circuitboard",
+        "destroyItem": true,
+        "ignoredId": ""
+      },
+      {
+        "specific": true,
+        "specificId": "bundleofwires",
+        "destroyItem": true,
+        "ignoredId": ""
+      }
+    ],
+    "result": {
+      "id": "circuitboard",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 3,
+    "description": "A small battery that can be inserted into various electronic devices. Stores half as much as a medium battery.",
+    "fullName": "<sprite index=25>Small battery (x2)",
+    "index": 48,
+    "INT": 11,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "processedcopper",
+        "destroyItem": true,
+        "ignoredId": "smallbattery"
+      },
+      {
+        "specific": true,
+        "specificId": "plasticchunk",
+        "destroyItem": true,
+        "ignoredId": "smallbattery"
+      },
+      {
+        "specific": true,
+        "specificId": "plasticchunk",
+        "destroyItem": true,
+        "ignoredId": "smallbattery"
+      },
+      {
+        "specific": true,
+        "specificId": "biochem",
+        "isLiquid": true,
+        "minimumCondition": 10.0,
+        "destroyItem": true,
+        "ignoredId": "smallbattery"
+      },
+      {
+        "quality": {
+          "id": "hammering",
+          "amount": 1.0,
+          "LocaleName": "Hammering"
+        },
+        "ignoredId": "smallbattery"
+      }
+    ],
+    "result": {
+      "id": "smallbattery",
+      "amount": 2,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 3,
+    "description": "A generic battery that can be inserted into various electronic devices. Stores twice as much as a small battery, but a third as much as a large one.",
+    "fullName": "<sprite index=25>Medium battery",
+    "index": 49,
+    "INT": 12,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "smallbattery",
+        "destroyItem": true,
+        "ignoredId": "mediumbattery"
+      },
+      {
+        "specific": true,
+        "specificId": "smallbattery",
+        "destroyItem": true,
+        "ignoredId": "mediumbattery"
+      },
+      {
+        "specific": true,
+        "specificId": "scrappanel",
+        "destroyItem": true,
+        "ignoredId": "mediumbattery"
+      },
+      {
+        "specific": true,
+        "specificId": "plasticchunk",
+        "destroyItem": true,
+        "ignoredId": "mediumbattery"
+      },
+      {
+        "specific": true,
+        "specificId": "biochem",
+        "isLiquid": true,
+        "minimumCondition": 10.0,
+        "destroyItem": true,
+        "ignoredId": "mediumbattery"
+      }
+    ],
+    "result": {
+      "id": "mediumbattery",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 3,
+    "description": "A large industrial battery that can be inserted into certain electornic devices. Stores three times as much as a medium battery.",
+    "fullName": "<sprite index=25>Large battery",
+    "index": 50,
+    "INT": 13,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "mediumbattery",
+        "destroyItem": true,
+        "ignoredId": "largebattery"
+      },
+      {
+        "specific": true,
+        "specificId": "processedcopper",
+        "destroyItem": true,
+        "ignoredId": "largebattery"
+      },
+      {
+        "specific": true,
+        "specificId": "plasticchunk",
+        "destroyItem": true,
+        "ignoredId": "largebattery"
+      },
+      {
+        "specific": true,
+        "specificId": "biochem",
+        "isLiquid": true,
+        "minimumCondition": 20.0,
+        "destroyItem": true,
+        "ignoredId": "largebattery"
+      }
+    ],
+    "result": {
+      "id": "largebattery",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 3,
+    "description": "Lights up a large area in front of it, but slowly loses battery. Use to change mode.",
+    "fullName": "<sprite index=25>Flashlight",
+    "index": 51,
+    "INT": 10,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "lightbulb",
+        "destroyItem": true,
+        "ignoredId": "flashlight"
+      },
+      {
+        "specific": true,
+        "specificId": "scraptube",
+        "destroyItem": true,
+        "ignoredId": "flashlight"
+      },
+      {
+        "specific": true,
+        "specificId": "flexiglass",
+        "destroyItem": true,
+        "ignoredId": "flashlight"
+      },
+      {
+        "specific": true,
+        "specificId": "plasticchunk",
+        "destroyItem": true,
+        "ignoredId": "flashlight"
+      },
+      {
+        "specific": true,
+        "specificId": "bundleofwires",
+        "destroyItem": true,
+        "ignoredId": "flashlight"
+      },
+      {
+        "specific": true,
+        "specificId": "circuitboard",
+        "minimumCondition": 0.9,
+        "destroyItem": true,
+        "ignoredId": "flashlight"
+      },
+      {
+        "quality": {
+          "id": "nails",
+          "amount": 1.0,
+          "LocaleName": "Nails"
+        },
+        "ignoredId": "flashlight"
+      },
+      {
+        "quality": {
+          "id": "hammering",
+          "amount": 1.0,
+          "LocaleName": "Hammering"
+        },
+        "ignoredId": "flashlight"
+      }
+    ],
+    "result": {
+      "id": "flashlight",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 3,
+    "description": "A little flashlight, made to be strapped onto your forehead. Loses battery over time.",
+    "fullName": "<sprite index=25>Headlamp",
+    "index": 52,
+    "INT": 8,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "flashlight",
+        "destroyItem": true,
+        "ignoredId": "headlamp"
+      },
+      {
+        "specific": true,
+        "specificId": "rope",
+        "destroyItem": true,
+        "ignoredId": "headlamp"
+      },
+      {
+        "quality": {
+          "id": "nails",
+          "amount": 1.0,
+          "LocaleName": "Nails"
+        },
+        "ignoredId": "headlamp"
+      },
+      {
+        "quality": {
+          "id": "hammering",
+          "amount": 1.0,
+          "LocaleName": "Hammering"
+        },
+        "ignoredId": "headlamp"
+      }
+    ],
+    "result": {
+      "id": "headlamp",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "description": "A simple electronic display, used in crafting.",
+    "fullName": "<sprite index=25>LCD screen",
+    "index": 53,
+    "INT": 11,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "flexiglass",
+        "destroyItem": true,
+        "ignoredId": "lcdscreen"
+      },
+      {
+        "specific": true,
+        "specificId": "plasticchunk",
+        "destroyItem": true,
+        "ignoredId": "lcdscreen"
+      },
+      {
+        "quality": {
+          "id": "nails",
+          "amount": 1.0,
+          "LocaleName": "Nails"
+        },
+        "ignoredId": "lcdscreen"
+      },
+      {
+        "specific": true,
+        "specificId": "bundleofwires",
+        "destroyItem": true,
+        "ignoredId": "lcdscreen"
+      },
+      {
+        "specific": true,
+        "specificId": "circuitboard",
+        "minimumCondition": 0.9,
+        "destroyItem": true,
+        "ignoredId": "lcdscreen"
+      },
+      {
+        "specific": true,
+        "specificId": "biochem",
+        "isLiquid": true,
+        "minimumCondition": 10.0,
+        "destroyItem": true,
+        "ignoredId": "lcdscreen"
+      },
+      {
+        "quality": {
+          "id": "cutting",
+          "amount": 1.0,
+          "LocaleName": "Cutting"
+        },
+        "ignoredId": "lcdscreen"
+      }
+    ],
+    "result": {
+      "id": "lcdscreen",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "description": "A thin sheet of flexible, transparent material, made from chemically treated plastic. Used in crafting.",
+    "fullName": "<sprite index=25>Flexiglass",
+    "index": 54,
+    "INT": 9,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "plasticchunk",
+        "destroyItem": true,
+        "ignoredId": "flexiglass"
+      },
+      {
+        "specific": true,
+        "specificId": "plasticchunk",
+        "destroyItem": true,
+        "ignoredId": "flexiglass"
+      },
+      {
+        "specific": true,
+        "specificId": "biochem",
+        "isLiquid": true,
+        "minimumCondition": 10.0,
+        "destroyItem": true,
+        "ignoredId": "flexiglass"
+      },
+      {
+        "quality": {
+          "id": "cutting",
+          "amount": 1.0,
+          "LocaleName": "Cutting"
+        },
+        "ignoredId": "flexiglass"
+      }
+    ],
+    "result": {
+      "id": "flexiglass",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 3,
+    "description": "An electric light with a filament that is heated until it glows. Seems to be battery powered. Don't put it in your mouth.",
+    "fullName": "<sprite index=25>Lightbulb",
+    "index": 55,
+    "INT": 11,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "flexiglass",
+        "destroyItem": true,
+        "ignoredId": "lightbulb"
+      },
+      {
+        "specific": true,
+        "specificId": "flexiglass",
+        "destroyItem": true,
+        "ignoredId": "lightbulb"
+      },
+      {
+        "specific": true,
+        "specificId": "scrapcube",
+        "destroyItem": true,
+        "ignoredId": "lightbulb"
+      },
+      {
+        "quality": {
+          "id": "nails",
+          "amount": 1.0,
+          "LocaleName": "Nails"
+        },
+        "ignoredId": "lightbulb"
+      },
+      {
+        "specific": true,
+        "specificId": "bundleofwires",
+        "destroyItem": true,
+        "ignoredId": "lightbulb"
+      },
+      {
+        "specific": true,
+        "specificId": "bundleofwires",
+        "destroyItem": true,
+        "ignoredId": "lightbulb"
+      }
+    ],
+    "result": {
+      "id": "lightbulb",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 3,
+    "description": "Makeshift wraps made from gauze to cover the extremities. Slightly protects your arms and feet from damage and makes you feel like a warrior.",
+    "fullName": "<sprite index=25>Limb wraps",
+    "index": 56,
+    "INT": 6,
+    "items": [
+      {
+        "quality": {
+          "id": "dressing",
+          "amount": 1.0,
+          "LocaleName": "Dressing"
+        },
+        "minimumCondition": 0.9,
+        "destroyItem": true,
+        "ignoredId": "limbwraps"
+      },
+      {
+        "quality": {
+          "id": "dressing",
+          "amount": 1.0,
+          "LocaleName": "Dressing"
+        },
+        "minimumCondition": 0.9,
+        "destroyItem": true,
+        "ignoredId": "limbwraps"
+      }
+    ],
+    "result": {
+      "id": "limbwraps",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 3,
+    "description": "It's just a glowplant fruit strapped to your forehead. Not exactly comfortable, but frees up some inventory space.",
+    "fullName": "<sprite index=25>Makeshift headlamp",
+    "index": 57,
+    "INT": 4,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "carcass",
+        "destroyItem": true,
+        "ignoredId": "makeshiftheadlamp"
+      },
+      {
+        "specific": true,
+        "specificId": "glowplantfruit",
+        "destroyItem": true,
+        "ignoredId": "makeshiftheadlamp"
+      },
+      {
+        "specific": true,
+        "specificId": "rope",
+        "destroyItem": true,
+        "ignoredId": "makeshiftheadlamp"
+      }
+    ],
+    "result": {
+      "id": "makeshiftheadlamp",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 3,
+    "description": "A helmet designed to reduce the severity of impacts to the head. Reduces head injuries from falls.",
+    "fullName": "<sprite index=25>Bicycle helmet",
+    "index": 58,
+    "INT": 13,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "makeshifthelmet",
+        "destroyItem": true,
+        "ignoredId": "bikehelmet"
+      },
+      {
+        "specific": true,
+        "specificId": "scrappanel",
+        "destroyItem": true,
+        "ignoredId": "bikehelmet"
+      },
+      {
+        "specific": true,
+        "specificId": "scrappanel",
+        "destroyItem": true,
+        "ignoredId": "bikehelmet"
+      },
+      {
+        "specific": true,
+        "specificId": "scrappanel",
+        "destroyItem": true,
+        "ignoredId": "bikehelmet"
+      },
+      {
+        "specific": true,
+        "specificId": "scrappanel",
+        "destroyItem": true,
+        "ignoredId": "bikehelmet"
+      },
+      {
+        "specific": true,
+        "specificId": "plasticchunk",
+        "destroyItem": true,
+        "ignoredId": "bikehelmet"
+      },
+      {
+        "quality": {
+          "id": "nails",
+          "amount": 1.0,
+          "LocaleName": "Nails"
+        },
+        "ignoredId": "bikehelmet"
+      },
+      {
+        "specific": true,
+        "specificId": "biochem",
+        "isLiquid": true,
+        "minimumCondition": 10.0,
+        "destroyItem": true,
+        "ignoredId": "bikehelmet"
+      },
+      {
+        "quality": {
+          "id": "cutting",
+          "amount": 1.0,
+          "LocaleName": "Cutting"
+        },
+        "ignoredId": "bikehelmet"
+      }
+    ],
+    "result": {
+      "id": "bikehelmet",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 3,
+    "description": "A rudimentary helmet made out of some rope and stitched together carcasses. Provides some head protection.",
+    "fullName": "<sprite index=25>Makeshift helmet",
+    "index": 59,
+    "INT": 8,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "largecarcass",
+        "destroyItem": true,
+        "ignoredId": "makeshifthelmet"
+      },
+      {
+        "specific": true,
+        "specificId": "rope",
+        "destroyItem": true,
+        "ignoredId": "makeshifthelmet"
+      },
+      {
+        "specific": true,
+        "specificId": "string",
+        "destroyItem": true,
+        "ignoredId": "makeshifthelmet"
+      },
+      {
+        "specific": true,
+        "specificId": "biochem",
+        "isLiquid": true,
+        "minimumCondition": 10.0,
+        "destroyItem": true,
+        "ignoredId": "makeshifthelmet"
+      }
+    ],
+    "result": {
+      "id": "makeshifthelmet",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 1,
+    "description": "A piece of thrown together and tied up metal, made for digging through rock. It's a bit flimsy.",
+    "fullName": "<sprite index=25>Makeshift digging tool",
+    "index": 60,
+    "INT": 7,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "flimsyknife",
+        "destroyItem": true,
+        "ignoredId": "makeshiftdiggingtool"
+      },
+      {
+        "specific": true,
+        "specificId": "rope",
+        "destroyItem": true,
+        "ignoredId": "makeshiftdiggingtool"
+      },
+      {
+        "specific": true,
+        "specificId": "stick",
+        "destroyItem": true,
+        "ignoredId": "makeshiftdiggingtool"
+      },
+      {
+        "specific": true,
+        "specificId": "stick",
+        "destroyItem": true,
+        "ignoredId": "makeshiftdiggingtool"
+      },
+      {
+        "specific": true,
+        "specificId": "biochem",
+        "isLiquid": true,
+        "minimumCondition": 10.0,
+        "destroyItem": true,
+        "ignoredId": "makeshiftdiggingtool"
+      }
+    ],
+    "result": {
+      "id": "makeshiftdiggingtool",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 1,
+    "description": "An improvised bolt-action firearm, made of scrapped together tubes and gun scraps. Uses small magazines loaded with 9mm rounds. Might jam when wet or low condition. Hold in your main hand to use and see controls.",
+    "fullName": "<sprite index=25>Makeshift rifle",
+    "index": 61,
+    "INT": 12,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "magazinebase",
+        "destroyItem": true,
+        "ignoredId": "makeshiftrifle"
+      },
+      {
+        "quality": {
+          "id": "nails",
+          "amount": 1.0,
+          "LocaleName": "Nails"
+        },
+        "ignoredId": "makeshiftrifle"
+      },
+      {
+        "specific": true,
+        "specificId": "scrappanel",
+        "destroyItem": true,
+        "ignoredId": "makeshiftrifle"
+      },
+      {
+        "specific": true,
+        "specificId": "scrappanel",
+        "destroyItem": true,
+        "ignoredId": "makeshiftrifle"
+      },
+      {
+        "specific": true,
+        "specificId": "scraptube",
+        "destroyItem": true,
+        "ignoredId": "makeshiftrifle"
+      },
+      {
+        "specific": true,
+        "specificId": "scraptube",
+        "destroyItem": true,
+        "ignoredId": "makeshiftrifle"
+      },
+      {
+        "specific": true,
+        "specificId": "string",
+        "destroyItem": true,
+        "ignoredId": "makeshiftrifle"
+      },
+      {
+        "quality": {
+          "id": "cutting",
+          "amount": 1.0,
+          "LocaleName": "Cutting"
+        },
+        "ignoredId": "makeshiftrifle"
+      },
+      {
+        "quality": {
+          "id": "hammering",
+          "amount": 1.0,
+          "LocaleName": "Hammering"
+        },
+        "ignoredId": "makeshiftrifle"
+      }
+    ],
+    "result": {
+      "id": "makeshiftrifle",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 1,
+    "description": "A small, consumer-grade laser drill. Not the best at digging, but uses no stamina.",
+    "fullName": "<sprite index=25>Mini laser drill",
+    "index": 62,
+    "INT": 16,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "titaniumsheet",
+        "destroyItem": true,
+        "ignoredId": "minilaserdrill"
+      },
+      {
+        "specific": true,
+        "specificId": "titaniumsheet",
+        "destroyItem": true,
+        "ignoredId": "minilaserdrill"
+      },
+      {
+        "specific": true,
+        "specificId": "titaniumsheet",
+        "destroyItem": true,
+        "ignoredId": "minilaserdrill"
+      },
+      {
+        "specific": true,
+        "specificId": "flexiglass",
+        "destroyItem": true,
+        "ignoredId": "minilaserdrill"
+      },
+      {
+        "specific": true,
+        "specificId": "flexiglass",
+        "destroyItem": true,
+        "ignoredId": "minilaserdrill"
+      },
+      {
+        "specific": true,
+        "specificId": "bundleofwires",
+        "destroyItem": true,
+        "ignoredId": "minilaserdrill"
+      },
+      {
+        "specific": true,
+        "specificId": "bundleofwires",
+        "destroyItem": true,
+        "ignoredId": "minilaserdrill"
+      },
+      {
+        "specific": true,
+        "specificId": "circuitboard",
+        "destroyItem": true,
+        "ignoredId": "minilaserdrill"
+      },
+      {
+        "specific": true,
+        "specificId": "circuitboard",
+        "destroyItem": true,
+        "ignoredId": "minilaserdrill"
+      },
+      {
+        "specific": true,
+        "specificId": "flashlight",
+        "destroyItem": true,
+        "ignoredId": "minilaserdrill"
+      },
+      {
+        "specific": true,
+        "specificId": "plasticchunk",
+        "destroyItem": true,
+        "ignoredId": "minilaserdrill"
+      },
+      {
+        "quality": {
+          "id": "nails",
+          "amount": 1.0,
+          "LocaleName": "Nails"
+        },
+        "ignoredId": "minilaserdrill"
+      },
+      {
+        "quality": {
+          "id": "cutting",
+          "amount": 1.0,
+          "LocaleName": "Cutting"
+        },
+        "ignoredId": "minilaserdrill"
+      },
+      {
+        "quality": {
+          "id": "hammering",
+          "amount": 1.0,
+          "LocaleName": "Hammering"
+        },
+        "ignoredId": "minilaserdrill"
+      }
+    ],
+    "result": {
+      "id": "minilaserdrill",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 2,
+    "description": "A roll of dressing with a bandage, used to slow down bleeding, stabilize fractures and aid skin healing. Has no effect on muscle health.",
+    "fullName": "<sprite index=25>Dressing",
+    "index": 63,
+    "INT": 5,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "rippeddressing",
+        "minimumCondition": 0.9,
+        "destroyItem": true,
+        "ignoredId": "bandage"
+      },
+      {
+        "specific": true,
+        "specificId": "rippeddressing",
+        "minimumCondition": 0.9,
+        "destroyItem": true,
+        "ignoredId": "bandage"
+      }
+    ],
+    "result": {
+      "id": "bandage",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 3,
+    "description": "A simple, wood and glass lantern with a bright yellow crystal inside of it.",
+    "fullName": "<sprite index=25>Lantern",
+    "index": 64,
+    "INT": 10,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "emissivecrystalshard",
+        "destroyItem": true,
+        "ignoredId": "lantern"
+      },
+      {
+        "specific": true,
+        "specificId": "flexiglass",
+        "destroyItem": true,
+        "ignoredId": "lantern"
+      },
+      {
+        "specific": true,
+        "specificId": "woodpanel",
+        "destroyItem": true,
+        "ignoredId": "lantern"
+      },
+      {
+        "specific": true,
+        "specificId": "woodpanel",
+        "destroyItem": true,
+        "ignoredId": "lantern"
+      },
+      {
+        "quality": {
+          "id": "nails",
+          "amount": 1.0,
+          "LocaleName": "Nails"
+        },
+        "ignoredId": "lantern"
+      },
+      {
+        "quality": {
+          "id": "hammering",
+          "amount": 1.0,
+          "LocaleName": "Hammering"
+        },
+        "ignoredId": "lantern"
+      }
+    ],
+    "result": {
+      "id": "lantern",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 3,
+    "description": "Shows you a low-quality map of the terrain below you. Terrain is highlighted in green, solid buildings in red. Goes 24 meters down.",
+    "fullName": "<sprite index=25>Terrain scanner",
+    "index": 65,
+    "INT": 12,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "scrappanel",
+        "destroyItem": true,
+        "ignoredId": "terrainscanner"
+      },
+      {
+        "specific": true,
+        "specificId": "scrappanel",
+        "destroyItem": true,
+        "ignoredId": "terrainscanner"
+      },
+      {
+        "specific": true,
+        "specificId": "scrappanel",
+        "destroyItem": true,
+        "ignoredId": "terrainscanner"
+      },
+      {
+        "specific": true,
+        "specificId": "scraptube",
+        "destroyItem": true,
+        "ignoredId": "terrainscanner"
+      },
+      {
+        "specific": true,
+        "specificId": "lcdscreen",
+        "destroyItem": true,
+        "ignoredId": "terrainscanner"
+      },
+      {
+        "quality": {
+          "id": "nails",
+          "amount": 1.0,
+          "LocaleName": "Nails"
+        },
+        "destroyItem": true,
+        "ignoredId": "terrainscanner"
+      },
+      {
+        "specific": true,
+        "specificId": "bundleofwires",
+        "destroyItem": true,
+        "ignoredId": "terrainscanner"
+      },
+      {
+        "specific": true,
+        "specificId": "circuitboard",
+        "minimumCondition": 0.9,
+        "destroyItem": true,
+        "ignoredId": "terrainscanner"
+      },
+      {
+        "quality": {
+          "id": "hammering",
+          "amount": 1.0,
+          "LocaleName": "Hammering"
+        },
+        "ignoredId": "terrainscanner"
+      }
+    ],
+    "result": {
+      "id": "terrainscanner",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 3,
+    "description": "Lets you indefinitely breathe and regenerate stamina underwater, makes you move faster in liquids and dries you out quickly after resurfacing. The pool floaties are retrofitted.",
+    "fullName": "<sprite index=25>Advanced scuba diving gear",
+    "index": 66,
+    "INT": 12,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "oxygencrystalshard",
+        "destroyItem": true,
+        "ignoredId": "scubadivinggear"
+      },
+      {
+        "specific": true,
+        "specificId": "scrappanel",
+        "destroyItem": true,
+        "ignoredId": "scubadivinggear"
+      },
+      {
+        "specific": true,
+        "specificId": "scrappanel",
+        "destroyItem": true,
+        "ignoredId": "scubadivinggear"
+      },
+      {
+        "specific": true,
+        "specificId": "scraptube",
+        "destroyItem": true,
+        "ignoredId": "scubadivinggear"
+      },
+      {
+        "specific": true,
+        "specificId": "scraptube",
+        "destroyItem": true,
+        "ignoredId": "scubadivinggear"
+      },
+      {
+        "specific": true,
+        "specificId": "flexiglass",
+        "destroyItem": true,
+        "ignoredId": "scubadivinggear"
+      },
+      {
+        "specific": true,
+        "specificId": "plasticchunk",
+        "destroyItem": true,
+        "ignoredId": "scubadivinggear"
+      },
+      {
+        "specific": true,
+        "specificId": "plasticchunk",
+        "destroyItem": true,
+        "ignoredId": "scubadivinggear"
+      },
+      {
+        "specific": true,
+        "specificId": "biochem",
+        "isLiquid": true,
+        "minimumCondition": 10.0,
+        "destroyItem": true,
+        "ignoredId": "scubadivinggear"
+      },
+      {
+        "specific": true,
+        "specificId": "bundleofwires",
+        "destroyItem": true,
+        "ignoredId": "scubadivinggear"
+      },
+      {
+        "quality": {
+          "id": "hammering",
+          "amount": 1.0,
+          "LocaleName": "Hammering"
+        },
+        "ignoredId": "scubadivinggear"
+      },
+      {
+        "quality": {
+          "id": "cutting",
+          "amount": 1.0,
+          "LocaleName": "Cutting"
+        },
+        "ignoredId": "scubadivinggear"
+      }
+    ],
+    "result": {
+      "id": "scubadivinggear",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 1,
+    "description": "A tool specially crafted to dig rock. Very efficient at removing terrain, though slow.",
+    "fullName": "<sprite index=25>Pickaxe",
+    "index": 67,
+    "INT": 12,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "makeshiftdiggingtool",
+        "destroyItem": true,
+        "ignoredId": "pickaxe"
+      },
+      {
+        "specific": true,
+        "specificId": "scraptube",
+        "destroyItem": true,
+        "ignoredId": "pickaxe"
+      },
+      {
+        "specific": true,
+        "specificId": "scraptube",
+        "destroyItem": true,
+        "ignoredId": "pickaxe"
+      },
+      {
+        "specific": true,
+        "specificId": "scrappanel",
+        "destroyItem": true,
+        "ignoredId": "pickaxe"
+      },
+      {
+        "quality": {
+          "id": "nails",
+          "amount": 1.0,
+          "LocaleName": "Nails"
+        },
+        "destroyItem": true,
+        "ignoredId": "pickaxe"
+      },
+      {
+        "specific": true,
+        "specificId": "biochem",
+        "isLiquid": true,
+        "minimumCondition": 10.0,
+        "destroyItem": true,
+        "ignoredId": "pickaxe"
+      },
+      {
+        "quality": {
+          "id": "hammering",
+          "amount": 1.0,
+          "LocaleName": "Hammering"
+        },
+        "ignoredId": "pickaxe"
+      }
+    ],
+    "result": {
+      "id": "pickaxe",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 3,
+    "description": "A hyper-compressed box of scaffolding, made to be easily placed down. Lasts 100 uses.",
+    "fullName": "<sprite index=25>Scaffolding pack",
+    "index": 68,
+    "INT": 14,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "titaniumslab",
+        "destroyItem": true,
+        "ignoredId": "scaffoldingpack"
+      },
+      {
+        "specific": true,
+        "specificId": "titaniumslab",
+        "destroyItem": true,
+        "ignoredId": "scaffoldingpack"
+      },
+      {
+        "specific": true,
+        "specificId": "rope",
+        "destroyItem": true,
+        "ignoredId": "scaffoldingpack"
+      },
+      {
+        "specific": true,
+        "specificId": "plasticchunk",
+        "destroyItem": true,
+        "ignoredId": "scaffoldingpack"
+      }
+    ],
+    "result": {
+      "id": "scaffoldingpack",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 3,
+    "description": "A medium sized backpack.",
+    "fullName": "<sprite index=25>Backpack",
+    "index": 69,
+    "INT": 13,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "rope",
+        "destroyItem": true,
+        "ignoredId": "bigpack"
+      },
+      {
+        "specific": true,
+        "specificId": "rope",
+        "destroyItem": true,
+        "ignoredId": "bigpack"
+      },
+      {
+        "specific": true,
+        "specificId": "woodpanel",
+        "destroyItem": true,
+        "ignoredId": "bigpack"
+      },
+      {
+        "specific": true,
+        "specificId": "canvas",
+        "destroyItem": true,
+        "ignoredId": "bigpack"
+      },
+      {
+        "specific": true,
+        "specificId": "canvas",
+        "destroyItem": true,
+        "ignoredId": "bigpack"
+      },
+      {
+        "specific": true,
+        "specificId": "canvas",
+        "destroyItem": true,
+        "ignoredId": "bigpack"
+      },
+      {
+        "specific": true,
+        "specificId": "canvas",
+        "destroyItem": true,
+        "ignoredId": "bigpack"
+      },
+      {
+        "specific": true,
+        "specificId": "canvas",
+        "destroyItem": true,
+        "ignoredId": "bigpack"
+      },
+      {
+        "specific": true,
+        "specificId": "string",
+        "destroyItem": true,
+        "ignoredId": "bigpack"
+      },
+      {
+        "specific": true,
+        "specificId": "string",
+        "destroyItem": true,
+        "ignoredId": "bigpack"
+      },
+      {
+        "specific": true,
+        "specificId": "string",
+        "destroyItem": true,
+        "ignoredId": "bigpack"
+      },
+      {
+        "quality": {
+          "id": "cutting",
+          "amount": 1.0,
+          "LocaleName": "Cutting"
+        },
+        "ignoredId": "bigpack"
+      }
+    ],
+    "result": {
+      "id": "bigpack",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 3,
+    "description": "A decently sized bag made of fabric.",
+    "fullName": "<sprite index=25>Duffel bag",
+    "index": 70,
+    "INT": 11,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "brokenbag",
+        "destroyItem": true,
+        "ignoredId": "duffelbag"
+      },
+      {
+        "specific": true,
+        "specificId": "rope",
+        "destroyItem": true,
+        "ignoredId": "duffelbag"
+      },
+      {
+        "specific": true,
+        "specificId": "string",
+        "destroyItem": true,
+        "ignoredId": "duffelbag"
+      },
+      {
+        "specific": true,
+        "specificId": "string",
+        "destroyItem": true,
+        "ignoredId": "duffelbag"
+      },
+      {
+        "specific": true,
+        "specificId": "woodpanel",
+        "destroyItem": true,
+        "ignoredId": "duffelbag"
+      },
+      {
+        "quality": {
+          "id": "cutting",
+          "amount": 1.0,
+          "LocaleName": "Cutting"
+        },
+        "ignoredId": "duffelbag"
+      }
+    ],
+    "result": {
+      "id": "duffelbag",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 3,
+    "description": "A large, sturdy pouch that attaches to your thigh, with many small pockets to hold crafting materials. Has a high encumbrance reduction, but only accepts very small items.",
+    "fullName": "<sprite index=25>Material pouch",
+    "index": 71,
+    "INT": 10,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "rope",
+        "destroyItem": true,
+        "ignoredId": "materialpouch"
+      },
+      {
+        "specific": true,
+        "specificId": "string",
+        "destroyItem": true,
+        "ignoredId": "materialpouch"
+      },
+      {
+        "specific": true,
+        "specificId": "string",
+        "destroyItem": true,
+        "ignoredId": "materialpouch"
+      },
+      {
+        "specific": true,
+        "specificId": "woodpanel",
+        "destroyItem": true,
+        "ignoredId": "materialpouch"
+      },
+      {
+        "specific": true,
+        "specificId": "woodpanel",
+        "destroyItem": true,
+        "ignoredId": "materialpouch"
+      },
+      {
+        "specific": true,
+        "specificId": "woodpanel",
+        "destroyItem": true,
+        "ignoredId": "materialpouch"
+      },
+      {
+        "quality": {
+          "id": "nails",
+          "amount": 1.0,
+          "LocaleName": "Nails"
+        },
+        "ignoredId": "materialpouch"
+      },
+      {
+        "specific": true,
+        "specificId": "canvas",
+        "destroyItem": true,
+        "ignoredId": "materialpouch"
+      },
+      {
+        "quality": {
+          "id": "hammering",
+          "amount": 1.0,
+          "LocaleName": "Hammering"
+        },
+        "ignoredId": "materialpouch"
+      }
+    ],
+    "result": {
+      "id": "materialpouch",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 3,
+    "description": "A leather belt to go over your belly. You could attach something to it.",
+    "fullName": "<sprite index=25>Belt (50%)",
+    "index": 72,
+    "INT": 10,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "rope",
+        "destroyItem": true,
+        "ignoredId": "belt"
+      },
+      {
+        "specific": true,
+        "specificId": "rope",
+        "destroyItem": true,
+        "ignoredId": "belt"
+      },
+      {
+        "specific": true,
+        "specificId": "string",
+        "destroyItem": true,
+        "ignoredId": "belt"
+      },
+      {
+        "specific": true,
+        "specificId": "string",
+        "destroyItem": true,
+        "ignoredId": "belt"
+      },
+      {
+        "specific": true,
+        "specificId": "woodpanel",
+        "destroyItem": true,
+        "ignoredId": "belt"
+      },
+      {
+        "quality": {
+          "id": "cutting",
+          "amount": 1.0,
+          "LocaleName": "Cutting"
+        },
+        "ignoredId": "belt"
+      }
+    ],
+    "result": {
+      "id": "belt",
+      "amount": 1,
+      "resultCondition": 0.5
+    }
+  },
+  {
+    "category": 4,
+    "description": "A foliage bowl that can hold 0.5L of liquid. Somehow, you're unable to create it without the cereal.",
+    "fullName": "<sprite index=25>Bowl of cereal (x3)",
+    "index": 73,
+    "INT": 2,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "cereal",
+        "destroyItem": true,
+        "ignoredId": "bowlofcereal"
+      },
+      {
+        "specific": true,
+        "specificId": "milk",
+        "isLiquid": true,
+        "minimumCondition": 500.0,
+        "destroyItem": true,
+        "ignoredId": "bowlofcereal"
+      }
+    ],
+    "result": {
+      "id": "bowlofcereal",
+      "amount": 3,
+      "resultCondition": 1.0,
+      "dontDrainResultLiquid": true
+    }
+  },
+  {
+    "category": 4,
+    "description": "Liquid animal fat, gotten from flesh. Can be eaten, though not particularly pleasant. Can be processed into soap.",
+    "fullName": "<sprite index=25>Fat (100mL)",
+    "index": 74,
+    "INT": 8,
+    "items": [
+      {
+        "quality": {
+          "id": "meat",
+          "amount": 1.0,
+          "LocaleName": "Meat"
+        },
+        "minimumCondition": 0.2,
+        "destroyItem": true,
+        "ignoredId": "fat"
+      },
+      {
+        "quality": {
+          "id": "heatsource",
+          "amount": 1.0,
+          "LocaleName": "Heat source"
+        },
+        "ignoredId": "fat"
+      },
+      {
+        "quality": {
+          "id": "cutting",
+          "amount": 0.5,
+          "LocaleName": "Cutting"
+        },
+        "ignoredId": "fat"
+      }
+    ],
+    "result": {
+      "id": "fat",
+      "isLiquid": true,
+      "amount": 1,
+      "resultCondition": 100.0
+    }
+  },
+  {
+    "category": 2,
+    "description": "Soap made from animal fat. Can be used in the health panel to clean dirt off of you, and slightly disinfect wounds.",
+    "fullName": "<sprite index=25>Soap (100mL)",
+    "index": 75,
+    "INT": 8,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "fat",
+        "isLiquid": true,
+        "minimumCondition": 50.0,
+        "destroyItem": true,
+        "ignoredId": "soap"
+      },
+      {
+        "specific": true,
+        "specificId": "biochem",
+        "isLiquid": true,
+        "minimumCondition": 10.0,
+        "destroyItem": true,
+        "ignoredId": "soap"
+      },
+      {
+        "isLiquid": true,
+        "quality": {
+          "id": "water",
+          "amount": 40.0,
+          "LocaleName": "Water"
+        },
+        "minimumCondition": 0.9,
+        "destroyItem": true,
+        "ignoredId": "soap"
+      }
+    ],
+    "result": {
+      "id": "soap",
+      "isLiquid": true,
+      "amount": 1,
+      "resultCondition": 100.0
+    }
+  },
+  {
+    "category": 2,
+    "description": "A small vial of a clot-promoting poultice. Needs to be held in a special container in order to not go bad. While not particularly useful on its own, it could be refined further...",
+    "fullName": "<sprite index=25>Clotting mush",
+    "index": 76,
+    "INT": 10,
+    "items": [
+      {
+        "isLiquid": true,
+        "quality": {
+          "id": "blood",
+          "amount": 50.0,
+          "LocaleName": "Blood"
+        },
+        "destroyItem": true,
+        "ignoredId": "clottingmush"
+      },
+      {
+        "specific": true,
+        "specificId": "flammablepowder",
+        "destroyItem": true,
+        "ignoredId": "clottingmush"
+      },
+      {
+        "specific": true,
+        "specificId": "biochem",
+        "isLiquid": true,
+        "minimumCondition": 10.0,
+        "destroyItem": true,
+        "ignoredId": "clottingmush"
+      },
+      {
+        "specific": true,
+        "specificId": "flexiglass",
+        "destroyItem": true,
+        "ignoredId": "clottingmush"
+      }
+    ],
+    "result": {
+      "id": "clottingmush",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 2,
+    "description": "Pills used to treat general ailments like sickness or opiate abuse. Lowers happiness and may cause vomiting.",
+    "fullName": "<sprite index=25>Naltrexone (200mL)",
+    "index": 77,
+    "INT": 10,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "digestioncrystalshard",
+        "destroyItem": true,
+        "ignoredId": "naltrexone"
+      },
+      {
+        "specific": true,
+        "specificId": "biochem",
+        "isLiquid": true,
+        "minimumCondition": 20.0,
+        "destroyItem": true,
+        "ignoredId": "naltrexone"
+      },
+      {
+        "isLiquid": true,
+        "quality": {
+          "id": "opiate",
+          "amount": 50.0,
+          "LocaleName": "Opiate"
+        },
+        "destroyItem": true,
+        "ignoredId": "naltrexone"
+      }
+    ],
+    "result": {
+      "id": "naltrexone",
+      "isLiquid": true,
+      "amount": 1,
+      "resultCondition": 200.0
+    }
+  },
+  {
+    "category": 2,
+    "description": "Potent antidepressant pills. Makes you feel everything less for some time, and slowly increases happiness. Might have side effects.",
+    "fullName": "<sprite index=25>Antidepressants (200mL)",
+    "index": 78,
+    "INT": 10,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "soothingcrystalshard",
+        "destroyItem": true,
+        "ignoredId": "antidepressants"
+      },
+      {
+        "specific": true,
+        "specificId": "biochem",
+        "isLiquid": true,
+        "minimumCondition": 20.0,
+        "destroyItem": true,
+        "ignoredId": "antidepressants"
+      },
+      {
+        "specific": true,
+        "specificId": "flammablepowder",
+        "destroyItem": true,
+        "ignoredId": "antidepressants"
+      }
+    ],
+    "result": {
+      "id": "antidepressants",
+      "isLiquid": true,
+      "amount": 1,
+      "resultCondition": 200.0
+    }
+  },
+  {
+    "description": "A medical marvel when it was invented, this little device is able to automatically find a vein or artery to inject to and deliver the provided dosage. Used in medicinal crafting.",
+    "fullName": "<sprite index=25>Auto-injector",
+    "index": 79,
+    "INT": 12,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "scraptube",
+        "destroyItem": true,
+        "ignoredId": "autoinjector"
+      },
+      {
+        "specific": true,
+        "specificId": "flexiglass",
+        "destroyItem": true,
+        "ignoredId": "autoinjector"
+      },
+      {
+        "specific": true,
+        "specificId": "plasticchunk",
+        "destroyItem": true,
+        "ignoredId": "autoinjector"
+      },
+      {
+        "specific": true,
+        "specificId": "biochem",
+        "isLiquid": true,
+        "minimumCondition": 10.0,
+        "destroyItem": true,
+        "ignoredId": "autoinjector"
+      },
+      {
+        "specific": true,
+        "specificId": "bundleofwires",
+        "destroyItem": true,
+        "ignoredId": "autoinjector"
+      },
+      {
+        "specific": true,
+        "specificId": "circuitboard",
+        "minimumCondition": 0.9,
+        "destroyItem": true,
+        "ignoredId": "autoinjector"
+      },
+      {
+        "quality": {
+          "id": "cutting",
+          "amount": 1.0,
+          "LocaleName": "Cutting"
+        },
+        "ignoredId": "autoinjector"
+      }
+    ],
+    "result": {
+      "id": "autoinjector",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 2,
+    "description": "Attaches to your thigh and automatically activates when you go into a critical state, keeping your oxygen at livable levels and providing energy, but only once.",
+    "fullName": "<sprite index=25>Auto-auto-pump",
+    "index": 80,
+    "INT": 12,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "autopump",
+        "destroyItem": true,
+        "ignoredId": "autoautopump"
+      },
+      {
+        "specific": true,
+        "specificId": "circuitboard",
+        "destroyItem": true,
+        "ignoredId": "autoautopump"
+      },
+      {
+        "specific": true,
+        "specificId": "autoinjector",
+        "destroyItem": true,
+        "ignoredId": "autoautopump"
+      },
+      {
+        "specific": true,
+        "specificId": "bundleofwires",
+        "destroyItem": true,
+        "ignoredId": "autoautopump"
+      },
+      {
+        "specific": true,
+        "specificId": "rope",
+        "destroyItem": true,
+        "ignoredId": "autoautopump"
+      }
+    ],
+    "result": {
+      "id": "autoautopump",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 2,
+    "description": "Smushed together bits of fruit and foliage, resulting in a mixture effective in treating infections. Lasts one use.",
+    "fullName": "<sprite index=25>Antiseptic mush",
+    "index": 81,
+    "INT": 8,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "bulbskin",
+        "destroyItem": true,
+        "ignoredId": "antisepticmush"
+      },
+      {
+        "specific": true,
+        "specificId": "roselight",
+        "destroyItem": true,
+        "ignoredId": "antisepticmush"
+      }
+    ],
+    "result": {
+      "id": "antisepticmush",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 2,
+    "description": "A roll of specially synthesized tough material, made to efficiently cover wounds and stabilize fractures. Has no effect on muscle health.",
+    "fullName": "<sprite index=25>Plastic dressing",
+    "index": 82,
+    "INT": 14,
+    "items": [
+      {
+        "quality": {
+          "id": "dressing",
+          "amount": 1.0,
+          "LocaleName": "Dressing"
+        },
+        "minimumCondition": 0.5,
+        "destroyItem": true,
+        "ignoredId": "plasticbandage"
+      },
+      {
+        "specific": true,
+        "specificId": "biochem",
+        "isLiquid": true,
+        "minimumCondition": 20.0,
+        "destroyItem": true,
+        "ignoredId": "plasticbandage"
+      },
+      {
+        "specific": true,
+        "specificId": "titaniumsheet",
+        "destroyItem": true,
+        "ignoredId": "plasticbandage"
+      }
+    ],
+    "result": {
+      "id": "plasticbandage",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 2,
+    "description": "When applied, it cuts off circulation to the limb, stopping all bleeding in the affected area (though it does not heal the wound). It must be removed after some time, as it causes pain and deprives the limb of oxygen. Reusable.",
+    "fullName": "<sprite index=25>Tourniquet (50%)",
+    "index": 83,
+    "INT": 9,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "rope",
+        "destroyItem": true,
+        "ignoredId": "tourniquet"
+      },
+      {
+        "specific": true,
+        "specificId": "rope",
+        "destroyItem": true,
+        "ignoredId": "tourniquet"
+      },
+      {
+        "specific": true,
+        "specificId": "string",
+        "destroyItem": true,
+        "ignoredId": "tourniquet"
+      },
+      {
+        "specific": true,
+        "specificId": "plasticchunk",
+        "destroyItem": true,
+        "ignoredId": "tourniquet"
+      },
+      {
+        "specific": true,
+        "specificId": "biochem",
+        "isLiquid": true,
+        "minimumCondition": 10.0,
+        "destroyItem": true,
+        "ignoredId": "tourniquet"
+      }
+    ],
+    "result": {
+      "id": "tourniquet",
+      "amount": 1,
+      "resultCondition": 0.5
+    }
+  },
+  {
+    "category": 2,
+    "description": "A very experimental bit of technology that welds a fracture back together, vastly speeding up healing. Causes some damage to the limb due to the process - better have some dressing ready.",
+    "fullName": "<sprite index=25>Bone welding tool",
+    "index": 84,
+    "INT": 14,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "scrappanel",
+        "destroyItem": true,
+        "ignoredId": "boneweldingtool"
+      },
+      {
+        "specific": true,
+        "specificId": "scrappanel",
+        "destroyItem": true,
+        "ignoredId": "boneweldingtool"
+      },
+      {
+        "specific": true,
+        "specificId": "scrappanel",
+        "destroyItem": true,
+        "ignoredId": "boneweldingtool"
+      },
+      {
+        "specific": true,
+        "specificId": "bundleofwires",
+        "destroyItem": true,
+        "ignoredId": "boneweldingtool"
+      },
+      {
+        "specific": true,
+        "specificId": "bundleofwires",
+        "destroyItem": true,
+        "ignoredId": "boneweldingtool"
+      },
+      {
+        "specific": true,
+        "specificId": "circuitboard",
+        "minimumCondition": 0.9,
+        "destroyItem": true,
+        "ignoredId": "boneweldingtool"
+      },
+      {
+        "specific": true,
+        "specificId": "biochem",
+        "isLiquid": true,
+        "minimumCondition": 20.0,
+        "destroyItem": true,
+        "ignoredId": "boneweldingtool"
+      },
+      {
+        "specific": true,
+        "specificId": "lrdserum",
+        "isLiquid": true,
+        "minimumCondition": 10.0,
+        "destroyItem": true,
+        "ignoredId": "boneweldingtool"
+      }
+    ],
+    "result": {
+      "id": "boneweldingtool",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 2,
+    "description": "A simple pair of metal tweezers. Can cleanly and painlessly remove shrapnel from limbs.",
+    "fullName": "<sprite index=25>Tweezers (10%)",
+    "index": 85,
+    "INT": 9,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "scrappanel",
+        "destroyItem": true,
+        "ignoredId": "tweezers"
+      },
+      {
+        "quality": {
+          "id": "hammering",
+          "amount": 1.0,
+          "LocaleName": "Hammering"
+        },
+        "ignoredId": "tweezers"
+      },
+      {
+        "quality": {
+          "id": "cutting",
+          "amount": 1.0,
+          "LocaleName": "Cutting"
+        },
+        "ignoredId": "tweezers"
+      }
+    ],
+    "result": {
+      "id": "tweezers",
+      "amount": 1,
+      "resultCondition": 0.1
+    }
+  },
+  {
+    "category": 2,
+    "description": "A 0.75L plastic bag with an autoinjector at the end. Injects 375mL on use. Use in the inventory to draw blood from yourself.",
+    "fullName": "<sprite index=25>Blood bag",
+    "index": 86,
+    "INT": 12,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "plasticchunk",
+        "destroyItem": true,
+        "ignoredId": "bloodbag"
+      },
+      {
+        "specific": true,
+        "specificId": "flexiglass",
+        "destroyItem": true,
+        "ignoredId": "bloodbag"
+      },
+      {
+        "specific": true,
+        "specificId": "flexiglass",
+        "destroyItem": true,
+        "ignoredId": "bloodbag"
+      },
+      {
+        "specific": true,
+        "specificId": "bundleofwires",
+        "destroyItem": true,
+        "ignoredId": "bloodbag"
+      },
+      {
+        "specific": true,
+        "specificId": "autoinjector",
+        "destroyItem": true,
+        "ignoredId": "bloodbag"
+      },
+      {
+        "specific": true,
+        "specificId": "biochem",
+        "isLiquid": true,
+        "minimumCondition": 20.0,
+        "destroyItem": true,
+        "ignoredId": "bloodbag"
+      }
+    ],
+    "result": {
+      "id": "bloodbag",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 2,
+    "description": "A 0.75L bag with a needle at the end, for injecting fluids intravenously.",
+    "fullName": "<sprite index=25>IV bag",
+    "index": 87,
+    "INT": 11,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "plasticchunk",
+        "destroyItem": true,
+        "ignoredId": "saline"
+      },
+      {
+        "specific": true,
+        "specificId": "plasticchunk",
+        "destroyItem": true,
+        "ignoredId": "saline"
+      },
+      {
+        "specific": true,
+        "specificId": "flexiglass",
+        "destroyItem": true,
+        "ignoredId": "saline"
+      },
+      {
+        "specific": true,
+        "specificId": "flexiglass",
+        "destroyItem": true,
+        "ignoredId": "saline"
+      },
+      {
+        "specific": true,
+        "specificId": "scraptube",
+        "destroyItem": true,
+        "ignoredId": "saline"
+      },
+      {
+        "specific": true,
+        "specificId": "biochem",
+        "isLiquid": true,
+        "minimumCondition": 20.0,
+        "destroyItem": true,
+        "ignoredId": "saline"
+      }
+    ],
+    "result": {
+      "id": "saline",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 2,
+    "description": "Basic antiseptic fluid. Counteracts infections and stings a little.",
+    "fullName": "<sprite index=25>Antiseptic (100mL)",
+    "index": 88,
+    "INT": 9,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "biochem",
+        "isLiquid": true,
+        "minimumCondition": 25.0,
+        "destroyItem": true,
+        "ignoredId": "disinfectant"
+      },
+      {
+        "specific": true,
+        "specificId": "soap",
+        "isLiquid": true,
+        "minimumCondition": 50.0,
+        "destroyItem": true,
+        "ignoredId": "disinfectant"
+      },
+      {
+        "isLiquid": true,
+        "quality": {
+          "id": "blood",
+          "amount": 25.0,
+          "LocaleName": "Blood"
+        },
+        "minimumCondition": 0.9,
+        "destroyItem": true,
+        "ignoredId": "disinfectant"
+      },
+      {
+        "isLiquid": true,
+        "quality": {
+          "id": "water",
+          "amount": 50.0,
+          "LocaleName": "Water"
+        },
+        "minimumCondition": 0.9,
+        "destroyItem": true,
+        "ignoredId": "disinfectant"
+      }
+    ],
+    "result": {
+      "id": "disinfectant",
+      "isLiquid": true,
+      "amount": 1,
+      "resultCondition": 100.0
+    }
+  },
+  {
+    "category": 2,
+    "description": "Mix of chemicals and drugs that instantly relieves pain and disinfects wounds.",
+    "fullName": "<sprite index=25>Relief cream (100mL)",
+    "index": 89,
+    "INT": 9,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "flammablepowder",
+        "destroyItem": true,
+        "ignoredId": "reliefcream"
+      },
+      {
+        "isLiquid": true,
+        "quality": {
+          "id": "water",
+          "amount": 50.0,
+          "LocaleName": "Water"
+        },
+        "minimumCondition": 0.9,
+        "destroyItem": true,
+        "ignoredId": "reliefcream"
+      },
+      {
+        "isLiquid": true,
+        "quality": {
+          "id": "blood",
+          "amount": 25.0,
+          "LocaleName": "Blood"
+        },
+        "minimumCondition": 0.9,
+        "destroyItem": true,
+        "ignoredId": "reliefcream"
+      },
+      {
+        "isLiquid": true,
+        "quality": {
+          "id": "opiate",
+          "amount": 50.0,
+          "LocaleName": "Opiate"
+        },
+        "minimumCondition": 0.9,
+        "destroyItem": true,
+        "ignoredId": "reliefcream"
+      },
+      {
+        "specific": true,
+        "specificId": "biochem",
+        "isLiquid": true,
+        "minimumCondition": 25.0,
+        "destroyItem": true,
+        "ignoredId": "reliefcream"
+      }
+    ],
+    "result": {
+      "id": "reliefcream",
+      "isLiquid": true,
+      "amount": 1,
+      "resultCondition": 100.0
+    }
+  },
+  {
+    "category": 2,
+    "description": "A sturdy board, made to aid fractures. Helps with healing fractures and dislocations. Putting it on a functional limb will still immobilize it, reducing your capabilities.",
+    "fullName": "<sprite index=25>Splint (80%)",
+    "index": 90,
+    "INT": 8,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "woodpanel",
+        "destroyItem": true,
+        "ignoredId": "splint"
+      },
+      {
+        "specific": true,
+        "specificId": "woodpanel",
+        "destroyItem": true,
+        "ignoredId": "splint"
+      },
+      {
+        "specific": true,
+        "specificId": "woodpanel",
+        "destroyItem": true,
+        "ignoredId": "splint"
+      },
+      {
+        "specific": true,
+        "specificId": "scraptube",
+        "destroyItem": true,
+        "ignoredId": "splint"
+      },
+      {
+        "specific": true,
+        "specificId": "scraptube",
+        "destroyItem": true,
+        "ignoredId": "splint"
+      },
+      {
+        "quality": {
+          "id": "nails",
+          "amount": 1.0,
+          "LocaleName": "Nails"
+        },
+        "ignoredId": "splint"
+      },
+      {
+        "quality": {
+          "id": "hammering",
+          "amount": 1.0,
+          "LocaleName": "Hammering"
+        },
+        "ignoredId": "splint"
+      }
+    ],
+    "result": {
+      "id": "splint",
+      "amount": 1,
+      "resultCondition": 0.8
+    }
+  },
+  {
+    "category": 2,
+    "description": "A combination of drugs and other medicines, made to aid muscle healing. Increases muscle/skin health and highly aids dislocations. Doesn't affect bleeding.",
+    "fullName": "<sprite index=25>Bruise kit",
+    "index": 91,
+    "INT": 10,
+    "items": [
+      {
+        "quality": {
+          "id": "dressing",
+          "amount": 1.0,
+          "LocaleName": "Dressing"
+        },
+        "minimumCondition": 0.5,
+        "destroyItem": true,
+        "ignoredId": "bruisekit"
+      },
+      {
+        "isLiquid": true,
+        "quality": {
+          "id": "opiate",
+          "amount": 25.0,
+          "LocaleName": "Opiate"
+        },
+        "minimumCondition": 0.9,
+        "destroyItem": true,
+        "ignoredId": "bruisekit"
+      },
+      {
+        "specific": true,
+        "specificId": "biochem",
+        "isLiquid": true,
+        "minimumCondition": 20.0,
+        "destroyItem": true,
+        "ignoredId": "bruisekit"
+      }
+    ],
+    "result": {
+      "id": "bruisekit",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 2,
+    "description": "A hard, long tube made from multiple joined carcasses. Functions as a decent makeshift splint for treating fractures.",
+    "fullName": "<sprite index=25>Carcass splint",
+    "index": 92,
+    "INT": 6,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "largecarcass",
+        "destroyItem": true,
+        "ignoredId": "carcasssplint"
+      },
+      {
+        "specific": true,
+        "specificId": "carcass",
+        "destroyItem": true,
+        "ignoredId": "carcasssplint"
+      },
+      {
+        "specific": true,
+        "specificId": "rope",
+        "destroyItem": true,
+        "ignoredId": "carcasssplint"
+      }
+    ],
+    "result": {
+      "id": "carcasssplint",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 2,
+    "description": "A makeshift Localized Resuscitation Device. Looks like it's taped together. Increases the muscle health and disinfects limb it's used on, AND any directly adjacent limbs. Slightly reduces internal bleeding if used on the chest. Requires atleast 25mL of LRD serum to function.",
+    "fullName": "<sprite index=25>Makeshift L.R.D.",
+    "index": 93,
+    "INT": 10,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "scrappanel",
+        "destroyItem": true,
+        "ignoredId": "makeshiftlrd"
+      },
+      {
+        "specific": true,
+        "specificId": "scrappanel",
+        "destroyItem": true,
+        "ignoredId": "makeshiftlrd"
+      },
+      {
+        "specific": true,
+        "specificId": "bundleofwires",
+        "destroyItem": true,
+        "ignoredId": "makeshiftlrd"
+      },
+      {
+        "specific": true,
+        "specificId": "plasticchunk",
+        "destroyItem": true,
+        "ignoredId": "makeshiftlrd"
+      },
+      {
+        "specific": true,
+        "specificId": "scraptube",
+        "destroyItem": true,
+        "ignoredId": "makeshiftlrd"
+      },
+      {
+        "quality": {
+          "id": "nails",
+          "amount": 1.0,
+          "LocaleName": "Nails"
+        },
+        "ignoredId": "makeshiftlrd"
+      },
+      {
+        "quality": {
+          "id": "hammering",
+          "amount": 1.0,
+          "LocaleName": "Hammering"
+        },
+        "ignoredId": "makeshiftlrd"
+      }
+    ],
+    "result": {
+      "id": "makeshiftlrd",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 2,
+    "description": "A Localized Resuscitation Device, made to easily provide effective general trauma care. Increases limb health, slows bleeding, provides pain relieving drugs and disinfects the limb it's used on, along with any adjacent limbs. Highly reduces internal bleeding if used on the chest. Requires atleast 25mL of LRD serum to function.",
+    "fullName": "<sprite index=25>L.R.D.",
+    "index": 94,
+    "INT": 15,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "makeshiftlrd",
+        "destroyItem": true,
+        "ignoredId": "lrd"
+      },
+      {
+        "specific": true,
+        "specificId": "titaniumsheet",
+        "destroyItem": true,
+        "ignoredId": "lrd"
+      },
+      {
+        "specific": true,
+        "specificId": "titaniumsheet",
+        "destroyItem": true,
+        "ignoredId": "lrd"
+      },
+      {
+        "specific": true,
+        "specificId": "biochem",
+        "isLiquid": true,
+        "minimumCondition": 25.0,
+        "destroyItem": true,
+        "ignoredId": "lrd"
+      },
+      {
+        "specific": true,
+        "specificId": "autoinjector",
+        "destroyItem": true,
+        "ignoredId": "lrd"
+      },
+      {
+        "specific": true,
+        "specificId": "circuitboard",
+        "minimumCondition": 0.9,
+        "destroyItem": true,
+        "ignoredId": "lrd"
+      },
+      {
+        "specific": true,
+        "specificId": "bundleofwires",
+        "destroyItem": true,
+        "ignoredId": "lrd"
+      },
+      {
+        "quality": {
+          "id": "cutting",
+          "amount": 1.0,
+          "LocaleName": "Cutting"
+        },
+        "ignoredId": "lrd"
+      },
+      {
+        "quality": {
+          "id": "hammering",
+          "amount": 1.0,
+          "LocaleName": "Hammering"
+        },
+        "ignoredId": "lrd"
+      }
+    ],
+    "result": {
+      "id": "lrd",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 2,
+    "description": "Special mixture used by a Localized Resuscitation Device. Does nothing if injected via other tools.",
+    "fullName": "<sprite index=25>L.R.D. Serum (25mL)",
+    "index": 95,
+    "INT": 11,
+    "items": [
+      {
+        "isLiquid": true,
+        "quality": {
+          "id": "disinfectant",
+          "amount": 25.0,
+          "LocaleName": "Antiseptic"
+        },
+        "minimumCondition": 0.9,
+        "destroyItem": true,
+        "ignoredId": "lrdserum"
+      },
+      {
+        "isLiquid": true,
+        "quality": {
+          "id": "water",
+          "amount": 50.0,
+          "LocaleName": "Water"
+        },
+        "minimumCondition": 0.9,
+        "destroyItem": true,
+        "ignoredId": "lrdserum"
+      },
+      {
+        "isLiquid": true,
+        "quality": {
+          "id": "opiate",
+          "amount": 25.0,
+          "LocaleName": "Opiate"
+        },
+        "minimumCondition": 0.9,
+        "destroyItem": true,
+        "ignoredId": "lrdserum"
+      },
+      {
+        "isLiquid": true,
+        "quality": {
+          "id": "blood",
+          "amount": 25.0,
+          "LocaleName": "Blood"
+        },
+        "minimumCondition": 0.9,
+        "destroyItem": true,
+        "ignoredId": "lrdserum"
+      },
+      {
+        "specific": true,
+        "specificId": "biochem",
+        "isLiquid": true,
+        "minimumCondition": 25.0,
+        "destroyItem": true,
+        "ignoredId": "lrdserum"
+      }
+    ],
+    "result": {
+      "id": "lrdserum",
+      "isLiquid": true,
+      "amount": 1,
+      "resultCondition": 25.0
+    }
+  },
+  {
+    "category": 4,
+    "description": "A bunch of fruit, vegetables and whatever else you could find, mashed up and mixed with water. It tastes... interesting.",
+    "fullName": "<sprite index=25>Produce juice (250mL)",
+    "index": 96,
+    "INT": 2,
+    "items": [
+      {
+        "quality": {
+          "id": "produce",
+          "amount": 1.0,
+          "LocaleName": "Produce"
+        },
+        "minimumCondition": 0.5,
+        "destroyItem": true,
+        "ignoredId": "producejuice"
+      },
+      {
+        "quality": {
+          "id": "produce",
+          "amount": 1.0,
+          "LocaleName": "Produce"
+        },
+        "minimumCondition": 0.5,
+        "destroyItem": true,
+        "ignoredId": "producejuice"
+      },
+      {
+        "quality": {
+          "id": "produce",
+          "amount": 1.0,
+          "LocaleName": "Produce"
+        },
+        "minimumCondition": 0.5,
+        "destroyItem": true,
+        "ignoredId": "producejuice"
+      },
+      {
+        "isLiquid": true,
+        "quality": {
+          "id": "water",
+          "amount": 75.0,
+          "LocaleName": "Water"
+        },
+        "minimumCondition": 0.9,
+        "destroyItem": true,
+        "ignoredId": "producejuice"
+      },
+      {
+        "quality": {
+          "id": "hammering",
+          "amount": 0.1,
+          "LocaleName": "Hammering"
+        },
+        "ignoredId": "producejuice"
+      }
+    ],
+    "result": {
+      "id": "producejuice",
+      "isLiquid": true,
+      "amount": 1,
+      "resultCondition": 250.0
+    }
+  },
+  {
+    "category": 4,
+    "description": "Cooked through, better mixed and mashed produce juice. Very tasty and nutricious!",
+    "fullName": "<sprite index=25>Refined juice (200mL)",
+    "index": 97,
+    "INT": 4,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "producejuice",
+        "isLiquid": true,
+        "minimumCondition": 250.0,
+        "destroyItem": true,
+        "ignoredId": "refinedjuice"
+      },
+      {
+        "quality": {
+          "id": "heatsource",
+          "amount": 1.0,
+          "LocaleName": "Heat source"
+        },
+        "ignoredId": "refinedjuice"
+      }
+    ],
+    "result": {
+      "id": "refinedjuice",
+      "isLiquid": true,
+      "amount": 1,
+      "resultCondition": 200.0
+    }
+  },
+  {
+    "category": 1,
+    "description": "A small bundle of spare parts, made to repair Drill Pods. You could use one of these to get a pod back into a working state.",
+    "fullName": "<sprite index=25>Drill repair kit",
+    "index": 98,
+    "INT": 9,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "scrappanel",
+        "destroyItem": true,
+        "ignoredId": "drillrepairkit"
+      },
+      {
+        "specific": true,
+        "specificId": "scrappanel",
+        "destroyItem": true,
+        "ignoredId": "drillrepairkit"
+      },
+      {
+        "specific": true,
+        "specificId": "scraptube",
+        "destroyItem": true,
+        "ignoredId": "drillrepairkit"
+      },
+      {
+        "specific": true,
+        "specificId": "scraptube",
+        "destroyItem": true,
+        "ignoredId": "drillrepairkit"
+      },
+      {
+        "specific": true,
+        "specificId": "scrapcube",
+        "destroyItem": true,
+        "ignoredId": "drillrepairkit"
+      },
+      {
+        "quality": {
+          "id": "nails",
+          "amount": 1.0,
+          "LocaleName": "Nails"
+        },
+        "ignoredId": "drillrepairkit"
+      },
+      {
+        "specific": true,
+        "specificId": "plasticchunk",
+        "destroyItem": true,
+        "ignoredId": "drillrepairkit"
+      },
+      {
+        "specific": true,
+        "specificId": "bundleofwires",
+        "destroyItem": true,
+        "ignoredId": "drillrepairkit"
+      },
+      {
+        "specific": true,
+        "specificId": "circuitboard",
+        "minimumCondition": 0.9,
+        "destroyItem": true,
+        "ignoredId": "drillrepairkit"
+      },
+      {
+        "quality": {
+          "id": "hammering",
+          "amount": 1.0,
+          "LocaleName": "Hammering"
+        },
+        "ignoredId": "drillrepairkit"
+      }
+    ],
+    "result": {
+      "id": "drillrepairkit",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 2,
+    "description": "Chemical which promotes blood clotting. Globally slows down blood loss, including internal bleeding.",
+    "fullName": "<sprite index=25>Procoagulant (100mL)",
+    "index": 99,
+    "INT": 14,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "clottingmush",
+        "destroyItem": true,
+        "ignoredId": "procoagulant"
+      },
+      {
+        "isLiquid": true,
+        "quality": {
+          "id": "blood",
+          "amount": 50.0,
+          "LocaleName": "Blood"
+        },
+        "minimumCondition": 0.9,
+        "destroyItem": true,
+        "ignoredId": "procoagulant"
+      },
+      {
+        "specific": true,
+        "specificId": "bunchunk",
+        "destroyItem": true,
+        "ignoredId": "procoagulant"
+      },
+      {
+        "specific": true,
+        "specificId": "bunchunk",
+        "destroyItem": true,
+        "ignoredId": "procoagulant"
+      },
+      {
+        "specific": true,
+        "specificId": "biochem",
+        "isLiquid": true,
+        "minimumCondition": 25.0,
+        "destroyItem": true,
+        "ignoredId": "procoagulant"
+      }
+    ],
+    "result": {
+      "id": "procoagulant",
+      "isLiquid": true,
+      "amount": 1,
+      "resultCondition": 100.0
+    }
+  },
+  {
+    "category": 2,
+    "description": "A 0.2L plastic bottle with a spray nozzle on it. Can spray 10ml of liquid at a time.",
+    "fullName": "<sprite index=25>Antiseptic bottle",
+    "index": 100,
+    "INT": 7,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "canteen",
+        "destroyItem": true,
+        "ignoredId": "disinfectant"
+      },
+      {
+        "specific": true,
+        "specificId": "plasticchunk",
+        "destroyItem": true,
+        "ignoredId": "disinfectant"
+      },
+      {
+        "quality": {
+          "id": "cutting",
+          "amount": 1.0,
+          "LocaleName": "Cutting"
+        },
+        "ignoredId": "disinfectant"
+      }
+    ],
+    "result": {
+      "id": "disinfectant",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 3,
+    "description": "A device to start a fire by friction between a rapidly rotating wooden rod and a cavity on a stationary wood piece. In layman's terms, stick rotatey, fire starty. Can be used up to 3 times before burning out.",
+    "fullName": "<sprite index=25>Firestarter",
+    "index": 101,
+    "INT": 8,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "stick",
+        "destroyItem": true,
+        "ignoredId": "firestarter"
+      },
+      {
+        "specific": true,
+        "specificId": "stick",
+        "destroyItem": true,
+        "ignoredId": "firestarter"
+      },
+      {
+        "specific": true,
+        "specificId": "rope",
+        "destroyItem": true,
+        "ignoredId": "firestarter"
+      },
+      {
+        "quality": {
+          "id": "foliage",
+          "amount": 1.0,
+          "LocaleName": "Foliage"
+        },
+        "destroyItem": true,
+        "ignoredId": "firestarter"
+      }
+    ],
+    "result": {
+      "id": "firestarter",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 4,
+    "description": "A lit campfire. Warm and cozy, you'll heat up when next to it. Used as a heat source in a variety of food recipes.",
+    "fullName": "<sprite index=25>Campfire",
+    "index": 102,
+    "INT": 4,
+    "items": [
+      {
+        "quality": {
+          "id": "firestarter",
+          "amount": 1.0,
+          "LocaleName": "Firestarter"
+        },
+        "ignoredId": "campfire"
+      },
+      {
+        "quality": {
+          "id": "flammable",
+          "amount": 1.0,
+          "LocaleName": "Flammable"
+        },
+        "destroyItem": true,
+        "ignoredId": "campfire"
+      },
+      {
+        "quality": {
+          "id": "flammable",
+          "amount": 1.0,
+          "LocaleName": "Flammable"
+        },
+        "destroyItem": true,
+        "ignoredId": "campfire"
+      },
+      {
+        "quality": {
+          "id": "flammable",
+          "amount": 1.0,
+          "LocaleName": "Flammable"
+        },
+        "destroyItem": true,
+        "ignoredId": "campfire"
+      }
+    ],
+    "result": {
+      "id": "campfire",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 4,
+    "description": "Slightly dirty groundwater. Mostly safe to drink, though slightly sickening.",
+    "fullName": "<sprite index=25>Water (200mL)",
+    "index": 103,
+    "INT": 4,
+    "items": [
+      {
+        "quality": {
+          "id": "heatsource",
+          "amount": 1.0,
+          "LocaleName": "Heat source"
+        },
+        "ignoredId": "water"
+      },
+      {
+        "specific": true,
+        "specificId": "groundwater",
+        "isLiquid": true,
+        "minimumCondition": 200.0,
+        "destroyItem": true,
+        "ignoredId": "water"
+      }
+    ],
+    "result": {
+      "id": "water",
+      "isLiquid": true,
+      "amount": 1,
+      "resultCondition": 200.0
+    }
+  },
+  {
+    "category": 3,
+    "description": "Small, light piece of charcoal. Can be used as a flammable ingredient for crafting.",
+    "fullName": "<sprite index=25>Charcoal (x3)",
+    "index": 104,
+    "INT": 7,
+    "items": [
+      {
+        "quality": {
+          "id": "heatsource",
+          "amount": 1.0,
+          "LocaleName": "Heat source"
+        },
+        "ignoredId": "charcoal"
+      },
+      {
+        "specific": true,
+        "specificId": "droppings",
+        "destroyItem": true,
+        "ignoredId": "charcoal"
+      },
+      {
+        "specific": true,
+        "specificId": "biochem",
+        "isLiquid": true,
+        "minimumCondition": 10.0,
+        "destroyItem": true,
+        "ignoredId": "charcoal"
+      }
+    ],
+    "result": {
+      "id": "charcoal",
+      "amount": 3,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 4,
+    "description": "A loaf of bread, made of flour and water. About the simplest thing you could eat, though not repulsive and will last for a long time.",
+    "fullName": "<sprite index=25>Bread",
+    "index": 105,
+    "INT": 7,
+    "items": [
+      {
+        "quality": {
+          "id": "heatsource",
+          "amount": 1.0,
+          "LocaleName": "Heat source"
+        },
+        "ignoredId": "bread"
+      },
+      {
+        "quality": {
+          "id": "flour",
+          "amount": 1.0,
+          "LocaleName": "Flour"
+        },
+        "destroyItem": true,
+        "ignoredId": "bread"
+      },
+      {
+        "isLiquid": true,
+        "quality": {
+          "id": "water",
+          "amount": 150.0,
+          "LocaleName": "Water"
+        },
+        "minimumCondition": 0.9,
+        "destroyItem": true,
+        "ignoredId": "bread"
+      }
+    ],
+    "result": {
+      "id": "bread",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 4,
+    "description": "A powder mainly used in making baked goods. You'll probably need some water and a heat source to work with it.",
+    "fullName": "<sprite index=25>Rye flour",
+    "index": 106,
+    "INT": 6,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "ryebulb",
+        "destroyItem": true,
+        "ignoredId": "ryeflour"
+      },
+      {
+        "quality": {
+          "id": "hammering",
+          "amount": 0.5,
+          "LocaleName": "Hammering"
+        },
+        "ignoredId": "ryeflour"
+      }
+    ],
+    "result": {
+      "id": "ryeflour",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 3,
+    "description": "Extremely primitive lightsource. While it lights up the way pretty well, it will be put out by liquids. You can relight it with a bit of fat and a flame source.",
+    "fullName": "<sprite index=25>Torch (0%)",
+    "index": 107,
+    "INT": 5,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "stick",
+        "destroyItem": true,
+        "ignoredId": "torch"
+      },
+      {
+        "specific": true,
+        "specificId": "stick",
+        "destroyItem": true,
+        "ignoredId": "torch"
+      },
+      {
+        "specific": true,
+        "specificId": "rope",
+        "destroyItem": true,
+        "ignoredId": "torch"
+      }
+    ],
+    "result": {
+      "id": "torch",
+      "amount": 1
+    }
+  },
+  {
+    "category": 3,
+    "description": "Extremely primitive lightsource. While it lights up the way pretty well, it will be put out by liquids. You can relight it with a bit of fat and a flame source.",
+    "fullName": "<sprite index=25>Torch",
+    "index": 108,
+    "INT": 5,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "torch",
+        "destroyItem": true,
+        "ignoredId": "torch"
+      },
+      {
+        "specific": true,
+        "specificId": "fat",
+        "isLiquid": true,
+        "minimumCondition": 25.0,
+        "destroyItem": true,
+        "ignoredId": "torch"
+      },
+      {
+        "quality": {
+          "id": "heatsource",
+          "amount": 1.0,
+          "LocaleName": "Heat source"
+        },
+        "ignoredId": "torch"
+      }
+    ],
+    "result": {
+      "id": "torch",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 4,
+    "description": "Solid, edible bar of pure nutrients and calories. Neutral taste, and doesn't spoil.",
+    "fullName": "<sprite index=25>Nutrient bar",
+    "index": 109,
+    "INT": 9,
+    "items": [
+      {
+        "quality": {
+          "id": "heatsource",
+          "amount": 1.0,
+          "LocaleName": "Heat source"
+        },
+        "ignoredId": "nutrientbar"
+      },
+      {
+        "quality": {
+          "id": "flour",
+          "amount": 1.0,
+          "LocaleName": "Flour"
+        },
+        "destroyItem": true,
+        "ignoredId": "nutrientbar"
+      },
+      {
+        "quality": {
+          "id": "produce",
+          "amount": 1.0,
+          "LocaleName": "Produce"
+        },
+        "minimumCondition": 0.5,
+        "destroyItem": true,
+        "ignoredId": "nutrientbar"
+      },
+      {
+        "specific": true,
+        "specificId": "fat",
+        "isLiquid": true,
+        "minimumCondition": 25.0,
+        "destroyItem": true,
+        "ignoredId": "nutrientbar"
+      }
+    ],
+    "result": {
+      "id": "nutrientbar",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 4,
+    "description": "A mixture of fat, dried meat, and dehydrated fruit. Lasts a long time and is very calorie-dense. Tastes neutral.",
+    "fullName": "<sprite index=25>Pemmican",
+    "index": 110,
+    "INT": 6,
+    "items": [
+      {
+        "quality": {
+          "id": "heatsource",
+          "amount": 1.0,
+          "LocaleName": "Heat source"
+        },
+        "ignoredId": "pemmican"
+      },
+      {
+        "quality": {
+          "id": "meat",
+          "amount": 1.0,
+          "LocaleName": "Meat"
+        },
+        "minimumCondition": 0.2,
+        "destroyItem": true,
+        "ignoredId": "pemmican"
+      },
+      {
+        "quality": {
+          "id": "produce",
+          "amount": 1.0,
+          "LocaleName": "Produce"
+        },
+        "minimumCondition": 0.5,
+        "destroyItem": true,
+        "ignoredId": "pemmican"
+      },
+      {
+        "specific": true,
+        "specificId": "fat",
+        "isLiquid": true,
+        "minimumCondition": 75.0,
+        "destroyItem": true,
+        "ignoredId": "pemmican"
+      }
+    ],
+    "result": {
+      "id": "pemmican",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 4,
+    "description": "A decent prepared food, made of crispy foliage and rudimentary filling. Won't last for long and has no fat, but it's very filling.",
+    "fullName": "<sprite index=25>Foliage meal",
+    "index": 111,
+    "INT": 7,
+    "items": [
+      {
+        "quality": {
+          "id": "heatsource",
+          "amount": 1.0,
+          "LocaleName": "Heat source"
+        },
+        "ignoredId": "foliagemeal"
+      },
+      {
+        "quality": {
+          "id": "foliage",
+          "amount": 1.0,
+          "LocaleName": "Foliage"
+        },
+        "destroyItem": true,
+        "ignoredId": "foliagemeal"
+      },
+      {
+        "quality": {
+          "id": "foliage",
+          "amount": 1.0,
+          "LocaleName": "Foliage"
+        },
+        "destroyItem": true,
+        "ignoredId": "foliagemeal"
+      },
+      {
+        "quality": {
+          "id": "foliage",
+          "amount": 1.0,
+          "LocaleName": "Foliage"
+        },
+        "destroyItem": true,
+        "ignoredId": "foliagemeal"
+      },
+      {
+        "quality": {
+          "id": "produce",
+          "amount": 1.0,
+          "LocaleName": "Produce"
+        },
+        "destroyItem": true,
+        "ignoredId": "foliagemeal"
+      }
+    ],
+    "result": {
+      "id": "foliagemeal",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 4,
+    "description": "A big, tasty snack. Fills both your tummy and soul!",
+    "fullName": "<sprite index=25>Burger",
+    "index": 112,
+    "INT": 6,
+    "items": [
+      {
+        "quality": {
+          "id": "heatsource",
+          "amount": 1.0,
+          "LocaleName": "Heat source"
+        },
+        "ignoredId": "burger"
+      },
+      {
+        "quality": {
+          "id": "meat",
+          "amount": 1.0,
+          "LocaleName": "Meat"
+        },
+        "minimumCondition": 0.2,
+        "destroyItem": true,
+        "ignoredId": "burger"
+      },
+      {
+        "specific": true,
+        "specificId": "bread",
+        "minimumCondition": 0.2,
+        "destroyItem": true,
+        "ignoredId": "burger"
+      },
+      {
+        "specific": true,
+        "specificId": "ketchup",
+        "isLiquid": true,
+        "minimumCondition": 20.0,
+        "destroyItem": true,
+        "ignoredId": "burger"
+      }
+    ],
+    "result": {
+      "id": "burger",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 4,
+    "description": "Unidentifiable soup, though still tasty and filling.",
+    "fullName": "<sprite index=25>Soup (300mL)",
+    "index": 113,
+    "INT": 9,
+    "items": [
+      {
+        "quality": {
+          "id": "heatsource",
+          "amount": 1.0,
+          "LocaleName": "Heat source"
+        },
+        "ignoredId": "soup"
+      },
+      {
+        "isLiquid": true,
+        "quality": {
+          "id": "water",
+          "amount": 200.0,
+          "LocaleName": "Water"
+        },
+        "minimumCondition": 0.9,
+        "destroyItem": true,
+        "ignoredId": "soup"
+      },
+      {
+        "specific": true,
+        "specificId": "fat",
+        "isLiquid": true,
+        "minimumCondition": 25.0,
+        "destroyItem": true,
+        "ignoredId": "soup"
+      },
+      {
+        "quality": {
+          "id": "meat",
+          "amount": 1.0,
+          "LocaleName": "Meat"
+        },
+        "minimumCondition": 0.2,
+        "destroyItem": true,
+        "ignoredId": "soup"
+      },
+      {
+        "quality": {
+          "id": "cutting",
+          "amount": 0.5,
+          "LocaleName": "Cutting"
+        },
+        "ignoredId": "soup"
+      }
+    ],
+    "result": {
+      "id": "soup",
+      "isLiquid": true,
+      "amount": 1,
+      "resultCondition": 300.0
+    }
+  },
+  {
+    "category": 2,
+    "description": "A cold bag filled with self-cooling refrigerant gel. Speeds up muscle healing, reduces pain and cools you down slightly. Automatically cools itself over time.",
+    "fullName": "<sprite index=25>Ice pack",
+    "index": 114,
+    "INT": 14,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "frigiantfruit",
+        "minimumCondition": 0.5,
+        "destroyItem": true,
+        "ignoredId": "icepack"
+      },
+      {
+        "specific": true,
+        "specificId": "frigiantfruit",
+        "minimumCondition": 0.5,
+        "destroyItem": true,
+        "ignoredId": "icepack"
+      },
+      {
+        "isLiquid": true,
+        "quality": {
+          "id": "water",
+          "amount": 200.0,
+          "LocaleName": "Water"
+        },
+        "destroyItem": true,
+        "ignoredId": "icepack"
+      },
+      {
+        "specific": true,
+        "specificId": "canvas",
+        "destroyItem": true,
+        "ignoredId": "icepack"
+      },
+      {
+        "specific": true,
+        "specificId": "canvas",
+        "destroyItem": true,
+        "ignoredId": "icepack"
+      },
+      {
+        "specific": true,
+        "specificId": "string",
+        "destroyItem": true,
+        "ignoredId": "icepack"
+      },
+      {
+        "specific": true,
+        "specificId": "circuitboard",
+        "minimumCondition": 0.9,
+        "destroyItem": true,
+        "ignoredId": "icepack"
+      }
+    ],
+    "result": {
+      "id": "icepack",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 3,
+    "description": "Red, warm, and fuzzy, this long scarf provides some insulation from the elements. Makes you feel like a mercenary...",
+    "fullName": "<sprite index=25>Scarf",
+    "index": 115,
+    "INT": 10,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "canvas",
+        "destroyItem": true,
+        "ignoredId": "scarf"
+      },
+      {
+        "specific": true,
+        "specificId": "canvas",
+        "destroyItem": true,
+        "ignoredId": "scarf"
+      },
+      {
+        "specific": true,
+        "specificId": "canvas",
+        "destroyItem": true,
+        "ignoredId": "scarf"
+      },
+      {
+        "specific": true,
+        "specificId": "canvas",
+        "destroyItem": true,
+        "ignoredId": "scarf"
+      },
+      {
+        "specific": true,
+        "specificId": "canvas",
+        "destroyItem": true,
+        "ignoredId": "scarf"
+      },
+      {
+        "quality": {
+          "id": "string",
+          "amount": 1.0,
+          "LocaleName": "cqstring"
+        },
+        "destroyItem": true,
+        "ignoredId": "scarf"
+      },
+      {
+        "quality": {
+          "id": "string",
+          "amount": 1.0,
+          "LocaleName": "cqstring"
+        },
+        "destroyItem": true,
+        "ignoredId": "scarf"
+      },
+      {
+        "quality": {
+          "id": "string",
+          "amount": 1.0,
+          "LocaleName": "cqstring"
+        },
+        "destroyItem": true,
+        "ignoredId": "scarf"
+      }
+    ],
+    "result": {
+      "id": "scarf",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 1,
+    "description": "A finely crafted tool, made out of forged titanium. Very durable and efficient at removing terrain, though not very combat capable.",
+    "fullName": "<sprite index=25>Titanium pickaxe",
+    "index": 116,
+    "INT": 16,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "pickaxe",
+        "destroyItem": true,
+        "ignoredId": "titaniumpickaxe"
+      },
+      {
+        "specific": true,
+        "specificId": "titaniumrod",
+        "destroyItem": true,
+        "ignoredId": "titaniumpickaxe"
+      },
+      {
+        "specific": true,
+        "specificId": "titaniumrod",
+        "destroyItem": true,
+        "ignoredId": "titaniumpickaxe"
+      },
+      {
+        "specific": true,
+        "specificId": "plasticchunk",
+        "destroyItem": true,
+        "ignoredId": "titaniumpickaxe"
+      },
+      {
+        "specific": true,
+        "specificId": "biochem",
+        "isLiquid": true,
+        "minimumCondition": 20.0,
+        "destroyItem": true,
+        "ignoredId": "titaniumpickaxe"
+      },
+      {
+        "quality": {
+          "id": "hammering",
+          "amount": 1.0,
+          "LocaleName": "Hammering"
+        },
+        "ignoredId": "titaniumpickaxe"
+      }
+    ],
+    "result": {
+      "id": "titaniumpickaxe",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 1,
+    "description": "A very capable and durable tool for combat, both easy and light to swing, yet razor-sharp and devastating. Its edge is heat treated to keep its sharpness for a long time. An amazing tool for self defense, and can be used as a digging tool as a last resort.\n\n<color=\"red\">Can be used in the health panel to amputate severely infected limbs.",
+    "fullName": "<sprite index=25>Titanium machete",
+    "index": 117,
+    "INT": 16,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "machete",
+        "destroyItem": true,
+        "ignoredId": "titaniummachete"
+      },
+      {
+        "specific": true,
+        "specificId": "titaniumsheet",
+        "destroyItem": true,
+        "ignoredId": "titaniummachete"
+      },
+      {
+        "specific": true,
+        "specificId": "titaniumsheet",
+        "destroyItem": true,
+        "ignoredId": "titaniummachete"
+      },
+      {
+        "specific": true,
+        "specificId": "plasticchunk",
+        "destroyItem": true,
+        "ignoredId": "titaniummachete"
+      },
+      {
+        "specific": true,
+        "specificId": "biochem",
+        "isLiquid": true,
+        "minimumCondition": 20.0,
+        "destroyItem": true,
+        "ignoredId": "titaniummachete"
+      },
+      {
+        "quality": {
+          "id": "hammering",
+          "amount": 1.0,
+          "LocaleName": "Hammering"
+        },
+        "ignoredId": "titaniummachete"
+      }
+    ],
+    "result": {
+      "id": "titaniummachete",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 1,
+    "description": "A small, yet very firm and durable tool used for crafting, with a heavy hammer top and a tiny yet razor sharp blade hidden in the handle. While not useful for digging nor combat, it will last neigh indefinitely for all sorts of crafting recipes, and is light.\n\n<color=\"red\">Can be used in the health panel to amputate severely infected limbs.",
+    "fullName": "<sprite index=25>Titanium multitool",
+    "index": 118,
+    "INT": 16,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "titaniumsheet",
+        "destroyItem": true,
+        "ignoredId": "titaniummultitool"
+      },
+      {
+        "specific": true,
+        "specificId": "titaniumrod",
+        "destroyItem": true,
+        "ignoredId": "titaniummultitool"
+      },
+      {
+        "specific": true,
+        "specificId": "plasticchunk",
+        "destroyItem": true,
+        "ignoredId": "titaniummultitool"
+      },
+      {
+        "specific": true,
+        "specificId": "biochem",
+        "isLiquid": true,
+        "minimumCondition": 20.0,
+        "destroyItem": true,
+        "ignoredId": "titaniummultitool"
+      },
+      {
+        "quality": {
+          "id": "hammering",
+          "amount": 1.0,
+          "LocaleName": "Hammering"
+        },
+        "ignoredId": "titaniummultitool"
+      },
+      {
+        "quality": {
+          "id": "cutting",
+          "amount": 1.0,
+          "LocaleName": "Cutting"
+        },
+        "ignoredId": "titaniummultitool"
+      }
+    ],
+    "result": {
+      "id": "titaniummultitool",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  },
+  {
+    "category": 3,
+    "description": "A long, strengthened sheet of rope with attachment points at each end. You could place it over a large drop and use it to climb down. Has two uses.",
+    "fullName": "<sprite index=25>Climbing rope",
+    "index": 119,
+    "INT": 8,
+    "items": [
+      {
+        "specific": true,
+        "specificId": "rope",
+        "destroyItem": true,
+        "ignoredId": "climbingrope"
+      },
+      {
+        "specific": true,
+        "specificId": "rope",
+        "destroyItem": true,
+        "ignoredId": "climbingrope"
+      },
+      {
+        "specific": true,
+        "specificId": "rope",
+        "destroyItem": true,
+        "ignoredId": "climbingrope"
+      },
+      {
+        "quality": {
+          "id": "nails",
+          "amount": 1.0,
+          "LocaleName": "Nails"
+        },
+        "ignoredId": "climbingrope"
+      }
+    ],
+    "result": {
+      "id": "climbingrope",
+      "amount": 1,
+      "resultCondition": 1.0
+    }
+  }
+]

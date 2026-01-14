@@ -1,0 +1,27 @@
+{
+  "name": "tmp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sveltejs/vite-plugin-svelte": "^6.2.1",
+    "@tailwindcss/vite": "^4.1.18",
+    "@total-typescript/ts-reset": "^0.6.1",
+    "@tsconfig/svelte": "^5.0.6",
+    "@types/alpinejs": "^3.13.11",
+    "comlink": "^4.4.2",
+    "fuse.js": "^7.1.0",
+    "radashi": "^12.7.1",
+    "runed": "^0.37.1",
+    "svelte": "^5.46.1",
+    "tailwindcss": "^4.1.18",
+    "type-fest": "^5.3.1",
+    "vite": "^7.2.7"
+  }
+}

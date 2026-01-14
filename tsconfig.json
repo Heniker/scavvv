@@ -1,0 +1,31 @@
+{
+  "extends": "@tsconfig/svelte/tsconfig.json",
+  "compilerOptions": {
+    "types": [
+      "svelte",
+      "vite/client"
+    ],
+    "module": "esnext",
+    "target": "esnext",
+    "useDefineForClassFields": true,
+    "esModuleInterop": true,
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "moduleResolution": "bundler",
+    "allowJs": true,
+    "checkJs": true,
+    "moduleDetection": "force"
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.js",
+    "src/**/*.svelte"
+  ],
+  "typeAcquisition": {
+    "enable": true
+  },
+  "exclude": [
+    "node_modules"
+  ],
+}

@@ -1,7 +1,7 @@
 import type { UiListEntityT } from './_types'
 import * as _ from 'radashi'
 import { api } from './api'
-import Fuse, { type FuseGetFunction } from 'fuse.js'
+import Fuse from 'fuse.js'
 
 const storedState = $state({
   items: [] as (typeof api.fetchItems)['$type'][],
@@ -9,9 +9,6 @@ const storedState = $state({
   liquids: [] as (typeof api.fetchLiquids)['$type'][],
   translation: {} as Awaited<ReturnType<typeof api.fetchEnTranslationItem>>,
 })
-
-console.log(storedState)
-window.st = storedState
 
 export const store = {
   init: async () => {

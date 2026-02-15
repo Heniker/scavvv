@@ -1,712 +1,712 @@
 [
   {
     "color": {
-      "r": 0.458823532,
+      "b": 1,
       "g": 0.819607854,
-      "b": 1.0
+      "r": 0.458823532
     },
     "localeName": "cleanwater",
     "qualities": [
       {
-        "id": "water",
-        "amount": 1.0,
-        "LocaleName": "Water"
+        "LocaleName": "Water",
+        "amount": 1,
+        "id": "water"
       }
     ],
-    "valuePerLiter": 14.0
+    "valuePerLiter": 14
   },
   {
     "color": {
-      "r": 0.831372559,
+      "b": 0.5294118,
       "g": 0.796078444,
-      "b": 0.5294118
+      "r": 0.831372559
     },
     "localeName": "lrdserum",
     "qualities": [],
-    "valuePerLiter": 120.0
+    "valuePerLiter": 120
   },
   {
     "color": {
-      "r": 0.588,
+      "b": 0.373,
       "g": 0.482,
-      "b": 0.373
+      "r": 0.588
     },
     "injectable": true,
     "localeName": "morphine",
     "qualities": [
       {
-        "id": "opiate",
-        "amount": 1.0,
-        "LocaleName": "Opiate"
+        "LocaleName": "Opiate",
+        "amount": 1,
+        "id": "opiate"
       }
     ],
-    "valuePerLiter": 110.0
+    "valuePerLiter": 110
   },
   {
     "color": {
-      "r": 0.702,
-      "g": 1.0,
-      "b": 0.145
+      "b": 0.145,
+      "g": 1,
+      "r": 0.702
     },
     "injectable": true,
-    "injectionSickness": 2.0,
+    "injectionSickness": 2,
     "localeName": "biochem",
     "qualities": [],
-    "valuePerLiter": 50.0
+    "valuePerLiter": 50
   },
   {
     "color": {
-      "r": 1.0,
+      "b": 0.318,
       "g": 0.922,
-      "b": 0.318
+      "r": 1
     },
     "injectable": true,
     "localeName": "opium",
     "qualities": [
       {
-        "id": "opiate",
+        "LocaleName": "Opiate",
         "amount": 0.4,
-        "LocaleName": "Opiate"
+        "id": "opiate"
       }
     ],
-    "valuePerLiter": 100.0
+    "valuePerLiter": 100
   },
   {
     "color": {
-      "r": 1.0,
-      "g": 1.0,
-      "b": 1.0
+      "b": 1,
+      "g": 1,
+      "r": 1
     },
-    "injectionSickness": 1.0,
+    "injectionSickness": 1,
     "localeName": "painkillers",
     "qualities": [
       {
-        "id": "opiate",
-        "amount": 1.0,
-        "LocaleName": "Opiate"
+        "LocaleName": "Opiate",
+        "amount": 1,
+        "id": "opiate"
       }
     ],
-    "valuePerLiter": 125.0
+    "valuePerLiter": 125
   },
   {
     "color": {
-      "r": 0.92,
+      "b": 0.92,
       "g": 0.92,
-      "b": 0.92
+      "r": 0.92
     },
     "injectable": true,
     "localeName": "heroin",
     "qualities": [
       {
-        "id": "opiate",
+        "LocaleName": "Opiate",
         "amount": 1.5,
-        "LocaleName": "Opiate"
+        "id": "opiate"
       }
     ],
-    "valuePerLiter": 140.0
+    "valuePerLiter": 140
   },
   {
     "color": {
-      "r": 0.91,
+      "b": 0.745,
       "g": 0.847,
-      "b": 0.745
+      "r": 0.91
     },
     "injectable": true,
     "localeName": "naloxone",
     "qualities": [],
-    "valuePerLiter": 80.0
+    "valuePerLiter": 80
   },
   {
     "color": {
-      "r": 1.0,
-      "g": 1.0,
-      "b": 1.0
+      "b": 1,
+      "g": 1,
+      "r": 1
     },
-    "injectionSickness": 1.0,
+    "injectionSickness": 1,
     "localeName": "naltrexone",
     "qualities": [],
-    "valuePerLiter": 100.0
+    "valuePerLiter": 100
   },
   {
     "color": {
-      "r": 0.275,
+      "b": 0.188,
       "g": 0.812,
-      "b": 0.188
+      "r": 0.275
     },
     "injectable": true,
     "localeName": "ceftriaxone",
     "qualities": [
       {
-        "id": "disinfectant",
-        "amount": 2.0,
-        "LocaleName": "Antiseptic"
+        "LocaleName": "Antiseptic",
+        "amount": 2,
+        "id": "disinfectant"
       }
     ],
-    "valuePerLiter": 170.0
+    "valuePerLiter": 170
   },
   {
     "color": {
-      "r": 0.341,
+      "b": 1,
       "g": 0.949,
-      "b": 1.0
+      "r": 0.341
     },
     "injectable": true,
     "localeName": "fentanyl",
     "qualities": [
       {
-        "id": "opiate",
-        "amount": 40.0,
-        "LocaleName": "Opiate"
+        "LocaleName": "Opiate",
+        "amount": 40,
+        "id": "opiate"
       }
     ],
-    "valuePerLiter": 2000.0
+    "valuePerLiter": 2000
   },
   {
     "color": {
-      "r": 1.0,
+      "b": 0.168627456,
       "g": 0.168627456,
-      "b": 0.168627456
+      "r": 1
     },
-    "injectionSickness": 1.0,
+    "injectionSickness": 1,
     "localeName": "ketchup",
     "qualities": [],
-    "valuePerLiter": 18.0
+    "valuePerLiter": 18
   },
   {
     "color": {
-      "r": 1.0,
-      "g": 1.0,
-      "b": 1.0
+      "b": 1,
+      "g": 1,
+      "r": 1
     },
     "injectionSickness": 0.4,
     "localeName": "milk",
     "qualities": [
       {
-        "id": "water",
+        "LocaleName": "Water",
         "amount": 0.5,
-        "LocaleName": "Water"
+        "id": "water"
       }
     ],
-    "valuePerLiter": 13.0
+    "valuePerLiter": 13
   },
   {
     "color": {
-      "r": 0.772549033,
-      "g": 1.0,
-      "b": 0.380392164
+      "b": 0.380392164,
+      "g": 1,
+      "r": 0.772549033
     },
     "injectionSickness": 0.4,
     "localeName": "applejuice",
     "qualities": [],
-    "valuePerLiter": 14.0
+    "valuePerLiter": 14
   },
   {
     "color": {
-      "r": 1.0,
+      "b": 0.380392164,
       "g": 0.968627453,
-      "b": 0.380392164
+      "r": 1
     },
     "injectionSickness": 0.4,
     "localeName": "lemonade",
     "qualities": [
       {
-        "id": "water",
+        "LocaleName": "Water",
         "amount": 0.5,
-        "LocaleName": "Water"
+        "id": "water"
       }
     ],
-    "valuePerLiter": 14.0
+    "valuePerLiter": 14
   },
   {
     "color": {
-      "r": 1.0,
+      "b": 0.329411775,
       "g": 0.854901969,
-      "b": 0.329411775
+      "r": 1
     },
-    "injectionSickness": 2.0,
+    "injectionSickness": 2,
     "localeName": "urine",
     "qualities": [
       {
-        "id": "water",
+        "LocaleName": "Water",
         "amount": 0.1,
-        "LocaleName": "Water"
+        "id": "water"
       }
     ],
-    "valuePerLiter": 2.0
+    "valuePerLiter": 2
   },
   {
     "color": {
-      "r": 0.980392158,
+      "b": 0.203921571,
       "g": 0.5294118,
-      "b": 0.203921571
+      "r": 0.980392158
     },
     "injectionSickness": 0.4,
     "localeName": "icedtea",
     "qualities": [
       {
-        "id": "water",
+        "LocaleName": "Water",
         "amount": 0.5,
-        "LocaleName": "Water"
+        "id": "water"
       }
     ],
-    "valuePerLiter": 12.0
+    "valuePerLiter": 12
   },
   {
     "color": {
-      "r": 0.490196079,
-      "g": 0.31764707
+      "g": 0.31764707,
+      "r": 0.490196079
     },
     "injectionSickness": 0.6,
     "localeName": "soup",
     "qualities": [],
-    "valuePerLiter": 20.0
+    "valuePerLiter": 20
   },
   {
     "color": {
-      "r": 0.56078434,
+      "b": 0.215686277,
       "g": 0.360784322,
-      "b": 0.215686277
+      "r": 0.56078434
     },
-    "injectionSickness": 1.0,
+    "injectionSickness": 1,
     "localeName": "chocolatemilk",
     "qualities": [
       {
-        "id": "water",
+        "LocaleName": "Water",
         "amount": 0.5,
-        "LocaleName": "Water"
+        "id": "water"
       }
     ],
-    "valuePerLiter": 10.0
+    "valuePerLiter": 10
   },
   {
     "color": {
-      "r": 1.0,
+      "b": 0.6117647,
       "g": 0.858823538,
-      "b": 0.6117647
+      "r": 1
     },
     "injectionSickness": 0.9,
     "localeName": "cereal",
     "qualities": [],
-    "valuePerLiter": 20.0
+    "valuePerLiter": 20
   },
   {
     "color": {
-      "r": 0.3137255,
+      "b": 0.117647059,
       "g": 0.196078435,
-      "b": 0.117647059
+      "r": 0.3137255
     },
     "injectionSickness": 0.7,
     "localeName": "coffee",
     "qualities": [
       {
-        "id": "water",
+        "LocaleName": "Water",
         "amount": 0.3,
-        "LocaleName": "Water"
+        "id": "water"
       }
     ],
-    "valuePerLiter": 14.0
+    "valuePerLiter": 14
   },
   {
     "color": {
-      "r": 0.733333349,
-      "b": 1.0
+      "b": 1,
+      "r": 0.733333349
     },
     "injectionSickness": 0.7,
     "localeName": "energydrink",
     "qualities": [],
-    "valuePerLiter": 20.0
+    "valuePerLiter": 20
   },
   {
     "color": {
-      "r": 0.4392157,
+      "b": 0.286274523,
       "g": 0.368627459,
-      "b": 0.286274523
+      "r": 0.4392157
     },
     "injectionSickness": 0.6,
     "localeName": "soda",
     "qualities": [
       {
-        "id": "water",
+        "LocaleName": "Water",
         "amount": 0.5,
-        "LocaleName": "Water"
+        "id": "water"
       }
     ],
-    "valuePerLiter": 16.0
+    "valuePerLiter": 16
   },
   {
     "color": {
-      "r": 0.4627451,
+      "b": 0.403921574,
       "g": 0.9019608,
-      "b": 0.403921574
+      "r": 0.4627451
     },
     "healthUsable": true,
     "injectionSickness": 0.75,
     "localeName": "alcohol",
     "qualities": [
       {
-        "id": "disinfectant",
+        "LocaleName": "Antiseptic",
         "amount": 0.4,
-        "LocaleName": "Antiseptic"
+        "id": "disinfectant"
       },
       {
-        "id": "water",
+        "LocaleName": "Water",
         "amount": 0.7,
-        "LocaleName": "Water"
+        "id": "water"
       }
     ],
-    "valuePerLiter": 12.0
+    "valuePerLiter": 12
   },
   {
     "color": {
-      "r": 1.0,
-      "g": 1.0,
-      "b": 1.0
+      "b": 1,
+      "g": 1,
+      "r": 1
     },
     "healthUsable": true,
-    "injectionSickness": 5.0,
+    "injectionSickness": 5,
     "localeName": "bleach",
     "qualities": [
       {
-        "id": "disinfectant",
+        "LocaleName": "Antiseptic",
         "amount": 0.8,
-        "LocaleName": "Antiseptic"
+        "id": "disinfectant"
       }
     ],
-    "valuePerLiter": 6.0
+    "valuePerLiter": 6
   },
   {
     "color": {
-      "r": 0.7411765,
+      "b": 0.7882353,
       "g": 0.356862754,
-      "b": 0.7882353
+      "r": 0.7411765
     },
     "healthUsable": true,
     "injectionSickness": 0.75,
     "localeName": "reliefcream",
     "qualities": [
       {
-        "id": "disinfectant",
-        "amount": 1.0,
-        "LocaleName": "Antiseptic"
+        "LocaleName": "Antiseptic",
+        "amount": 1,
+        "id": "disinfectant"
       }
     ],
-    "valuePerLiter": 120.0
+    "valuePerLiter": 120
   },
   {
     "color": {
-      "r": 0.7529412,
+      "b": 0.368627459,
       "g": 0.3254902,
-      "b": 0.368627459
+      "r": 0.7529412
     },
-    "injectionSickness": 1.0,
+    "injectionSickness": 1,
     "localeName": "braingrow",
     "qualities": [],
-    "valuePerLiter": 500.0
+    "valuePerLiter": 500
   },
   {
     "color": {
-      "r": 0.129411772,
+      "b": 0.368627459,
       "g": 0.282352954,
-      "b": 0.368627459
+      "r": 0.129411772
     },
-    "injectionSickness": 1.0,
+    "injectionSickness": 1,
     "localeName": "mindwipe",
     "qualities": [],
-    "valuePerLiter": 1333.0
+    "valuePerLiter": 1333
   },
   {
     "color": {
-      "r": 0.392156869,
+      "b": 0.521568656,
       "g": 0.6313726,
-      "b": 0.521568656
+      "r": 0.392156869
     },
-    "injectionSickness": 1.0,
+    "injectionSickness": 1,
     "localeName": "antidepressants",
     "qualities": [],
-    "valuePerLiter": 120.0
+    "valuePerLiter": 120
   },
   {
     "color": {
-      "r": 0.619607866,
+      "b": 0.9254902,
       "g": 0.3647059,
-      "b": 0.9254902
+      "r": 0.619607866
     },
     "injectionSickness": 0.5,
     "localeName": "antibiotics",
     "qualities": [],
-    "valuePerLiter": 180.0
+    "valuePerLiter": 180
   },
   {
     "color": {
-      "r": 0.458823532,
+      "b": 0.3647059,
       "g": 0.243137255,
-      "b": 0.3647059
+      "r": 0.458823532
     },
     "injectable": true,
     "localeName": "antiserum",
     "qualities": [],
-    "valuePerLiter": 160.0
+    "valuePerLiter": 160
   },
   {
     "color": {
-      "r": 0.9843137,
+      "b": 0.0235294122,
       "g": 0.75686276,
-      "b": 0.0235294122
+      "r": 0.9843137
     },
-    "injectionSickness": 1.0,
+    "injectionSickness": 1,
     "localeName": "antirad",
     "qualities": [],
-    "valuePerLiter": 120.0
+    "valuePerLiter": 120
   },
   {
     "color": {
-      "r": 0.549019635,
+      "b": 0.5764706,
       "g": 0.65882355,
-      "b": 0.5764706
+      "r": 0.549019635
     },
-    "injectionSickness": 1.0,
+    "injectionSickness": 1,
     "localeName": "sleepingpills",
     "qualities": [],
-    "valuePerLiter": 320.0
+    "valuePerLiter": 320
   },
   {
     "color": {
-      "r": 0.7411765,
+      "b": 0.3764706,
       "g": 0.3372549,
-      "b": 0.3764706
+      "r": 0.7411765
     },
     "injectable": true,
     "localeName": "procoagulant",
     "qualities": [],
-    "valuePerLiter": 250.0
+    "valuePerLiter": 250
   },
   {
     "color": {
-      "r": 0.258823544,
+      "b": 0.509803951,
       "g": 0.494117647,
-      "b": 0.509803951
+      "r": 0.258823544
     },
     "injectable": true,
     "localeName": "streptokinase",
     "qualities": [],
-    "valuePerLiter": 150.0
+    "valuePerLiter": 150
   },
   {
     "color": {
-      "r": 0.768627465,
+      "b": 0.768627465,
       "g": 0.768627465,
-      "b": 0.768627465
+      "r": 0.768627465
     },
     "injectable": true,
     "localeName": "saline",
     "qualities": [
       {
-        "id": "water",
-        "amount": 1.0,
-        "LocaleName": "Water"
+        "LocaleName": "Water",
+        "amount": 1,
+        "id": "water"
       }
     ],
-    "valuePerLiter": 20.0
+    "valuePerLiter": 20
   },
   {
     "color": {
-      "r": 0.929,
+      "b": 0.929,
       "g": 0.929,
-      "b": 0.929
+      "r": 0.929
     },
     "injectable": true,
     "localeName": "ringersolution",
     "qualities": [
       {
-        "id": "water",
+        "LocaleName": "Water",
         "amount": 0.8,
-        "LocaleName": "Water"
+        "id": "water"
       }
     ],
-    "valuePerLiter": 24.0
+    "valuePerLiter": 24
   },
   {
     "color": {
-      "r": 1.0,
-      "g": 0.7882353
+      "g": 0.7882353,
+      "r": 1
     },
     "injectable": true,
     "localeName": "blood",
     "qualities": [
       {
-        "id": "blood",
-        "amount": 1.0,
-        "LocaleName": "Blood"
+        "LocaleName": "Blood",
+        "amount": 1,
+        "id": "blood"
       }
     ],
-    "valuePerLiter": 20.0
+    "valuePerLiter": 20
   },
   {
     "color": {
-      "r": 0.78039217,
+      "b": 0.0392156877,
       "g": 0.0392156877,
-      "b": 0.0392156877
+      "r": 0.78039217
     },
     "injectable": true,
     "localeName": "redblood",
     "qualities": [
       {
-        "id": "blood",
+        "LocaleName": "Blood",
         "amount": 1.2,
-        "LocaleName": "Blood"
+        "id": "blood"
       }
     ],
-    "valuePerLiter": 18.0
+    "valuePerLiter": 18
   },
   {
     "color": {
-      "r": 1.0,
+      "b": 0.07058824,
       "g": 0.921568632,
-      "b": 0.07058824
+      "r": 1
     },
     "injectable": true,
     "localeName": "alienblood",
     "qualities": [
       {
-        "id": "blood",
+        "LocaleName": "Blood",
         "amount": 0.8,
-        "LocaleName": "Blood"
+        "id": "blood"
       }
     ],
-    "valuePerLiter": 20.0
+    "valuePerLiter": 20
   },
   {
     "color": {
-      "r": 0.784313738,
-      "g": 1.0,
-      "b": 1.0
+      "b": 1,
+      "g": 1,
+      "r": 0.784313738
     },
     "healthUsable": true,
     "injectionSickness": 1.25,
     "localeName": "disinfectant",
     "qualities": [
       {
-        "id": "disinfectant",
+        "LocaleName": "Antiseptic",
         "amount": 1.5,
-        "LocaleName": "Antiseptic"
+        "id": "disinfectant"
       }
     ],
-    "valuePerLiter": 55.0
+    "valuePerLiter": 55
   },
   {
     "color": {
-      "r": 0.349019617,
+      "b": 0.831372559,
       "g": 0.5411765,
-      "b": 0.831372559
+      "r": 0.349019617
     },
     "injectionSickness": 0.15,
     "localeName": "groundwater",
     "qualities": [
       {
-        "id": "water",
+        "LocaleName": "Water",
         "amount": 0.4,
-        "LocaleName": "Water"
+        "id": "water"
       }
     ],
-    "valuePerLiter": 4.0
+    "valuePerLiter": 4
   },
   {
     "color": {
-      "r": 0.129411772,
-      "g": 0.6
+      "g": 0.6,
+      "r": 0.129411772
     },
     "injectionSickness": 1.6,
     "localeName": "algae",
     "qualities": [],
-    "valuePerLiter": 2.0
+    "valuePerLiter": 2
   },
   {
     "color": {
-      "r": 0.2784314,
+      "b": 0.08235294,
       "g": 0.196078435,
-      "b": 0.08235294
+      "r": 0.2784314
     },
-    "injectionSickness": 5.0,
+    "injectionSickness": 5,
     "localeName": "oil",
     "qualities": [],
-    "valuePerLiter": 1.0
+    "valuePerLiter": 1
   },
   {
     "color": {
-      "r": 0.968627453,
+      "b": 0.203921571,
       "g": 0.7411765,
-      "b": 0.203921571
+      "r": 0.968627453
     },
-    "injectionSickness": 2.0,
+    "injectionSickness": 2,
     "localeName": "sap",
     "qualities": [],
-    "valuePerLiter": 15.0
+    "valuePerLiter": 15
   },
   {
     "color": {
-      "r": 0.6,
+      "b": 0.2627451,
       "g": 0.494117647,
-      "b": 0.2627451
+      "r": 0.6
     },
-    "injectionSickness": 2.0,
+    "injectionSickness": 2,
     "localeName": "dirtywater",
     "qualities": [
       {
-        "id": "water",
+        "LocaleName": "Water",
         "amount": 0.2,
-        "LocaleName": "Water"
+        "id": "water"
       }
     ]
   },
   {
     "color": {
-      "r": 0.819607854,
+      "b": 0.247058824,
       "g": 0.745098054,
-      "b": 0.247058824
+      "r": 0.819607854
     },
-    "injectionSickness": 2.0,
+    "injectionSickness": 2,
     "localeName": "fat",
     "qualities": [],
-    "valuePerLiter": 14.0
+    "valuePerLiter": 14
   },
   {
     "color": {
-      "r": 0.6313726,
-      "g": 1.0,
-      "b": 0.7294118
+      "b": 0.7294118,
+      "g": 1,
+      "r": 0.6313726
     },
     "healthUsable": true,
     "injectionSickness": 1.6,
     "localeName": "soap",
     "qualities": [
       {
-        "id": "disinfectant",
+        "LocaleName": "Antiseptic",
         "amount": 0.05,
-        "LocaleName": "Antiseptic"
+        "id": "disinfectant"
       }
     ],
-    "valuePerLiter": 14.0
+    "valuePerLiter": 14
   },
   {
     "color": {
-      "r": 1.0,
+      "b": 0.709803939,
       "g": 0.996078432,
-      "b": 0.709803939
+      "r": 1
     },
     "injectionSickness": 0.9,
     "localeName": "producejuice",
     "qualities": [],
-    "valuePerLiter": 14.0
+    "valuePerLiter": 14
   },
   {
     "color": {
-      "r": 1.0,
+      "b": 0.4509804,
       "g": 0.882352948,
-      "b": 0.4509804
+      "r": 1
     },
     "injectionSickness": 0.7,
     "localeName": "refinedjuice",
     "qualities": [],
-    "valuePerLiter": 18.0
+    "valuePerLiter": 18
   }
 ]

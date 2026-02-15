@@ -2,9 +2,9 @@
 // disinfectant, saline, torch
 // makes my life painful
 
-import urlItems from './public/items.json?url'
-import urlRecipes from './public/recipes.json?url'
-import urlLiquids from './public/liquids.json?url'
+import urlItems from './public/items_v5.json?url'
+import urlRecipes from './public/recipes_v5.json?url'
+import urlLiquids from './public/liquids_v5.json?url'
 import urlEnTranslation from './public/EN.json?url'
 
 export const api = {

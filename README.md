@@ -11,6 +11,12 @@ tip: use alt+q ([on chrome](https://developer.mozilla.org/en-US/docs/Web/HTML/Re
 tip2: type `c:` in the search bar to get only craftable items.
 
 <!--
+to build:
+```
+dotnet build
+```
+from plugin folder
+
 ai generated initial html & css
 
 Decompiled with ilspy.
@@ -24,15 +30,22 @@ Exported asset names were lowercased.
 
 Svgs from https://github.com/feathericons/feather
 
+-----
+
 todo:
+upload icons for new items | extracting icons with correct naming is annoying
 display additional item information
 ? crafting categories instead of item categories for filtering
-additional search after specifying category or quality
+
+? additional search after specifying category or quality
+  partly fixed. Can also allow specifying multiple qualities at once, but at this point search is way too advanced already
+
+todone:
 search is unavaliable after you specify `c:` or `q:`
 
+-----
 
-2026-02-15
-...
+2026-02-15:
 
 new items in release version:
 cake, combatpen, epda, liquidcentrifuge, liquidpouch, lockpickingkit, nondescriptcan, pancake, spraybottle, syringe, woodsandals
@@ -45,4 +58,13 @@ pancakes -> pancake
 
 .
 There should be a better way to extract icons.
+
+-----
+
+2026-06-22:
+Updated item information
+made search a bit better
+
+Need to update icons
  -->
+

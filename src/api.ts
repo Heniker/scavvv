@@ -2,9 +2,9 @@
 // disinfectant, saline, torch
 // makes my life painful
 
-import urlItems from './public/items_v5.json?url'
-import urlRecipes from './public/recipes_v5.json?url'
-import urlLiquids from './public/liquids_v5.json?url'
+import urlItems from './public/260621-items.json?url'
+import urlRecipes from './public/260621-recipes.json?url'
+import urlLiquids from './public/260621-liquids.json?url'
 import urlEnTranslation from './public/EN.json?url'
 
 export const api = {
@@ -128,11 +128,11 @@ function fetchLiquids() {
           it.localeName = 'water'
         }
 
-        it.id = 'liq' + it.localeName
+        it.id = 'liq|' + it.localeName
         it.category = 'liquid'
         it.isLiquid = true
         it.qualities.forEach((it) => {
-          it.id = 'liq' + it.id
+          it.id = 'liq|' + it.id
         })
       })
       return it as GameLiquidsT[]
@@ -142,5 +142,5 @@ function fetchLiquids() {
 function fetchEnTranslationItem() {
   return fetch(urlEnTranslation)
     .then((it) => it.json())
-    .then((it) => it.main as Record<string, string>)
+    .then((it) => Object.assign({}, it.main, it.other) as Record<string, string>)
 }

@@ -58,11 +58,15 @@ export const usePrevious = <T>(arg: Ref<T>) => {
 
 export const useCurrentUrl = () => {
   const r = ref(new URL(document.URL))
+
   onMount(() => {
-    window.addEventListener('popstate', () => {
+    const fn = () => {
       r.value = new URL(document.URL)
-    })
+    }
+    globalThis.addEventListener('popstate', fn)
+    return () => globalThis.removeEventListener('popstate', fn)
   })
+
   return r
 }
 

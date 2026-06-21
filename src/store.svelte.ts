@@ -42,13 +42,13 @@ export const store = {
   isInit: () => storedState.items.length > 0,
 
   t: (key: string) => {
+    // #todo> the whole liquid handling code is garbage
+    key = key.startsWith('liq|') ? key.slice('liq|'.length) : key
     return storedState.translation[key] || key
   },
 
   getDoSearch: (data: { searchTerm: string }) => {
-    const items = storedState.items
-
-    const searchResult = doSearch([...items, ...storedState.liquids], data)
+    const searchResult = doSearch([...storedState.items, ...storedState.liquids], data)
 
     return { items: searchResult }
   },
@@ -102,48 +102,85 @@ export const store = {
 }
 
 function doSearch(items: UiListEntityT[], data: { searchTerm: string }) {
-  const qualitySearchKey = data.searchTerm.startsWith('q:')
-    ? /q\:(.+)/g.exec(data.searchTerm)?.[1] || '!*'
-    : false
-  const categorySearchKey = data.searchTerm.startsWith('c:')
-    ? /c\:(.+)/g.exec(data.searchTerm)?.[1] || '!*'
-    : false
-  const searchTerm = qualitySearchKey || categorySearchKey || data.searchTerm
+  // category is not actually category
 
-  if (!searchTerm) {
-    return items
-  }
+  const qualitySearchKey = data.searchTerm.includes('q:')
+    ? /q\:([^\s]+)/g.exec(data.searchTerm)?.[1] || '!*'
+    : false
+  const categorySearchKey = data.searchTerm.includes('c:')
+    ? /c\:([^\s]+)/g.exec(data.searchTerm)?.[1] || '!*'
+    : false
+
+  const searchTerm = data.searchTerm
+    .replace(/q\:[^\s]*/g, '')
+    .replace(/c\:[^\s]*/g, '')
+    .trim()
+
+  // if (!searchTerm) {
+  //   return items
+  // }
+
+  // const fuseInstance = new Fuse(items, {
+  //   keys: (() => {
+  //     if (qualitySearchKey) {
+  //       return [
+  //         {
+  //           name: 'qualities.id',
+  //           weight: 0,
+  //           getFn: (it) => it.qualities.map((it) => store.t(it.id)),
+  //         },
+  //       ]
+  //     } else if (categorySearchKey) {
+  //       return [
+  //         {
+  //           name: 'category',
+  //           weight: 0,
+  //           getFn: (it) => store.getCraftingInfo(it.id).map((it) => store.t(it.category)),
+  //         },
+  //       ]
+  //     } else {
+  //       return [{ name: 'id', weight: 1, getFn: (it) => store.t(it.id) }]
+  //     }
+  //   })(),
+
+  //   threshold: qualitySearchKey || categorySearchKey ? 0.1 : 0.3,
+  //   ignoreLocation: false,
+  //   isCaseSensitive: false,
+  //   useExtendedSearch: true,
+  // })
 
   const fuseInstance = new Fuse(items, {
-    keys: (() => {
-      if (qualitySearchKey) {
-        return [
-          {
-            name: 'qualities.id',
-            weight: 1,
-            getFn: (it) => it.qualities.map((it) => store.t(it.id)),
-          },
-        ]
-      } else if (categorySearchKey) {
-        return [
-          {
-            name: 'category',
-            weight: 1,
-            getFn: (it) => store.getCraftingInfo(it.id).map((it) => store.t(it.category)),
-          },
-        ]
-      } else {
-        return [{ name: 'id', weight: 1, getFn: (it) => store.t(it.id) }]
-      }
-    })(),
+    keys: [
+      {
+        name: ['qualities', 'id'],
+        getFn: (it) => it.qualities.map((it) => store.t(it.id)),
+      },
+      {
+        name: 'category',
+        getFn: (it) => store.getCraftingInfo(it.id).map((it) => store.t(it.category)),
+      },
+      { name: 'id', getFn: (it) => store.t(it.id) },
+    ],
 
-    threshold: qualitySearchKey || categorySearchKey ? 0.1 : 0.3,
+    threshold: 0.3,
     ignoreLocation: false,
     isCaseSensitive: false,
     useExtendedSearch: true,
+    ignoreFieldNorm: true,
   })
 
-  const res = fuseInstance.search(searchTerm).map((it) => it.item)
+  const res = fuseInstance
+    .search({
+      $and: [
+        qualitySearchKey ? { $path: ['qualities', 'id'], $val: qualitySearchKey || '!*' } : false,
+        categorySearchKey ? { $path: ['category'], $val: categorySearchKey || '!*' } : false,
+        {
+          $path: ['id'],
+          $val: searchTerm || '!*',
+        },
+      ].filter(Boolean),
+    })
+    .map((it) => it.item)
 
   if (qualitySearchKey) {
     return res.sort((a, b) => {

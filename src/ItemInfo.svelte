@@ -1,6 +1,6 @@
 <script lang="ts">
   import * as _ from 'radashi'
-  import { type Snippet } from 'svelte'
+  import { onMount, type Snippet } from 'svelte'
   import type { UiGameItemT, UiGameLiquidT, UiListEntityT } from './_types'
   import { store } from './store.svelte'
   import SnippetToComponent from './SnippetToComponent.svelte'
@@ -21,14 +21,8 @@
 
   const prop = _rest
 
-  {
-    const _ = computed(() => store.getCraftingInfo(selectedItem.id))
-    var craftingInfo = $derived(_.value)
-  }
-  {
-    const _ = computed(() => store.getItemUsedIn(selectedItem))
-    var usedIn = $derived(_.value)
-  }
+  const craftingInfo = $derived.by(() => store.getCraftingInfo(selectedItem.id))
+  const usedIn = $derived.by(() => store.getItemUsedIn(selectedItem))
 
   const onClickItem = (id: string) => {
     const r = store.getItemInfo(id)
@@ -44,6 +38,10 @@
     const r = computed(() => p[u.value % p.length])
     return r
   }
+
+  // onMount(() => {
+  //   globalThis.scrollTo(0, 0);
+  // })
 </script>
 
 <div class="w-full p-4 md:p-6">

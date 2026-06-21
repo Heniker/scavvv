@@ -128,7 +128,6 @@ public class Plugin : BaseUnityPlugin
 
     // Logger.LogInfo("c:");
 
-    // File.Create(@"E:\_my\code\scav-test\bepinextest\items.json");
     File.WriteAllText(@"C:\\temp\\recipes.json", JsonConvert.SerializeObject(serializableRecipes));
     File.WriteAllText(@"C:\\temp\\liquids.json", JsonConvert.SerializeObject(serializableLiquids));
     File.WriteAllText(@"C:\\temp\\items.json", JsonConvert.SerializeObject(serializableItems));

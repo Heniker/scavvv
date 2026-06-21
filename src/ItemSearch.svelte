@@ -125,7 +125,7 @@
 </div>
 
 <div class="grid grid-cols-1 md:grid-cols-[repeat(auto-fill,minmax(380px,1fr))] gap-6">
-  {#each displayItems as it (it.isLiquid ? 'liq.' + it.id : it.id)}
+  {#each displayItems as it (it.id)}
     <div
       {@attach scrollAttachment(() => prop.lastSelectedItem && it === prop.lastSelectedItem)}
       class={[

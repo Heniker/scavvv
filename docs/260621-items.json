@@ -8,7 +8,7 @@
     "rec": {
       "min": 9
     },
-    "tags": "",
+    "tags": "bullet",
     "wearableVisualOffset": 5,
     "weight": 0.05
   },
@@ -21,7 +21,7 @@
     "rec": {
       "min": 10
     },
-    "tags": "",
+    "tags": "bullet",
     "wearableVisualOffset": 5,
     "weight": 0.05
   },
@@ -34,7 +34,7 @@
     "rec": {
       "min": 10
     },
-    "tags": "",
+    "tags": "bullet",
     "wearableVisualOffset": 5,
     "weight": 0.03
   },
@@ -49,11 +49,26 @@
       "min": 1
     },
     "scaleWeightWithCondition": true,
-    "tags": "dressing",
+    "tags": "dressing,medicine",
     "usableOnLimb": true,
     "value": 6,
     "wearableVisualOffset": 5,
     "weight": 0.25
+  },
+  "aed": {
+    "category": "utility",
+    "description": "An electronic device that diagnoses life-threatening cardiac arrhythmias and treats them via electric shocks. Use on the upper torso. Compared to a manual defibrillator, it does not require training, but takes longer to work and uses more power.",
+    "fullName": "Automated external defibrillator",
+    "qualities": [],
+    "rec": {
+      "min": 3
+    },
+    "slotRotation": -45,
+    "tags": "medicine",
+    "usableOnLimb": true,
+    "value": 30,
+    "wearableVisualOffset": 5,
+    "weight": 1
   },
   "alcohol": {
     "autoFill": true,
@@ -73,6 +88,7 @@
       "min": 7
     },
     "scaleWeightWithCondition": true,
+    "slotRotation": -45,
     "tags": "antiseptic,water",
     "usable": true,
     "value": 8,
@@ -96,11 +112,36 @@
       "min": 5
     },
     "scaleWeightWithCondition": true,
-    "tags": "dressing",
+    "tags": "dressing,medicine",
     "usableOnLimb": true,
     "value": 12,
     "wearableVisualOffset": 5,
     "weight": 0.8
+  },
+  "amiodarone": {
+    "autoFill": true,
+    "capacity": 100,
+    "category": "drug",
+    "combineable": true,
+    "defaultContents": [
+      {
+        "amount": 100,
+        "liquidId": "amiodarone"
+      }
+    ],
+    "description": "A 100ml bottle with amiodarone. As the medication only works intravenously, you will need to get a separate syringe to fill and use.",
+    "fullName": "Amiodarone bottle",
+    "qualities": [],
+    "rec": {
+      "min": 11
+    },
+    "scaleWeightWithCondition": true,
+    "slotRotation": -45,
+    "tags": "medicine",
+    "usable": true,
+    "value": 1,
+    "wearableVisualOffset": 5,
+    "weight": 0.3
   },
   "analgesicgauze": {
     "category": "medical",
@@ -116,10 +157,10 @@
       }
     ],
     "rec": {
-      "min": 2
+      "min": 3
     },
     "scaleWeightWithCondition": true,
-    "tags": "dressing",
+    "tags": "dressing,medicine",
     "usableOnLimb": true,
     "value": 10,
     "wearableVisualOffset": 5,
@@ -139,6 +180,7 @@
       }
     ],
     "rec": {},
+    "rotSpeed": 0.0555333346,
     "scaleWeightWithCondition": true,
     "tags": "cangetwet",
     "usable": true,
@@ -164,7 +206,8 @@
       "min": 7
     },
     "scaleWeightWithCondition": true,
-    "tags": "",
+    "slotRotation": -45,
+    "tags": "medicine",
     "usable": true,
     "value": 1,
     "wearableVisualOffset": 5,
@@ -189,7 +232,8 @@
       "min": 6
     },
     "scaleWeightWithCondition": true,
-    "tags": "",
+    "slotRotation": -45,
+    "tags": "medicine",
     "usable": true,
     "value": 1,
     "wearableVisualOffset": 5,
@@ -213,7 +257,8 @@
       "min": 10
     },
     "scaleWeightWithCondition": true,
-    "tags": "",
+    "slotRotation": -45,
+    "tags": "medicine",
     "usable": true,
     "value": 1,
     "wearableVisualOffset": 5,
@@ -229,7 +274,8 @@
     "rec": {
       "min": 5
     },
-    "tags": "",
+    "rotSpeed": 0.0555333346,
+    "tags": "medicine",
     "usableOnLimb": true,
     "value": 3,
     "wearableVisualOffset": 5,
@@ -250,10 +296,11 @@
     "fullName": "Antiserum syringe",
     "qualities": [],
     "rec": {
-      "min": 12
+      "min": 11
     },
     "scaleWeightWithCondition": true,
-    "tags": "",
+    "slotRotation": -45,
+    "tags": "medicine",
     "usableOnLimb": true,
     "value": 1,
     "wearableVisualOffset": 5,
@@ -277,11 +324,28 @@
       "min": 3
     },
     "scaleWeightWithCondition": true,
+    "slotRotation": -45,
     "tags": "",
     "usable": true,
     "value": 2,
     "wearableVisualOffset": 5,
     "weight": 1.65
+  },
+  "aquapple": {
+    "category": "custom",
+    "decayMinutes": 10,
+    "description": "A watery, bubble-shaped fruit. Looks and feels a little disgusting, but has high water content. Decays very fast.",
+    "destroyAtZeroCondition": true,
+    "fullName": "Aquapple",
+    "qualities": [],
+    "rec": {
+      "min": 4
+    },
+    "rotSpeed": 0.1666,
+    "tags": "fruit,cangetwet",
+    "usable": true,
+    "wearableVisualOffset": 5,
+    "weight": 0.5
   },
   "armwarmers": {
     "category": "utility",
@@ -301,6 +365,7 @@
     "rec": {
       "min": 2
     },
+    "rotSpeed": 0.00462777773,
     "tags": "",
     "value": 12,
     "wearSlotId": "arms",
@@ -310,22 +375,6 @@
     "wearableIsolation": 0.1,
     "wearableVisualOffset": 3,
     "weight": 0.1
-  },
-  "autoautopump": {
-    "category": "custom",
-    "description": "Attaches to your thigh and automatically activates when you go into a critical state, keeping your oxygen at livable levels and providing energy, but only once.",
-    "desiredWearLimb": "ThighF",
-    "fullName": "Auto-auto-pump",
-    "qualities": [],
-    "rec": {
-      "min": 10
-    },
-    "tags": "",
-    "value": 30,
-    "wearSlotId": "thigh",
-    "wearable": true,
-    "wearableVisualOffset": 6,
-    "weight": 1
   },
   "autoinjector": {
     "category": "custom",
@@ -343,22 +392,24 @@
   },
   "autopump": {
     "category": "medical",
-    "description": "When used, attaches to your chest, keeps your oxygen at livable levels, and provides adrenaline and energy for 5 minutes, potentially buying you more time. One-time use.",
-    "destroyAtZeroCondition": true,
+    "description": "While worn, pumps blood in place of your heart using a simple mechanism and an internal battery, keeping your blood pressure at livable levels. Might buy you more time to fix whatever catastrophe has befallen you.",
+    "desiredWearLimb": "UpTorso",
     "fullName": "Auto-pump",
     "qualities": [],
     "rec": {
-      "min": 10
+      "min": 9
     },
-    "tags": "",
-    "usable": true,
+    "slotRotation": -45,
+    "tags": "medicine",
     "value": 20,
-    "wearableVisualOffset": 5,
+    "wearSlotId": "outertorso",
+    "wearable": true,
+    "wearableVisualOffset": 9,
     "weight": 1
   },
   "autozoomgoggles": {
     "category": "utility",
-    "decayInfo": 16,
+    "decayInfo": 18,
     "decayMinutes": 120,
     "description": "A pair of goggles that have the ability to zoom in the user's vision to see farther.",
     "desiredWearLimb": "Head",
@@ -367,6 +418,7 @@
     "rec": {
       "min": 8
     },
+    "rotSpeed": 0.0138833337,
     "tags": "",
     "value": 20,
     "wearSlotId": "eyes",
@@ -416,7 +468,9 @@
     "rec": {
       "min": 10
     },
+    "rotSpeed": 0.0138833337,
     "scaleWeightWithCondition": true,
+    "slotRotation": 45,
     "tags": "cangetwet",
     "usable": true,
     "value": 8,
@@ -437,10 +491,10 @@
       }
     ],
     "rec": {
-      "min": 2
+      "min": 1
     },
     "scaleWeightWithCondition": true,
-    "tags": "dressing",
+    "tags": "dressing,medicine",
     "usableOnLimb": true,
     "value": 10,
     "wearableVisualOffset": 5,
@@ -458,6 +512,7 @@
     "rec": {
       "min": 8
     },
+    "rotSpeed": 0.00555333355,
     "tags": "",
     "value": 16,
     "wearSlotId": "bandolier",
@@ -489,7 +544,7 @@
     "category": "container",
     "decayInfo": 7,
     "decayMinutes": 1440,
-    "description": "A leather belt to go over your belly. You could attach something to it.",
+    "description": "A leather belt that goes over your belly. Can only hold tools.",
     "desiredWearLimb": "DownTorso",
     "destroyAtZeroCondition": true,
     "fullName": "Belt",
@@ -503,6 +558,7 @@
     "rec": {
       "min": 3
     },
+    "rotSpeed": 0.00115694443,
     "tags": "",
     "value": 14,
     "wearSlotId": "belt",
@@ -528,6 +584,7 @@
     "rec": {
       "min": 3
     },
+    "rotSpeed": 0.01851111,
     "tags": "",
     "value": 40,
     "wearSlotId": "back",
@@ -575,6 +632,7 @@
       "min": 8
     },
     "scaleWeightWithCondition": true,
+    "slotRotation": -45,
     "tags": "",
     "usable": true,
     "value": 3,
@@ -623,6 +681,7 @@
     "rec": {
       "min": 1
     },
+    "rotSpeed": 0.0555333346,
     "scaleWeightWithCondition": true,
     "tags": "cangetwet",
     "usable": true,
@@ -648,7 +707,7 @@
       "min": 5
     },
     "scaleWeightWithCondition": true,
-    "tags": "",
+    "tags": "medicine",
     "usable": true,
     "usableOnLimb": true,
     "value": 3,
@@ -670,10 +729,10 @@
     "fullName": "Red blood bag",
     "qualities": [],
     "rec": {
-      "min": 10
+      "min": 9
     },
     "scaleWeightWithCondition": true,
-    "tags": "",
+    "tags": "medicine",
     "usable": true,
     "usableOnLimb": true,
     "value": 3,
@@ -695,10 +754,10 @@
     "fullName": "Procoagulant syringe",
     "qualities": [],
     "rec": {
-      "min": 12
+      "min": 11
     },
     "scaleWeightWithCondition": true,
-    "tags": "dressing",
+    "tags": "dressing,medicine",
     "usableOnLimb": true,
     "value": 1,
     "wearableVisualOffset": 5,
@@ -715,6 +774,7 @@
     "rec": {
       "min": 10
     },
+    "rotSpeed": 0.0833,
     "scaleWeightWithCondition": true,
     "tags": "",
     "value": 10,
@@ -728,16 +788,11 @@
     "description": "A small, fleshy sac with blood in it. Doesn't look too different from your blood. Can be eaten or used in crafting.",
     "destroyAtZeroCondition": true,
     "fullName": "Blood sac",
-    "qualities": [
-      {
-        "LocaleName": "Meat",
-        "amount": 0.5,
-        "id": "meat"
-      }
-    ],
+    "qualities": [],
     "rec": {
       "min": 2
     },
+    "rotSpeed": 0.0555333346,
     "scaleWeightWithCondition": true,
     "tags": "",
     "usable": true,
@@ -765,9 +820,10 @@
     "fullName": "Bone welding tool",
     "qualities": [],
     "rec": {
-      "min": 13
+      "min": 12
     },
-    "tags": "",
+    "slotRotation": -45,
+    "tags": "medicine",
     "usableOnLimb": true,
     "value": 20,
     "wearableVisualOffset": 5,
@@ -791,6 +847,7 @@
       "min": 4
     },
     "scaleWeightWithCondition": true,
+    "slotRotation": -45,
     "tags": "cangetwet",
     "usable": true,
     "value": 4,
@@ -808,6 +865,8 @@
     "rec": {
       "min": 2
     },
+    "rotSpeed": 0.0555333346,
+    "slotRotation": -90,
     "tags": "",
     "value": 10,
     "wearableVisualOffset": 5,
@@ -822,7 +881,8 @@
     "rec": {
       "min": 9
     },
-    "tags": "",
+    "slotRotation": -90,
+    "tags": "belttool",
     "usable": true,
     "value": 22,
     "wearableVisualOffset": 5,
@@ -846,7 +906,8 @@
       "min": 8
     },
     "scaleWeightWithCondition": true,
-    "tags": "",
+    "slotRotation": -45,
+    "tags": "medicine",
     "usable": true,
     "value": 1,
     "wearableVisualOffset": 5,
@@ -862,7 +923,9 @@
     "rec": {
       "min": 1
     },
+    "rotSpeed": 0.00555333355,
     "scaleWeightWithCondition": true,
+    "slotRotation": 45,
     "tags": "cangetwet",
     "usable": true,
     "value": 8,
@@ -886,6 +949,8 @@
     "rec": {
       "min": 2
     },
+    "rotSpeed": 0.0277666673,
+    "slotRotation": -10,
     "tags": "",
     "value": 20,
     "wearableVisualOffset": 5,
@@ -905,8 +970,9 @@
       }
     ],
     "rec": {
-      "min": 4
+      "min": 9
     },
+    "rotSpeed": 0.04165,
     "tags": "cangetwet",
     "usable": true,
     "value": 2,
@@ -921,10 +987,10 @@
     "fullName": "Bruise kit",
     "qualities": [],
     "rec": {
-      "min": 2
+      "min": 5
     },
     "scaleWeightWithCondition": true,
-    "tags": "",
+    "tags": "medicine",
     "usableOnLimb": true,
     "value": 12,
     "wearableVisualOffset": 5,
@@ -933,14 +999,14 @@
   "bucketofchicken": {
     "category": "food",
     "combineable": true,
-    "description": "A bunch of chicken legs in a bucket. Very filling.",
+    "description": "A bunch of chicken legs in a bucket. Very filling. Has an exceedingly long shelf life.",
     "destroyAtZeroCondition": true,
     "fullName": "Bucket of chicken",
     "onlyHoldInHands": true,
     "qualities": [
       {
         "LocaleName": "Meat",
-        "amount": 2,
+        "amount": 1,
         "id": "meat"
       }
     ],
@@ -948,6 +1014,7 @@
       "min": 5
     },
     "scaleWeightWithCondition": true,
+    "slotRotation": -45,
     "tags": "cangetwet",
     "usable": true,
     "value": 16,
@@ -965,6 +1032,8 @@
     "rec": {
       "min": 2
     },
+    "rotSpeed": 0.0833,
+    "slotRotation": -45,
     "tags": "",
     "value": 4,
     "wearableVisualOffset": 5,
@@ -973,13 +1042,15 @@
   "bulbskin": {
     "category": "custom",
     "decayMinutes": 20,
-    "description": "An oily piece of thick, yellow plant skin. Contains a high amount of adrenaline and is slightly hydrating, but might minorly affect brain function. Can also be used as a makeshift bandage and limb analgesic.",
+    "description": "A piece of thick, yellow membrane. Satiates thirst, but might minorly affect brain function. Can also be used as a makeshift bandage and analgesic.",
     "destroyAtZeroCondition": true,
-    "fullName": "Bulb skin",
+    "fullName": "Popskin",
     "qualities": [],
     "rec": {
       "min": 10
     },
+    "rotSpeed": 0.0833,
+    "slotRotation": 45,
     "tags": "cangetwet",
     "usable": true,
     "usableOnLimb": true,
@@ -996,6 +1067,7 @@
     "fullName": "Bunchunk",
     "qualities": [],
     "rec": {},
+    "rotSpeed": 0.0138833337,
     "scaleWeightWithCondition": true,
     "tags": "",
     "usable": true,
@@ -1015,7 +1087,7 @@
     "tags": "",
     "value": 1,
     "wearableVisualOffset": 5,
-    "weight": 0.1
+    "weight": 0.03
   },
   "burger": {
     "category": "food",
@@ -1033,6 +1105,7 @@
     "rec": {
       "min": 6
     },
+    "rotSpeed": 0.0138833337,
     "scaleWeightWithCondition": true,
     "tags": "cangetwet",
     "usable": true,
@@ -1056,6 +1129,7 @@
     "rec": {
       "min": 6
     },
+    "rotSpeed": 0.04165,
     "scaleWeightWithCondition": true,
     "tags": "cangetwet",
     "usable": true,
@@ -1073,7 +1147,9 @@
     "rec": {
       "min": 4
     },
+    "rotSpeed": 0.0138833337,
     "scaleWeightWithCondition": true,
+    "slotRotation": 45,
     "tags": "cangetwet",
     "usable": true,
     "value": 20,
@@ -1097,6 +1173,7 @@
     "rec": {
       "min": 3
     },
+    "rotSpeed": 0.111066669,
     "tags": "cangetwet",
     "wearableVisualOffset": 5,
     "weight": 10
@@ -1111,7 +1188,9 @@
     "rec": {
       "min": 1
     },
+    "rotSpeed": 0.00370222214,
     "scaleWeightWithCondition": true,
+    "slotRotation": 45,
     "tags": "cangetwet",
     "usable": true,
     "value": 2,
@@ -1197,7 +1276,7 @@
     "rec": {
       "min": 6
     },
-    "tags": "",
+    "tags": "medicine",
     "usableOnLimb": true,
     "value": 12,
     "wearableVisualOffset": 5,
@@ -1212,7 +1291,7 @@
     "rec": {
       "min": 8
     },
-    "tags": "",
+    "tags": "bullet",
     "wearableVisualOffset": 5,
     "weight": 0.02
   },
@@ -1235,7 +1314,8 @@
       "min": 10
     },
     "scaleWeightWithCondition": true,
-    "tags": "",
+    "slotRotation": -45,
+    "tags": "medicine",
     "usableOnLimb": true,
     "value": 1,
     "wearableVisualOffset": 5,
@@ -1252,6 +1332,7 @@
     "rec": {
       "min": 4
     },
+    "rotSpeed": 0.00555333355,
     "scaleWeightWithCondition": true,
     "tags": "cangetwet",
     "usable": true,
@@ -1283,9 +1364,10 @@
     "fullName": "Chest drain",
     "qualities": [],
     "rec": {
-      "min": 10
+      "min": 12
     },
-    "tags": "",
+    "rotSpeed": -0.4,
+    "tags": "medicine",
     "usableOnLimb": true,
     "value": 10,
     "wearableVisualOffset": 5,
@@ -1302,6 +1384,7 @@
     "rec": {
       "min": 6
     },
+    "rotSpeed": 0.00555333355,
     "scaleWeightWithCondition": true,
     "tags": "cangetwet",
     "usable": true,
@@ -1319,7 +1402,9 @@
     "rec": {
       "min": 2
     },
+    "rotSpeed": 0.00370222214,
     "scaleWeightWithCondition": true,
+    "slotRotation": 45,
     "tags": "cangetwet",
     "usable": true,
     "value": 8,
@@ -1344,6 +1429,7 @@
       "min": 5
     },
     "scaleWeightWithCondition": true,
+    "slotRotation": -45,
     "tags": "",
     "usable": true,
     "value": 3,
@@ -1380,6 +1466,7 @@
     "rec": {
       "min": 4
     },
+    "slotRotation": -90,
     "tags": "tool",
     "usable": true,
     "usableOnLimb": true,
@@ -1434,7 +1521,7 @@
       "min": 3
     },
     "scaleWeightWithCondition": true,
-    "tags": "",
+    "tags": "medicine",
     "usableOnLimb": true,
     "value": 5,
     "wearableVisualOffset": 5,
@@ -1458,6 +1545,7 @@
       "min": 7
     },
     "scaleWeightWithCondition": true,
+    "slotRotation": -45,
     "tags": "",
     "usable": true,
     "value": 1,
@@ -1471,30 +1559,26 @@
     "combineable": true,
     "defaultContents": [
       {
-        "amount": 60.5,
+        "amount": 60,
         "liquidId": "highgradestimulant"
       },
       {
-        "amount": 30,
-        "liquidId": "procoagulant"
+        "amount": 15,
+        "liquidId": "epinephrine"
       },
       {
-        "amount": 1,
-        "liquidId": "fentanyl"
-      },
-      {
-        "amount": 8.5,
-        "liquidId": "ceftriaxone"
+        "amount": 25,
+        "liquidId": "oxyline"
       }
     ],
     "description": "A 100ml injector pen which instantly injects its contents into the body. Contains a mixture intended to quickly stabilize casualties and aid in combat scenarios.",
     "fullName": "Combat pen",
     "qualities": [],
     "rec": {
-      "min": 9
+      "min": 6
     },
     "scaleWeightWithCondition": true,
-    "tags": "",
+    "tags": "medicine",
     "usableOnLimb": true,
     "value": 10,
     "wearableVisualOffset": 5,
@@ -1511,6 +1595,7 @@
     "rec": {
       "min": 3
     },
+    "rotSpeed": 0.006941667,
     "scaleWeightWithCondition": true,
     "tags": "cangetwet",
     "usable": true,
@@ -1529,6 +1614,7 @@
     "rec": {},
     "scaleWeightWithCondition": true,
     "tags": "",
+    "usable": true,
     "wearableVisualOffset": 5,
     "weight": 1
   },
@@ -1548,6 +1634,7 @@
     "rec": {
       "min": 3
     },
+    "slotRotation": -90,
     "tags": "tool,backflip",
     "usable": true,
     "usableOnLimb": true,
@@ -1567,6 +1654,7 @@
     "rec": {
       "min": 10
     },
+    "rotSpeed": 0.0833,
     "scaleWeightWithCondition": true,
     "tags": "",
     "value": 8,
@@ -1591,7 +1679,7 @@
       "min": 5
     },
     "scaleWeightWithCondition": true,
-    "tags": "",
+    "tags": "medicine",
     "usableOnLimb": true,
     "value": 1,
     "wearableVisualOffset": 5,
@@ -1608,6 +1696,7 @@
     "rec": {
       "min": 2
     },
+    "rotSpeed": 0.00833,
     "scaleWeightWithCondition": true,
     "tags": "cangetwet",
     "usable": true,
@@ -1635,9 +1724,7 @@
     "destroyAtZeroCondition": true,
     "fullName": "Droppings",
     "qualities": [],
-    "rec": {
-      "min": 1
-    },
+    "rec": {},
     "tags": "",
     "usable": true,
     "wearableVisualOffset": 5,
@@ -1659,6 +1746,7 @@
     "rec": {
       "min": 1
     },
+    "rotSpeed": 0.0138833337,
     "tags": "cangetwet",
     "usable": true,
     "wearableVisualOffset": 5,
@@ -1682,6 +1770,7 @@
     "rec": {
       "min": 4
     },
+    "rotSpeed": 0.0123407412,
     "tags": "",
     "value": 30,
     "wearSlotId": "back",
@@ -1726,6 +1815,7 @@
     "rec": {
       "min": 8
     },
+    "rotSpeed": 0.00555333355,
     "tags": "",
     "usable": true,
     "value": 15,
@@ -1741,7 +1831,9 @@
     "rec": {
       "min": 7
     },
-    "tags": "backflip",
+    "rotSpeed": 0.1666,
+    "slotRotation": -90,
+    "tags": "belttool,backflip",
     "usable": true,
     "usableWithLMB": true,
     "value": 8,
@@ -1759,6 +1851,7 @@
     "rec": {
       "min": 10
     },
+    "rotSpeed": 0.0555333346,
     "scaleWeightWithCondition": true,
     "tags": "",
     "value": 10,
@@ -1783,6 +1876,7 @@
       "min": 3
     },
     "scaleWeightWithCondition": true,
+    "slotRotation": -45,
     "tags": "",
     "usable": true,
     "value": 1,
@@ -1791,7 +1885,7 @@
   },
   "epda": {
     "category": "custom",
-    "description": "Electronic personal digital assistant, likely accidentally left in a lifepod by your captors. If you get a battery into it, you could probably read up on their notes.",
+    "description": "Electronic personal digital assistant, likely accidentally left in a lifepod by your captors. If you get a battery into it, you could probably read up on their notes and gain some new knowledge.",
     "fullName": "E-PDA",
     "qualities": [],
     "rec": {
@@ -1817,12 +1911,28 @@
       }
     ],
     "rec": {},
+    "rotSpeed": 0.0555333346,
     "scaleWeightWithCondition": true,
     "tags": "cangetwet",
     "usable": true,
     "value": 1,
     "wearableVisualOffset": 5,
     "weight": 1.2
+  },
+  "exposedcore": {
+    "category": "custom",
+    "decayMinutes": 4,
+    "description": "The dormant remains of something once animated. You could probably eat it to absorb its energy in the form of nutrients and water. <i>It looks like it's slowly morphing into something...</i>",
+    "fullName": "Exposed core",
+    "qualities": [],
+    "rec": {
+      "min": 12
+    },
+    "rotSpeed": 0.4165,
+    "tags": "",
+    "usable": true,
+    "wearableVisualOffset": 5,
+    "weight": 1.5
   },
   "fannypack": {
     "category": "container",
@@ -1842,6 +1952,7 @@
     "rec": {
       "min": 3
     },
+    "rotSpeed": 0.0111066671,
     "tags": "",
     "value": 20,
     "wearSlotId": "torsofront",
@@ -1872,7 +1983,8 @@
       "min": 10
     },
     "scaleWeightWithCondition": true,
-    "tags": "",
+    "slotRotation": -45,
+    "tags": "medicine",
     "usableOnLimb": true,
     "value": 1,
     "wearableVisualOffset": 5,
@@ -1889,7 +2001,9 @@
     "rec": {
       "min": 4
     },
+    "rotSpeed": 0.006941667,
     "scaleWeightWithCondition": true,
+    "slotRotation": -30,
     "tags": "",
     "value": 16,
     "wearableVisualOffset": 5,
@@ -1937,9 +2051,11 @@
     "fullName": "Flashlight",
     "qualities": [],
     "rec": {
-      "min": 8
+      "min": 7
     },
-    "tags": "backflip",
+    "rotSpeed": 0.0252424236,
+    "slotRotation": -90,
+    "tags": "belttool,backflip",
     "usable": true,
     "usableWithLMB": true,
     "value": 25,
@@ -1956,12 +2072,14 @@
     "qualities": [
       {
         "LocaleName": "Meat",
-        "amount": 3,
+        "amount": 1,
         "id": "meat"
       }
     ],
     "rec": {},
+    "rotSpeed": 0.0138833337,
     "scaleWeightWithCondition": true,
+    "slotRotation": 45,
     "tags": "cangetwet",
     "usable": true,
     "value": 15,
@@ -2021,6 +2139,7 @@
     "rec": {
       "min": 1
     },
+    "rotSpeed": 0.111066669,
     "tags": "cangetwet",
     "usable": true,
     "wearableVisualOffset": 5,
@@ -2043,6 +2162,8 @@
     "rec": {
       "min": 2
     },
+    "rotSpeed": 0.06664,
+    "slotRotation": -35,
     "tags": "",
     "value": 2,
     "wearableVisualOffset": 5,
@@ -2058,7 +2179,9 @@
     "rec": {
       "min": 5
     },
+    "rotSpeed": 0.1666,
     "scaleWeightWithCondition": true,
+    "slotRotation": 45,
     "tags": "cangetwet",
     "usable": true,
     "value": 10,
@@ -2075,7 +2198,9 @@
     "rec": {
       "min": 9
     },
+    "rotSpeed": 0.3332,
     "scaleWeightWithCondition": true,
+    "slotRotation": 45,
     "tags": "cangetwet",
     "usable": true,
     "value": 1,
@@ -2090,36 +2215,31 @@
     "fullName": "Fungus chunk",
     "qualities": [],
     "rec": {
-      "min": 5
+      "min": 10
     },
+    "rotSpeed": 0.0555333346,
     "tags": "cangetwet",
     "usable": true,
     "value": 2,
     "wearableVisualOffset": 5,
     "weight": 0.4
   },
-  "geigefruit": {
-    "category": "custom",
-    "decayMinutes": 15,
-    "description": "An odd, rectangular shiny fruit. Smells of oil, but tastes nice! Refills hunger and thirst. Can mess with your lungs for a moment, and may randomly help or intensify radiation sickness slightly. Has a loud reaction when impacting the ground at speeds - useful for checking drop height.",
-    "destroyAtZeroCondition": true,
-    "fullName": "Geige-fruit",
-    "qualities": [
-      {
-        "LocaleName": "Produce",
-        "amount": 1,
-        "id": "produce"
-      }
-    ],
+  "geigercounter": {
+    "category": "utility",
+    "decayInfo": 16,
+    "decayMinutes": 60,
+    "description": "An electronic instrument for detecting and measuring ionizing radiation with the use of a Geiger–Müller tube. Use to toggle.",
+    "fullName": "Geiger counter",
+    "qualities": [],
     "rec": {
-      "min": 8
+      "min": 10
     },
-    "scaleWeightWithCondition": true,
-    "tags": "cangetwet",
+    "rotSpeed": 0.0277666673,
+    "tags": "belttool",
     "usable": true,
-    "value": 2,
+    "value": 10,
     "wearableVisualOffset": 5,
-    "weight": 0.8
+    "weight": 0.3
   },
   "geofruit": {
     "category": "custom",
@@ -2137,7 +2257,9 @@
     "rec": {
       "min": 3
     },
+    "rotSpeed": 0.138833329,
     "scaleWeightWithCondition": true,
+    "slotRotation": 45,
     "tags": "cangetwet",
     "usable": true,
     "value": 1,
@@ -2154,6 +2276,7 @@
     "rec": {
       "min": 4
     },
+    "rotSpeed": 0.0555333346,
     "tags": "cangetwet",
     "usableOnLimb": true,
     "value": 1,
@@ -2168,7 +2291,7 @@
     "rec": {
       "min": 10
     },
-    "tags": "backflip",
+    "tags": "backflip,belttool",
     "usable": true,
     "usableWithLMB": true,
     "value": 32,
@@ -2185,10 +2308,26 @@
     "rec": {
       "min": 10
     },
+    "rotSpeed": 0.01666,
+    "slotRotation": -35,
     "tags": "",
     "value": 25,
     "wearableVisualOffset": 5,
     "weight": 1
+  },
+  "handcrank": {
+    "category": "utility",
+    "description": "A device which can recharge spent batteries via a manual cranking motion. Slot in a battery and crank away!",
+    "fullName": "Hand crank charger",
+    "qualities": [],
+    "rec": {
+      "min": 9
+    },
+    "tags": "",
+    "usable": true,
+    "value": 25,
+    "wearableVisualOffset": 5,
+    "weight": 0.6
   },
   "hardcandy": {
     "category": "food",
@@ -2201,6 +2340,7 @@
     "rec": {
       "min": 4
     },
+    "rotSpeed": 0.003332,
     "scaleWeightWithCondition": true,
     "tags": "cangetwet",
     "usable": true,
@@ -2219,6 +2359,7 @@
     "rec": {
       "min": 8
     },
+    "rotSpeed": 0.0277666673,
     "tags": "",
     "value": 25,
     "wearSlotId": "hat",
@@ -2249,6 +2390,25 @@
     "wearableVisualOffset": 5,
     "weight": 5
   },
+  "helluce": {
+    "category": "custom",
+    "decayMinutes": 300,
+    "description": "A dry, purple herb with an especially spicy taste. Helps against sickness, slightly helps hearing loss and might lessen internal bleeding. It has a tendency to highly increase the consumer's body temperature.",
+    "destroyAtZeroCondition": true,
+    "fullName": "Helluce",
+    "qualities": [],
+    "rec": {
+      "min": 12
+    },
+    "rotSpeed": 0.00555333355,
+    "scaleWeightWithCondition": true,
+    "slotRotation": 45,
+    "tags": "cangetwet",
+    "usable": true,
+    "value": 2,
+    "wearableVisualOffset": 5,
+    "weight": 0.1
+  },
   "heroin": {
     "autoFill": false,
     "capacity": 150,
@@ -2272,7 +2432,8 @@
       "min": 11
     },
     "scaleWeightWithCondition": true,
-    "tags": "",
+    "slotRotation": -45,
+    "tags": "medicine",
     "usableOnLimb": true,
     "value": 1,
     "wearableVisualOffset": 5,
@@ -2282,7 +2443,7 @@
     "category": "utility",
     "decayInfo": 6,
     "decayMinutes": 180,
-    "description": "You've heard that people wear these for some kind of special occassion, though you're not sure what it's about. It's nice that you were sent with one, at least.",
+    "description": "You've heard that people wear these for some kind of special occasion, though you're not sure what it's about. It's nice that you were sent with one, at least.",
     "desiredWearLimb": "Head",
     "destroyAtZeroCondition": true,
     "fullName": "Holiday hat",
@@ -2296,6 +2457,7 @@
     "rec": {
       "min": 2
     },
+    "rotSpeed": 0.009255555,
     "tags": "",
     "value": 4,
     "wearSlotId": "hat",
@@ -2323,6 +2485,7 @@
     "rec": {
       "min": 2
     },
+    "rotSpeed": 0.00347083341,
     "tags": "",
     "value": 14,
     "wearSlotId": "outertorso",
@@ -2341,7 +2504,8 @@
     "rec": {
       "min": 4
     },
-    "tags": "",
+    "rotSpeed": -0.9,
+    "tags": "medicine",
     "usableOnLimb": true,
     "value": 16,
     "wearableVisualOffset": 5,
@@ -2365,6 +2529,7 @@
       "min": 4
     },
     "scaleWeightWithCondition": true,
+    "slotRotation": -45,
     "tags": "",
     "usable": true,
     "value": 2,
@@ -2400,8 +2565,9 @@
       }
     ],
     "rec": {
-      "min": 2
+      "min": 7
     },
+    "rotSpeed": 0.0833,
     "scaleWeightWithCondition": true,
     "tags": "cangetwet",
     "usable": true,
@@ -2411,7 +2577,7 @@
   },
   "jetpack": {
     "category": "utility",
-    "description": "A device worn as a backpack which uses jets to propel the wearer through the air. Has limited fuel and won't work while wet. Hold W to use.",
+    "description": "A device worn as a backpack which uses jets to propel the wearer through the air. Has limited fuel and will be impaired while wet. Hold W to use. It also has a little pocket to store things inside.",
     "desiredWearLimb": "UpTorso",
     "fullName": "Jetpack",
     "qualities": [],
@@ -2444,7 +2610,8 @@
       "min": 6
     },
     "scaleWeightWithCondition": true,
-    "tags": "",
+    "slotRotation": -45,
+    "tags": "medicine",
     "usable": true,
     "value": 1,
     "wearableVisualOffset": 5,
@@ -2468,6 +2635,7 @@
       "min": 3
     },
     "scaleWeightWithCondition": true,
+    "slotRotation": -45,
     "tags": "",
     "usable": true,
     "value": 1,
@@ -2504,18 +2672,19 @@
     "rec": {
       "min": 2
     },
-    "tags": "",
+    "rotSpeed": 0.009255555,
+    "tags": "belttool",
     "value": 10,
     "wearableVisualOffset": 5,
     "weight": 1.35
   },
   "largebattery": {
     "category": "utility",
-    "description": "A large industrial battery that can be inserted into certain electornic devices. Stores three times as much as a medium battery.",
+    "description": "A large industrial battery that can be inserted into certain electronic devices. Stores three times as much as a medium battery.",
     "fullName": "Large battery",
     "qualities": [],
     "rec": {
-      "min": 3
+      "min": 6
     },
     "tags": "battery",
     "value": 20,
@@ -2548,6 +2717,7 @@
     "rec": {
       "min": 2
     },
+    "rotSpeed": 0.00555333355,
     "tags": "",
     "value": 8,
     "wearSlotId": "hands",
@@ -2589,6 +2759,7 @@
     "rec": {
       "min": 4
     },
+    "rotSpeed": 0.009255555,
     "tags": "",
     "value": 25,
     "wearSlotId": "thigh",
@@ -2614,6 +2785,7 @@
       "min": 5
     },
     "scaleWeightWithCondition": true,
+    "slotRotation": -45,
     "tags": "",
     "usable": true,
     "value": 2,
@@ -2630,6 +2802,8 @@
     "rec": {
       "min": 4
     },
+    "rotSpeed": 0.1666,
+    "slotRotation": 30,
     "tags": "noautopickup",
     "value": 14,
     "wearableVisualOffset": 5,
@@ -2673,6 +2847,7 @@
     "rec": {
       "min": 5
     },
+    "rotSpeed": 0.00555333355,
     "tags": "",
     "value": 12,
     "wearSlotId": "wraps",
@@ -2685,9 +2860,9 @@
   },
   "liquidcentrifuge": {
     "autoFill": false,
-    "capacity": 600,
+    "capacity": 1000,
     "category": "utility",
-    "description": "A handheld centrifuge that can inefficiently split a mixture into its base components. The process is rather complex and results in about two thirds of the total liquid volume being lost. Recharges every 60 seconds.",
+    "description": "A handheld centrifuge that can inefficiently split a mixture into its base components. The process is rather complex and results in about a third of the total liquid volume being lost. Recharges every 60 seconds.",
     "fullName": "Liquid centrifuge",
     "qualities": [],
     "rec": {
@@ -2710,6 +2885,7 @@
     "rec": {
       "min": 4
     },
+    "scaleWeightWithCondition": true,
     "tags": "",
     "value": 6,
     "wearSlotId": "torsofront",
@@ -2742,7 +2918,7 @@
         "liquidId": "lrdserum"
       }
     ],
-    "description": "A Localized Resuscitation Device, made to easily provide effective general trauma care. Increases limb health, slows bleeding, provides pain relieving drugs and disinfects the limb it's used on, along with any adjacent limbs. Highly reduces internal bleeding if used on the chest. Requires atleast 25mL of LRD serum to function.",
+    "description": "A Localized Resuscitation Device, made to easily provide effective general trauma care. Increases limb health, slows bleeding, provides pain relieving drugs and disinfects the limb it's used on, along with any adjacent limbs. Highly reduces internal bleeding if used on the chest. Requires at least 25mL of LRD serum to function.",
     "fullName": "L.R.D.",
     "ignoreDepression": true,
     "qualities": [],
@@ -2750,7 +2926,8 @@
       "min": 11
     },
     "scaleWeightWithCondition": true,
-    "tags": "",
+    "slotRotation": -45,
+    "tags": "medicine",
     "usableOnLimb": true,
     "value": 12,
     "wearableVisualOffset": 5,
@@ -2777,6 +2954,7 @@
     "rec": {
       "min": 3
     },
+    "slotRotation": -90,
     "tags": "tool,backflip",
     "usable": true,
     "usableOnLimb": true,
@@ -2820,6 +2998,7 @@
     "rec": {
       "min": 5
     },
+    "slotRotation": -90,
     "tags": "tool,backflip",
     "usable": true,
     "usableWithLMB": true,
@@ -2838,6 +3017,7 @@
     "rec": {
       "min": 1
     },
+    "rotSpeed": 0.0555333346,
     "tags": "",
     "value": 5,
     "wearSlotId": "hat",
@@ -2856,6 +3036,7 @@
     "rec": {
       "min": 7
     },
+    "rotSpeed": 0.009255555,
     "tags": "",
     "value": 5,
     "wearSlotId": "hat",
@@ -2876,14 +3057,15 @@
         "liquidId": "lrdserum"
       }
     ],
-    "description": "A makeshift Localized Resuscitation Device. Looks like it's taped together. Increases the muscle health and disinfects limb it's used on, AND any directly adjacent limbs. Slightly reduces internal bleeding if used on the chest. Requires atleast 25mL of LRD serum to function.",
+    "description": "A makeshift Localized Resuscitation Device. Looks like it's taped together. Increases the muscle health and disinfects limb it's used on, AND any directly adjacent limbs. Slightly reduces internal bleeding if used on the chest. Requires at least 25mL of LRD serum to function.",
     "fullName": "Makeshift L.R.D.",
     "qualities": [],
     "rec": {
       "min": 9
     },
     "scaleWeightWithCondition": true,
-    "tags": "",
+    "slotRotation": -45,
+    "tags": "medicine",
     "usableOnLimb": true,
     "value": 5,
     "wearableVisualOffset": 5,
@@ -2899,6 +3081,7 @@
     "rec": {
       "min": 10
     },
+    "slotRotation": -90,
     "tags": "cangetwet,gun",
     "usable": true,
     "usableWithLMB": true,
@@ -2909,7 +3092,7 @@
   "makeshiftwrench": {
     "autoAttack": true,
     "category": "tool",
-    "description": "A crude tool that's probably better at hitting bolts into place than actually turning them. It won't help with dislocations, but is useful in crafting.'",
+    "description": "A crude tool that's probably better at hitting bolts into place than actually turning them. It won't help with dislocations, but is useful in crafting.",
     "destroyAtZeroCondition": true,
     "fullName": "Makeshift wrench",
     "qualities": [
@@ -2922,12 +3105,27 @@
     "rec": {
       "min": 5
     },
+    "slotRotation": -90,
     "tags": "tool,backflip",
     "usable": true,
     "usableWithLMB": true,
     "value": 12,
     "wearableVisualOffset": 5,
     "weight": 0.6
+  },
+  "manualdefibrillator": {
+    "category": "utility",
+    "description": "An electronic device used to stabilize dangerous heart rhythms. Use on the upper torso. This one is manual, and will require some know-how to use correctly. Compared to an AED, it's faster and uses less power, but isn't guaranteed to work. Higher INT makes operation easier.",
+    "fullName": "Manual defibrillator",
+    "qualities": [],
+    "rec": {
+      "min": 8
+    },
+    "tags": "medicine",
+    "usableOnLimb": true,
+    "value": 20,
+    "wearableVisualOffset": 5,
+    "weight": 1
   },
   "materialpouch": {
     "category": "container",
@@ -2947,6 +3145,7 @@
     "rec": {
       "min": 7
     },
+    "rotSpeed": 0.00555333355,
     "tags": "",
     "value": 20,
     "wearSlotId": "thighback",
@@ -2964,7 +3163,7 @@
     "rec": {
       "min": 7
     },
-    "tags": "dressing",
+    "tags": "dressing,medicine",
     "usableOnLimb": true,
     "value": 8,
     "wearableVisualOffset": 5,
@@ -2976,7 +3175,7 @@
     "fullName": "Medium battery",
     "qualities": [],
     "rec": {
-      "min": 3
+      "min": 5
     },
     "tags": "battery",
     "value": 12,
@@ -2987,14 +3186,14 @@
     "category": "container",
     "decayInfo": 5,
     "decayMinutes": 240,
-    "description": "A small box, made to hold medicine.",
+    "description": "A small box which can efficiently hold various medicines.",
     "destroyAtZeroCondition": true,
     "fullName": "Med-kit",
-    "onlyHoldInHands": true,
     "qualities": [],
     "rec": {
       "min": 4
     },
+    "rotSpeed": 0.006941667,
     "tags": "",
     "value": 15,
     "wearableVisualOffset": 5,
@@ -3018,6 +3217,7 @@
       "min": 5
     },
     "scaleWeightWithCondition": true,
+    "slotRotation": -45,
     "tags": "",
     "usable": true,
     "value": 3,
@@ -3043,11 +3243,10 @@
     "fullName": "Mindwipe",
     "ignoreDepression": true,
     "qualities": [],
-    "rec": {
-      "min": 1
-    },
+    "rec": {},
     "scaleWeightWithCondition": true,
-    "tags": "",
+    "slotRotation": -45,
+    "tags": "medicine",
     "usable": true,
     "value": 1,
     "wearableVisualOffset": 5,
@@ -3064,8 +3263,9 @@
     "onlyHoldInHands": true,
     "qualities": [],
     "rec": {
-      "min": 1
+      "min": 5
     },
+    "slotRotation": -90,
     "tags": "",
     "usable": true,
     "wearableVisualOffset": 5,
@@ -3103,10 +3303,11 @@
     "ignoreDepression": true,
     "qualities": [],
     "rec": {
-      "min": 10
+      "min": 8
     },
     "scaleWeightWithCondition": true,
-    "tags": "",
+    "slotRotation": -45,
+    "tags": "medicine",
     "usableOnLimb": true,
     "value": 10,
     "wearableVisualOffset": 5,
@@ -3118,7 +3319,7 @@
     "fullName": "MP3 player",
     "qualities": [],
     "rec": {
-      "min": 6
+      "min": 7
     },
     "tags": "",
     "usable": true,
@@ -3130,9 +3331,9 @@
     "category": "custom",
     "combineable": true,
     "decayMinutes": 20,
-    "description": "Inedible plant part, useful as a one-time makeshift bandage.",
+    "description": "Inedible plant part, useful as a one-time makeshift bandage. Can be used as foliage for crafing.",
     "destroyAtZeroCondition": true,
-    "fullName": "Mush arm",
+    "fullName": "Wrapvine",
     "qualities": [
       {
         "LocaleName": "Foliage",
@@ -3143,37 +3344,25 @@
     "rec": {
       "min": 4
     },
+    "rotSpeed": 0.0833,
+    "slotRotation": -45,
     "tags": "cangetwet",
     "usableOnLimb": true,
     "value": 1,
     "wearableVisualOffset": 5,
     "weight": 0.8
   },
-  "mushball": {
-    "category": "custom",
-    "decayMinutes": 10,
-    "description": "A round, edible, bubble-like watery fruit. Looks and feels a little disgusting, but has high water content. Decays very fast.",
-    "destroyAtZeroCondition": true,
-    "fullName": "Mushball",
-    "qualities": [],
-    "rec": {
-      "min": 4
-    },
-    "tags": "fruit,cangetwet",
-    "usable": true,
-    "wearableVisualOffset": 5,
-    "weight": 0.5
-  },
   "mushpear": {
     "category": "custom",
     "decayMinutes": 15,
-    "description": "A blue plant part, made to distribute water. Barely edible, with a weird weight-absorbing property and off-putting taste. Lowers body mass when eaten. Seems to have trace opiate concentration.",
+    "description": "A part of a hydreed that filters and distributes water. Has an odd weight-absorbing property and an off-putting taste. Lowers body mass when eaten. Seems to have trace opiate concentration.",
     "destroyAtZeroCondition": true,
-    "fullName": "Mushpear",
+    "fullName": "Numberry",
     "qualities": [],
     "rec": {
       "min": 4
     },
+    "rotSpeed": 0.111066669,
     "tags": "fruit",
     "usable": true,
     "value": 1,
@@ -3183,13 +3372,14 @@
   "mushtail": {
     "category": "custom",
     "decayMinutes": 15,
-    "description": "The end tail of a mushplant. Contains a chemical which can instantly knock someone out for a while, with a visible mood increase afterwards. Odd. No nutritional value.",
+    "description": "The tail-end of a hydreed. Contains a chemical which can instantly knock someone out for a while, with a visible mood increase afterwards. Odd. No nutritional value.",
     "destroyAtZeroCondition": true,
-    "fullName": "Mushtail",
+    "fullName": "Naptail",
     "qualities": [],
     "rec": {
       "min": 8
     },
+    "rotSpeed": 0.111066669,
     "tags": "fruit",
     "usable": true,
     "value": 2,
@@ -3233,7 +3423,8 @@
       "min": 6
     },
     "scaleWeightWithCondition": true,
-    "tags": "",
+    "slotRotation": -45,
+    "tags": "medicine",
     "usableOnLimb": true,
     "value": 1,
     "wearableVisualOffset": 5,
@@ -3254,10 +3445,11 @@
     "fullName": "Naltrexone bottle",
     "qualities": [],
     "rec": {
-      "min": 7
+      "min": 6
     },
     "scaleWeightWithCondition": true,
-    "tags": "",
+    "slotRotation": -45,
+    "tags": "medicine",
     "usable": true,
     "value": 1,
     "wearableVisualOffset": 5,
@@ -3273,6 +3465,7 @@
       "min": 18
     },
     "scaleWeightWithCondition": true,
+    "slotRotation": -45,
     "tags": "",
     "usable": true,
     "value": 50,
@@ -3288,6 +3481,7 @@
       "min": 4
     },
     "scaleWeightWithCondition": true,
+    "slotRotation": 45,
     "tags": "",
     "usable": true,
     "value": 5,
@@ -3305,6 +3499,8 @@
     "rec": {
       "min": 2
     },
+    "rotSpeed": 0.0833,
+    "slotRotation": -45,
     "tags": "",
     "value": 4,
     "wearableVisualOffset": 5,
@@ -3342,10 +3538,11 @@
     "ignoreDepression": true,
     "qualities": [],
     "rec": {
-      "min": 10
+      "min": 7
     },
     "scaleWeightWithCondition": true,
-    "tags": "",
+    "slotRotation": -45,
+    "tags": "medicine",
     "usableOnLimb": true,
     "value": 1,
     "wearableVisualOffset": 5,
@@ -3362,6 +3559,7 @@
     "rec": {
       "min": 10
     },
+    "rotSpeed": 0.0833,
     "scaleWeightWithCondition": true,
     "tags": "",
     "value": 10,
@@ -3386,7 +3584,8 @@
       "min": 6
     },
     "scaleWeightWithCondition": true,
-    "tags": "",
+    "slotRotation": -45,
+    "tags": "medicine",
     "usableOnLimb": true,
     "value": 1,
     "wearableVisualOffset": 5,
@@ -3410,7 +3609,8 @@
       "min": 4
     },
     "scaleWeightWithCondition": true,
-    "tags": "",
+    "slotRotation": -45,
+    "tags": "medicine",
     "usable": true,
     "value": 1,
     "wearableVisualOffset": 5,
@@ -3426,6 +3626,7 @@
     "rec": {
       "min": 5
     },
+    "rotSpeed": 0.0138833337,
     "scaleWeightWithCondition": true,
     "tags": "cangetwet",
     "usable": true,
@@ -3448,7 +3649,9 @@
     "rec": {
       "min": 7
     },
+    "rotSpeed": 0.006941667,
     "scaleWeightWithCondition": true,
+    "slotRotation": 45,
     "tags": "",
     "usable": true,
     "value": 8,
@@ -3469,6 +3672,7 @@
       }
     ],
     "rec": {},
+    "rotSpeed": 0.00277666678,
     "scaleWeightWithCondition": true,
     "tags": "cangetwet",
     "usable": true,
@@ -3493,6 +3697,7 @@
     "rec": {
       "min": 6
     },
+    "slotRotation": -90,
     "tags": "tool",
     "usable": true,
     "usableWithLMB": true,
@@ -3510,6 +3715,7 @@
     "rec": {
       "min": 10
     },
+    "slotRotation": -90,
     "tags": "cangetwet,gun",
     "usable": true,
     "usableWithLMB": true,
@@ -3527,6 +3733,7 @@
     "rec": {
       "min": 3
     },
+    "slotRotation": -90,
     "tags": "tool,backflip",
     "usable": true,
     "usableWithLMB": true,
@@ -3548,8 +3755,9 @@
       }
     ],
     "rec": {
-      "min": 6
+      "min": 7
     },
+    "rotSpeed": 0.01666,
     "scaleWeightWithCondition": true,
     "tags": "cangetwet",
     "usable": true,
@@ -3592,6 +3800,8 @@
     "rec": {
       "min": 2
     },
+    "rotSpeed": 0.03702222,
+    "slotRotation": -35,
     "tags": "",
     "value": 12,
     "wearableVisualOffset": 5,
@@ -3611,10 +3821,10 @@
       }
     ],
     "rec": {
-      "min": 7
+      "min": 6
     },
     "scaleWeightWithCondition": true,
-    "tags": "dressing",
+    "tags": "dressing,medicine",
     "usableOnLimb": true,
     "value": 20,
     "wearableVisualOffset": 5,
@@ -3640,9 +3850,9 @@
     "fullName": "Plushie",
     "qualities": [],
     "rec": {
-      "min": 5
+      "min": 6
     },
-    "tags": "",
+    "tags": "belttool",
     "usable": true,
     "value": 5,
     "wearableVisualOffset": 5,
@@ -3651,7 +3861,7 @@
   "popcorn": {
     "category": "food",
     "combineable": true,
-    "description": "A bucket containing a bunch of corn kernels, puffed up from being heated. You find it to be quite a novel concept. Tasty.",
+    "description": "A bucket containing a bunch of corn kernels, puffed up from being heated. You find it to be quite a novel concept. Tasty. Has a long shelf life.",
     "destroyAtZeroCondition": true,
     "fullName": "Popcorn",
     "qualities": [],
@@ -3659,11 +3869,37 @@
       "min": 7
     },
     "scaleWeightWithCondition": true,
+    "slotRotation": -45,
     "tags": "cangetwet",
     "usable": true,
     "value": 10,
     "wearableVisualOffset": 5,
     "weight": 1
+  },
+  "popfruit": {
+    "category": "custom",
+    "decayMinutes": 300,
+    "description": "An odd, rectangular shiny fruit. Tasty, refills hunger and thirst. May randomly help or intensify radiation sickness slightly. Has a loud reaction when impacting the ground at speeds - useful for checking drop height.",
+    "destroyAtZeroCondition": true,
+    "fullName": "Popfruit",
+    "qualities": [
+      {
+        "LocaleName": "Produce",
+        "amount": 1,
+        "id": "produce"
+      }
+    ],
+    "rec": {
+      "min": 8
+    },
+    "rotSpeed": 0.00555333355,
+    "scaleWeightWithCondition": true,
+    "slotRotation": 45,
+    "tags": "cangetwet",
+    "usable": true,
+    "value": 2,
+    "wearableVisualOffset": 5,
+    "weight": 0.8
   },
   "pouch": {
     "category": "container",
@@ -3682,6 +3918,8 @@
     "rec": {
       "min": 2
     },
+    "rotSpeed": 0.01851111,
+    "slotRotation": -90,
     "tags": "",
     "value": 16,
     "wearableVisualOffset": 5,
@@ -3718,6 +3956,7 @@
     "rec": {
       "min": 5
     },
+    "slotRotation": -90,
     "tags": "tool,backflip",
     "usable": true,
     "usableWithLMB": true,
@@ -3739,34 +3978,19 @@
     "wearableVisualOffset": 5,
     "weight": 0.8
   },
-  "purpleherb": {
-    "category": "custom",
-    "decayMinutes": 300,
-    "description": "A dry, purple leaf with a coarse texture. Commonly used as an aid for certain afflictions - helps against sickness, slightly helps hearing loss and might lessen internal bleeding. Use with caution - it has a tendency to highly increase the consumer's body temperature.",
-    "destroyAtZeroCondition": true,
-    "fullName": "Purple herb",
-    "qualities": [],
-    "rec": {
-      "min": 12
-    },
-    "scaleWeightWithCondition": true,
-    "tags": "cangetwet",
-    "usable": true,
-    "value": 2,
-    "wearableVisualOffset": 5,
-    "weight": 0.1
-  },
   "purse": {
     "category": "container",
     "decayInfo": 5,
     "decayMinutes": 120,
-    "description": "A handled medium-sized bag used to carry personal items. Quite stylish!",
+    "description": "A handheld medium-sized bag used to carry personal items. Quite stylish!",
     "destroyAtZeroCondition": true,
     "fullName": "Purse",
     "qualities": [],
     "rec": {
       "min": 2
     },
+    "rotSpeed": 0.0138833337,
+    "slotRotation": -90,
     "tags": "",
     "value": 16,
     "wearableVisualOffset": 5,
@@ -3775,13 +3999,14 @@
   "rag": {
     "category": "medical",
     "combineable": true,
-    "description": "A worn, crumpled up rag. Can be used as decent makeshift dressing.",
+    "description": "A worn, crumpled up rag. Can be used as decent makeshift dressing. Use in the inventory to dry yourself.",
     "destroyAtZeroCondition": true,
     "fullName": "Old rag",
     "qualities": [],
     "rec": {},
     "scaleWeightWithCondition": true,
-    "tags": "dressing",
+    "tags": "dressing,medicine",
+    "usable": true,
     "usableOnLimb": true,
     "value": 4,
     "wearableVisualOffset": 5,
@@ -3803,6 +4028,7 @@
     "rec": {
       "min": 1
     },
+    "slotRotation": -90,
     "tags": "tool,backflip",
     "usable": true,
     "usableWithLMB": true,
@@ -3816,9 +4042,9 @@
     "fullName": "Rangefinder",
     "qualities": [],
     "rec": {
-      "min": 9
+      "min": 3
     },
-    "tags": "",
+    "tags": "belttool",
     "usable": true,
     "usableWithLMB": true,
     "value": 18,
@@ -3850,6 +4076,7 @@
     "rec": {
       "min": 10
     },
+    "rotSpeed": 0.0833,
     "scaleWeightWithCondition": true,
     "tags": "",
     "value": 10,
@@ -3866,6 +4093,7 @@
     "rec": {
       "min": 10
     },
+    "slotRotation": -90,
     "tags": "cangetwet,gun",
     "usable": true,
     "usableWithLMB": true,
@@ -3882,7 +4110,8 @@
     "rec": {
       "min": 9
     },
-    "tags": "",
+    "slotRotation": -90,
+    "tags": "belttool",
     "usable": true,
     "value": 32,
     "wearableVisualOffset": 5,
@@ -3903,15 +4132,35 @@
     "fullName": "Small IV bag",
     "qualities": [],
     "rec": {
-      "min": 10
+      "min": 8
     },
     "scaleWeightWithCondition": true,
-    "tags": "",
+    "tags": "medicine",
     "usable": true,
     "usableOnLimb": true,
     "value": 1,
     "wearableVisualOffset": 5,
     "weight": 1.1
+  },
+  "riothelmet": {
+    "category": "custom",
+    "description": "An advanced helmet that greatly reduces the severity of head trauma.",
+    "desiredWearLimb": "Head",
+    "destroyAtZeroCondition": true,
+    "fullName": "Riot helmet",
+    "qualities": [],
+    "rec": {
+      "min": 10
+    },
+    "tags": "",
+    "value": 50,
+    "wearSlotId": "hat",
+    "wearable": true,
+    "wearableArmor": 2,
+    "wearableHitDurabilityLossMultiplier": 0.3,
+    "wearableIsolation": 0.2,
+    "wearableVisualOffset": 8,
+    "weight": 0.8
   },
   "rippeddressing": {
     "category": "medical",
@@ -3920,9 +4169,11 @@
     "destroyAtZeroCondition": true,
     "fullName": "Ripped dressing",
     "qualities": [],
-    "rec": {},
+    "rec": {
+      "min": 1
+    },
     "scaleWeightWithCondition": true,
-    "tags": "",
+    "tags": "medicine",
     "usableOnLimb": true,
     "value": 4,
     "wearableVisualOffset": 5,
@@ -3933,11 +4184,12 @@
     "decayMinutes": 45,
     "description": "A few bits of foliage, tied together into a rope. Used for crafting.",
     "destroyAtZeroCondition": true,
-    "fullName": "Foliage rope",
+    "fullName": "Rope",
     "qualities": [],
     "rec": {
       "min": 1
     },
+    "rotSpeed": 0.03702222,
     "tags": "",
     "wearableVisualOffset": 5,
     "weight": 0.25
@@ -3950,6 +4202,7 @@
     "fullName": "Rose light",
     "qualities": [],
     "rec": {},
+    "rotSpeed": 0.3332,
     "tags": "",
     "usableOnLimb": true,
     "value": 1,
@@ -3979,6 +4232,7 @@
     "rec": {
       "min": 5
     },
+    "rotSpeed": 0.0555333346,
     "tags": "cangetwet",
     "wearableVisualOffset": 5,
     "weight": 1
@@ -3999,6 +4253,7 @@
     "rec": {
       "min": 7
     },
+    "rotSpeed": 0.00555333355,
     "tags": "cangetwet",
     "value": 2,
     "wearableVisualOffset": 5,
@@ -4038,10 +4293,10 @@
     "fullName": "IV bag",
     "qualities": [],
     "rec": {
-      "min": 10
+      "min": 7
     },
     "scaleWeightWithCondition": true,
-    "tags": "",
+    "tags": "medicine",
     "usable": true,
     "usableOnLimb": true,
     "value": 1,
@@ -4084,6 +4339,7 @@
     "rec": {
       "min": 2
     },
+    "rotSpeed": 0.00462777773,
     "tags": "",
     "value": 10,
     "wearSlotId": "neck",
@@ -4122,7 +4378,7 @@
   },
   "scrappanel": {
     "category": "custom",
-    "description": "Thin sheet of scrap metal. Not partiularly strong, but will do in crafting.",
+    "description": "Thin sheet of scrap metal. Not particularly strong, but will do in crafting.",
     "destroyAtZeroCondition": true,
     "fullName": "Scrap panel",
     "qualities": [],
@@ -4134,7 +4390,7 @@
   },
   "scraptube": {
     "category": "custom",
-    "description": "Hollow tube made of scrap metal. Not partiularly strong, but will do in crafting. Could act as a shoddy makeshift hammer.",
+    "description": "Hollow tube made of scrap metal. Not particularly strong, but will do in crafting. Could act as a shoddy makeshift hammer.",
     "destroyAtZeroCondition": true,
     "fullName": "Scrap tube",
     "qualities": [
@@ -4161,6 +4417,7 @@
     "rec": {
       "min": 9
     },
+    "rotSpeed": 0.009255555,
     "tags": "",
     "value": 30,
     "wearSlotId": "back",
@@ -4179,6 +4436,7 @@
     "rec": {
       "min": 11
     },
+    "slotRotation": -90,
     "tags": "cangetwet,gun",
     "usable": true,
     "usableWithLMB": true,
@@ -4202,6 +4460,7 @@
     "rec": {
       "min": 2
     },
+    "slotRotation": -90,
     "tags": "tool,backflip",
     "usable": true,
     "usableWithLMB": true,
@@ -4225,6 +4484,7 @@
     "rec": {
       "min": 3
     },
+    "slotRotation": -90,
     "tags": "tool,backflip",
     "usable": true,
     "usableOnLimb": true,
@@ -4250,12 +4510,28 @@
     "rec": {
       "min": 4
     },
+    "slotRotation": -90,
     "tags": "tool",
     "usable": true,
     "usableWithLMB": true,
     "value": 30,
     "wearableVisualOffset": 5,
     "weight": 2.5
+  },
+  "sleepingbag": {
+    "category": "utility",
+    "description": "An insulated covering for a person to sleep in. Use to sleep in it, bumping the sleeping quality up a tier (capped at Good) and giving you some insulation for the night. Normal sleep restrictions apply.",
+    "destroyAtZeroCondition": true,
+    "fullName": "Sleeping bag",
+    "qualities": [],
+    "rec": {
+      "min": 5
+    },
+    "tags": "",
+    "usable": true,
+    "value": 20,
+    "wearableVisualOffset": 5,
+    "weight": 1
   },
   "sleepingpills": {
     "autoFill": true,
@@ -4272,10 +4548,11 @@
     "fullName": "Sleeping pills packet",
     "qualities": [],
     "rec": {
-      "min": 3
+      "min": 2
     },
     "scaleWeightWithCondition": true,
-    "tags": "",
+    "slotRotation": -45,
+    "tags": "medicine",
     "usable": true,
     "wearableVisualOffset": 5,
     "weight": 0.4
@@ -4298,6 +4575,7 @@
     "rec": {
       "min": 6
     },
+    "rotSpeed": 0.03332,
     "tags": "",
     "value": 8,
     "wearSlotId": "back",
@@ -4313,7 +4591,7 @@
     "rec": {
       "min": 3
     },
-    "tags": "battery",
+    "tags": "battery,bullet",
     "value": 6,
     "wearableVisualOffset": 5,
     "weight": 0.1
@@ -4327,7 +4605,8 @@
     "rec": {
       "min": 9
     },
-    "tags": "",
+    "slotRotation": -90,
+    "tags": "belttool",
     "usable": true,
     "value": 22,
     "wearableVisualOffset": 5,
@@ -4351,6 +4630,7 @@
     "rec": {
       "min": 2
     },
+    "rotSpeed": 0.00793333352,
     "tags": "",
     "value": 20,
     "wearSlotId": "back",
@@ -4377,6 +4657,7 @@
     "rec": {
       "min": 2
     },
+    "rotSpeed": 0.00555333355,
     "tags": "",
     "value": 15,
     "wearSlotId": "feet",
@@ -4405,6 +4686,7 @@
       "min": 3
     },
     "scaleWeightWithCondition": true,
+    "slotRotation": -45,
     "tags": "",
     "usable": true,
     "value": 3,
@@ -4429,11 +4711,37 @@
       "min": 3
     },
     "scaleWeightWithCondition": true,
+    "slotRotation": -45,
     "tags": "",
     "usable": true,
     "value": 1,
     "wearableVisualOffset": 5,
     "weight": 0.75
+  },
+  "sodiumnitroprusside": {
+    "autoFill": true,
+    "capacity": 100,
+    "category": "drug",
+    "combineable": true,
+    "defaultContents": [
+      {
+        "amount": 100,
+        "liquidId": "sodiumnitroprusside"
+      }
+    ],
+    "description": "A 100ml bottle with sodium nitroprusside. As the medication only works intravenously, you will need to get a separate syringe to fill and use.",
+    "fullName": "Sodium nitroprusside bottle",
+    "qualities": [],
+    "rec": {
+      "min": 10
+    },
+    "scaleWeightWithCondition": true,
+    "slotRotation": -45,
+    "tags": "medicine",
+    "usable": true,
+    "value": 1,
+    "wearableVisualOffset": 5,
+    "weight": 0.3
   },
   "soothingcrystalshard": {
     "category": "custom",
@@ -4446,6 +4754,7 @@
     "rec": {
       "min": 10
     },
+    "rotSpeed": 0.0833,
     "scaleWeightWithCondition": true,
     "tags": "",
     "value": 10,
@@ -4470,6 +4779,7 @@
       "min": 3
     },
     "scaleWeightWithCondition": true,
+    "slotRotation": -45,
     "tags": "",
     "usable": true,
     "value": 2,
@@ -4484,11 +4794,12 @@
     "rec": {
       "min": 5
     },
+    "rotSpeed": -0.52,
     "tags": "",
     "usable": true,
     "value": 13,
     "wearableVisualOffset": 5,
-    "weight": 1
+    "weight": 0.5
   },
   "splint": {
     "category": "medical",
@@ -4497,9 +4808,10 @@
     "fullName": "Splint",
     "qualities": [],
     "rec": {
-      "min": 6
+      "min": 4
     },
-    "tags": "",
+    "slotRotation": 90,
+    "tags": "medicine",
     "usableOnLimb": true,
     "value": 15,
     "wearableVisualOffset": 5,
@@ -4515,10 +4827,10 @@
     "fullName": "Spray bottle",
     "qualities": [],
     "rec": {
-      "min": 7
+      "min": 5
     },
     "scaleWeightWithCondition": true,
-    "tags": "",
+    "tags": "medicine",
     "usableOnLimb": true,
     "value": 1,
     "wearableVisualOffset": 5,
@@ -4538,6 +4850,7 @@
       }
     ],
     "rec": {},
+    "rotSpeed": 0.009255555,
     "scaleWeightWithCondition": true,
     "tags": "cangetwet",
     "usable": true,
@@ -4559,10 +4872,10 @@
       }
     ],
     "rec": {
-      "min": 2
+      "min": 1
     },
     "scaleWeightWithCondition": true,
-    "tags": "dressing",
+    "tags": "dressing,medicine",
     "usableOnLimb": true,
     "value": 15,
     "wearableVisualOffset": 5,
@@ -4601,7 +4914,9 @@
     "rec": {
       "min": 7
     },
+    "rotSpeed": 0.009255555,
     "scaleWeightWithCondition": true,
+    "slotRotation": 45,
     "tags": "",
     "usable": true,
     "value": 1,
@@ -4624,7 +4939,9 @@
     "rec": {
       "min": 6
     },
+    "rotSpeed": 0.0119,
     "scaleWeightWithCondition": true,
+    "slotRotation": 45,
     "tags": "cangetwet",
     "usable": true,
     "value": 1,
@@ -4646,10 +4963,10 @@
     "fullName": "Streptokinase syringe",
     "qualities": [],
     "rec": {
-      "min": 8
+      "min": 11
     },
     "scaleWeightWithCondition": true,
-    "tags": "",
+    "tags": "medicine",
     "usableOnLimb": true,
     "value": 1,
     "wearableVisualOffset": 5,
@@ -4673,6 +4990,7 @@
     "rec": {
       "min": 4
     },
+    "rotSpeed": 0.0277666673,
     "tags": "",
     "value": 10,
     "wearSlotId": "outertorso",
@@ -4704,21 +5022,73 @@
     "defaultContents": [],
     "description": "A 100ml syringe which can inject fluid intravenously. It's handmade.",
     "fullName": "Syringe",
-    "ignoreDepression": true,
     "qualities": [],
     "rec": {
-      "min": 8
+      "min": 4
     },
     "scaleWeightWithCondition": true,
-    "tags": "",
+    "slotRotation": -45,
+    "tags": "medicine",
     "usableOnLimb": true,
     "value": 6,
     "wearableVisualOffset": 5,
     "weight": 0.25
   },
+  "tacticalboots": {
+    "category": "custom",
+    "decayInfo": 6,
+    "decayMinutes": 400,
+    "description": "A pair of heavy synthetic boots, made to effectively protect the feet from various forms of trauma.",
+    "desiredWearLimb": "FootF",
+    "destroyAtZeroCondition": true,
+    "fullName": "Tactical boots",
+    "qualities": [
+      {
+        "LocaleName": "Rippable",
+        "amount": 2,
+        "id": "rippable"
+      }
+    ],
+    "rec": {
+      "min": 2
+    },
+    "rotSpeed": 0.004165,
+    "tags": "",
+    "value": 35,
+    "wearSlotId": "feet",
+    "wearable": true,
+    "wearableArmor": 2,
+    "wearableHitDurabilityLossMultiplier": 0.1,
+    "wearableIsolation": 0.3,
+    "wearableVisualOffset": 5,
+    "weight": 0.8
+  },
+  "tacticalgloves": {
+    "category": "custom",
+    "decayInfo": 6,
+    "decayMinutes": 600,
+    "description": "A pair of advanced synthetic gloves. Effectively protects your hands from physical trauma.",
+    "desiredWearLimb": "HandF",
+    "destroyAtZeroCondition": true,
+    "fullName": "Tactical gloves",
+    "qualities": [],
+    "rec": {
+      "min": 2
+    },
+    "rotSpeed": 0.00277666678,
+    "tags": "",
+    "value": 35,
+    "wearSlotId": "hands",
+    "wearable": true,
+    "wearableArmor": 1,
+    "wearableHitDurabilityLossMultiplier": 0.15,
+    "wearableIsolation": 0.15,
+    "wearableVisualOffset": 4,
+    "weight": 0.2
+  },
   "terrainscanner": {
     "category": "utility",
-    "description": "Shows you a low-quality map of the terrain below you. Terrain is highlighted in green, solid buildings in red. Goes 24 meters down.",
+    "description": "Shows you a low-quality map of the terrain below you. Terrain is highlighted in green, solid buildings in red. Might be slightly inaccurate. Goes 24 meters down.",
     "fullName": "Terrain scanner",
     "qualities": [],
     "rec": {
@@ -4728,7 +5098,7 @@
     "usable": true,
     "value": 25,
     "wearableVisualOffset": 5,
-    "weight": 1
+    "weight": 0.6
   },
   "titaniummachete": {
     "autoAttack": true,
@@ -4751,6 +5121,7 @@
     "rec": {
       "min": 5
     },
+    "slotRotation": -90,
     "tags": "tool,backflip",
     "usable": true,
     "usableOnLimb": true,
@@ -4762,7 +5133,7 @@
   "titaniummultitool": {
     "autoAttack": true,
     "category": "custom",
-    "description": "A small, yet very firm and durable tool used for crafting, with a heavy hammer top and a tiny yet razor sharp blade hidden in the handle. While not useful for digging nor combat, it will last neigh indefinitely for all sorts of crafting recipes, and is light.\n\n<color=\"red\">Can be used in the health panel to amputate severely infected limbs.",
+    "description": "A small, yet very firm and durable tool used for crafting, with a heavy hammer top and a tiny yet razor sharp blade hidden in the handle. While not useful for digging nor combat, it will last nigh indefinitely for all sorts of crafting recipes, and is light.\n\n<color=\"red\">Can be used in the health panel to amputate severely infected limbs.",
     "destroyAtZeroCondition": true,
     "fullName": "Titanium multitool",
     "qualities": [
@@ -4780,6 +5151,7 @@
     "rec": {
       "min": 2
     },
+    "slotRotation": -90,
     "tags": "tool,backflip",
     "usable": true,
     "usableOnLimb": true,
@@ -4805,6 +5177,7 @@
     "rec": {
       "min": 6
     },
+    "slotRotation": -90,
     "tags": "tool",
     "usable": true,
     "usableWithLMB": true,
@@ -4873,6 +5246,7 @@
     "rec": {
       "min": 5
     },
+    "rotSpeed": 0.00347083341,
     "tags": "",
     "value": 30,
     "wearableVisualOffset": 5,
@@ -4881,12 +5255,14 @@
   "torch": {
     "category": "utility",
     "decayMinutes": 20,
-    "description": "Extremely primitive lightsource. While it lights up the way pretty well, it will be put out by liquids. You can relight it with a bit of fat and a flame source.",
+    "description": "Extremely primitive lightsource. While it lights up the way pretty well, it will be put out by liquids. You can relight it with a flame source.",
     "fullName": "Torch",
     "qualities": [],
     "rec": {
       "min": 3
     },
+    "rotSpeed": 0.0833,
+    "slotRotation": -90,
     "tags": "cangetwet,backflip",
     "value": 6,
     "wearableVisualOffset": 5,
@@ -4910,6 +5286,7 @@
     "rec": {
       "min": 2
     },
+    "rotSpeed": 0.009255555,
     "tags": "",
     "value": 10,
     "wearSlotId": "torso",
@@ -4927,13 +5304,13 @@
     "fullName": "Tourniquet",
     "qualities": [],
     "rec": {
-      "min": 6
+      "min": 4
     },
-    "tags": "",
+    "tags": "medicine",
     "usableOnLimb": true,
     "value": 10,
     "wearableVisualOffset": 5,
-    "weight": 0.4
+    "weight": 0.2
   },
   "trashbag": {
     "category": "container",
@@ -4952,10 +5329,40 @@
     "rec": {
       "min": 2
     },
+    "rotSpeed": 0.0277666673,
+    "slotRotation": -35,
     "tags": "",
     "value": 15,
     "wearableVisualOffset": 5,
     "weight": 0.25
+  },
+  "traumarig": {
+    "category": "custom",
+    "decayInfo": 7,
+    "decayMinutes": 1440,
+    "description": "An advanced synthetic protective pouch that can hold various tools, weapons and medical gear. Also protects your torso!",
+    "desiredWearLimb": "DownTorso",
+    "destroyAtZeroCondition": true,
+    "fullName": "Trauma rig",
+    "qualities": [
+      {
+        "LocaleName": "Rippable",
+        "amount": 1,
+        "id": "rippable"
+      }
+    ],
+    "rec": {
+      "min": 12
+    },
+    "rotSpeed": 0.00115694443,
+    "tags": "",
+    "value": 50,
+    "wearSlotId": "torsofront",
+    "wearable": true,
+    "wearableArmor": 0.8,
+    "wearableHitDurabilityLossMultiplier": 0.1,
+    "wearableVisualOffset": 4,
+    "weight": 0.2
   },
   "trowel": {
     "autoAttack": true,
@@ -4967,6 +5374,7 @@
     "rec": {
       "min": 2
     },
+    "slotRotation": -90,
     "tags": "tool,backflip",
     "usable": true,
     "usableWithLMB": true,
@@ -4986,23 +5394,12 @@
     "rec": {
       "min": 10
     },
+    "rotSpeed": 0.0833,
     "scaleWeightWithCondition": true,
     "tags": "",
     "value": 15,
     "wearableVisualOffset": 5,
     "weight": 1.5
-  },
-  "tutorialradio": {
-    "category": "custom",
-    "description": "You're usually given one of these for the training sessions. Not sure if the messages are live or pre-recorded. It has a button you can press.",
-    "fullName": "Training radio",
-    "qualities": [],
-    "rec": {},
-    "tags": "",
-    "usable": true,
-    "value": 100,
-    "wearableVisualOffset": 5,
-    "weight": 1
   },
   "tweezers": {
     "category": "medical",
@@ -5013,9 +5410,52 @@
     "rec": {
       "min": 5
     },
-    "tags": "",
+    "tags": "medicine",
     "usableOnLimb": true,
     "value": 10,
+    "wearableVisualOffset": 5,
+    "weight": 0.1
+  },
+  "vasopressin": {
+    "autoFill": true,
+    "capacity": 100,
+    "category": "drug",
+    "combineable": true,
+    "defaultContents": [
+      {
+        "amount": 100,
+        "liquidId": "vasopressin"
+      }
+    ],
+    "description": "A 100ml bottle with vasopressin. As the medication only works intravenously, you will need to get a separate syringe to fill and use.",
+    "fullName": "Vasopressin bottle",
+    "qualities": [],
+    "rec": {
+      "min": 10
+    },
+    "scaleWeightWithCondition": true,
+    "slotRotation": -45,
+    "tags": "medicine",
+    "usable": true,
+    "value": 1,
+    "wearableVisualOffset": 5,
+    "weight": 0.3
+  },
+  "venomgland": {
+    "category": "custom",
+    "combineable": true,
+    "decayMinutes": 60,
+    "description": "A tiny salivary gland that produces and stores hemotoxin. You could probably process it into some kind of anti-venom.",
+    "destroyAtZeroCondition": true,
+    "fullName": "Venom gland",
+    "qualities": [],
+    "rec": {
+      "min": 2
+    },
+    "rotSpeed": 0.0277666673,
+    "tags": "",
+    "usable": true,
+    "value": 3,
     "wearableVisualOffset": 5,
     "weight": 0.1
   },
@@ -5029,7 +5469,8 @@
     "rec": {
       "min": 7
     },
-    "tags": "",
+    "rotSpeed": 0.00555333355,
+    "tags": "belttool",
     "usable": true,
     "value": 20,
     "wearableVisualOffset": 5,
@@ -5053,6 +5494,7 @@
       "min": 2
     },
     "scaleWeightWithCondition": true,
+    "slotRotation": -45,
     "tags": "",
     "usable": true,
     "value": 2,
@@ -5078,6 +5520,7 @@
       "min": 2
     },
     "scaleWeightWithCondition": true,
+    "slotRotation": -45,
     "tags": "",
     "usable": true,
     "value": 4,
@@ -5118,6 +5561,7 @@
     "rec": {
       "min": 4
     },
+    "slotRotation": -90,
     "tags": "tool,backflip",
     "usable": true,
     "usableWithLMB": true,
@@ -5159,6 +5603,7 @@
     "rec": {
       "min": 6
     },
+    "slotRotation": -90,
     "tags": "tool",
     "usable": true,
     "usableWithLMB": true,
@@ -5176,6 +5621,7 @@
     "rec": {
       "min": 3
     },
+    "slotRotation": -90,
     "tags": "tool,backflip",
     "usable": true,
     "usableWithLMB": true,
@@ -5195,6 +5641,7 @@
     "rec": {
       "min": 2
     },
+    "rotSpeed": 0.0277666673,
     "tags": "",
     "value": 4,
     "wearSlotId": "feet",
@@ -5236,6 +5683,7 @@
     "rec": {
       "min": 2
     },
+    "slotRotation": -90,
     "tags": "tool,backflip",
     "usable": true,
     "usableWithLMB": true,
@@ -5259,6 +5707,7 @@
     "rec": {
       "min": 3
     },
+    "slotRotation": -90,
     "tags": "tool,backflip",
     "usable": true,
     "usableWithLMB": true,
@@ -5276,6 +5725,7 @@
     "rec": {
       "min": 2
     },
+    "slotRotation": -90,
     "tags": "tool,backflip",
     "usable": true,
     "usableWithLMB": true,
@@ -5298,10 +5748,11 @@
     "fullName": "Wound glue",
     "qualities": [],
     "rec": {
-      "min": 8
+      "min": 6
     },
     "scaleWeightWithCondition": true,
-    "tags": "dressing",
+    "slotRotation": -45,
+    "tags": "dressing,medicine",
     "usableOnLimb": true,
     "value": 1,
     "wearableVisualOffset": 5,
@@ -5323,6 +5774,7 @@
     "rec": {
       "min": 5
     },
+    "slotRotation": -90,
     "tags": "tool,backflip",
     "usable": true,
     "usableOnLimb": true,
@@ -5341,6 +5793,8 @@
     "rec": {
       "min": 12
     },
+    "rotSpeed": 0.111066669,
+    "slotRotation": 45,
     "tags": "cangetwet",
     "usable": true,
     "usableOnLimb": true,

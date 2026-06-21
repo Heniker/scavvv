@@ -665,6 +665,17 @@
   },
   {
     "color": {
+      "b": 0.4392157,
+      "g": 1,
+      "r": 0.3019608
+    },
+    "injectable": true,
+    "localeName": "antivenom",
+    "qualities": [],
+    "valuePerLiter": 130
+  },
+  {
+    "color": {
       "b": 0.3647059,
       "g": 0.243137255,
       "r": 0.458823532
@@ -717,6 +728,61 @@
     "localeName": "procoagulant",
     "qualities": [],
     "valuePerLiter": 250
+  },
+  {
+    "color": {
+      "b": 0.9137255,
+      "g": 1,
+      "r": 0.6313726
+    },
+    "injectable": true,
+    "localeName": "epinephrine",
+    "qualities": [],
+    "valuePerLiter": 80
+  },
+  {
+    "color": {
+      "b": 0.870588243,
+      "g": 1,
+      "r": 0.3019608
+    },
+    "injectable": true,
+    "localeName": "oxyline",
+    "qualities": [],
+    "valuePerLiter": 80
+  },
+  {
+    "color": {
+      "b": 0.160784319,
+      "g": 0.345098048,
+      "r": 0.8117647
+    },
+    "injectable": true,
+    "localeName": "sodiumnitroprusside",
+    "qualities": [],
+    "valuePerLiter": 150
+  },
+  {
+    "color": {
+      "b": 1,
+      "g": 1,
+      "r": 1
+    },
+    "injectable": true,
+    "localeName": "vasopressin",
+    "qualities": [],
+    "valuePerLiter": 150
+  },
+  {
+    "color": {
+      "b": 0.831372559,
+      "g": 0.8627451,
+      "r": 1
+    },
+    "injectable": true,
+    "localeName": "amiodarone",
+    "qualities": [],
+    "valuePerLiter": 185
   },
   {
     "color": {

@@ -11,7 +11,7 @@
   store.init()
 
   let selectedItem = $state(undefined as UiListEntityT | undefined)
-  let searchTerm = $state('')
+  let searchTerm = $state('c:')
 
   let lastSelectedItem = usePrevious(computed(() => selectedItem))
 

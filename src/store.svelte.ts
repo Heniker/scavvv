@@ -116,39 +116,6 @@ function doSearch(items: UiListEntityT[], data: { searchTerm: string }) {
     .replace(/c\:[^\s]*/g, '')
     .trim()
 
-  // if (!searchTerm) {
-  //   return items
-  // }
-
-  // const fuseInstance = new Fuse(items, {
-  //   keys: (() => {
-  //     if (qualitySearchKey) {
-  //       return [
-  //         {
-  //           name: 'qualities.id',
-  //           weight: 0,
-  //           getFn: (it) => it.qualities.map((it) => store.t(it.id)),
-  //         },
-  //       ]
-  //     } else if (categorySearchKey) {
-  //       return [
-  //         {
-  //           name: 'category',
-  //           weight: 0,
-  //           getFn: (it) => store.getCraftingInfo(it.id).map((it) => store.t(it.category)),
-  //         },
-  //       ]
-  //     } else {
-  //       return [{ name: 'id', weight: 1, getFn: (it) => store.t(it.id) }]
-  //     }
-  //   })(),
-
-  //   threshold: qualitySearchKey || categorySearchKey ? 0.1 : 0.3,
-  //   ignoreLocation: false,
-  //   isCaseSensitive: false,
-  //   useExtendedSearch: true,
-  // })
-
   const fuseInstance = new Fuse(items, {
     keys: [
       {

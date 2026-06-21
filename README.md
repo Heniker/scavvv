@@ -4,7 +4,7 @@ Anything but updating the wiki
 
 https://heniker.github.io/scavvv
 
-Currently serving data from v5 version released on `2026/02/13`
+Currently serving data from STEAM demo version released on `2026-06-04`
 
 tip: use alt+q ([on chrome](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/accesskey)) to quickly focus search bar.
 
@@ -33,6 +33,7 @@ Svgs from https://github.com/feathericons/feather
 -----
 
 todo:
+search is kinda slow | use webworker fuse version?
 upload icons for new items | extracting icons with correct naming is annoying
 display additional item information
 ? crafting categories instead of item categories for filtering
